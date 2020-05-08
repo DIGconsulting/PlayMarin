@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import styled from "@emotion/Styled"
 import { Container, Row, Col } from "react-bootstrap"
 import FrontForm from "../components/Frontform"

@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "React"
+import React from "react"
 import PropTypes from "Prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
