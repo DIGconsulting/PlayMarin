@@ -1,21 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Banner from "../components/banner"
+import Hero from "../components/hero"
+import Footer from "../components/footer"
+import Homepagethreeup from "../components/homepagethreeup"
+import Timeline from "../components/timeline"
+import Newsletterform from "../components/Newsletterform"
+import Insta from "../components/insta"
+import Video from "../components/video"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <>
+    <Hero />
+    <Layout>
+      <SEO title="Home" />
+
+      <Banner />
+      <Homepagethreeup />
+      <Timeline />
+      <Video />
+      <Newsletterform />
+      <Insta />
+      <Footer />
+    </Layout>
+  </>
 )
 
 export default IndexPage
