@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { css } from "@emotion/core"
-import useInstagram from "../components/use-instagram"
+import useInstagram from "../components/useinstagram"
 
 const Insta = () => {
   const instaPhotos = useInstagram()
