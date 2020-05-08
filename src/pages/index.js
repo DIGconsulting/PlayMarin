@@ -6,7 +6,6 @@ import Hero from "../components/hero"
 import Footer from "../components/footer"
 import Homepagethreeup from "../components/homepagethreeup"
 import Timeline from "../components/timeline"
-import Newsletterform from "../components/newsletterform"
 import Insta from "../components/insta"
 import Video from "../components/video"
 
@@ -20,7 +19,6 @@ const IndexPage = () => (
       <Homepagethreeup />
       <Timeline />
       <Video />
-      <Newsletterform />
       <Insta />
       <Footer />
     </Layout>
