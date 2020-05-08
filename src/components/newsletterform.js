@@ -1,7 +1,7 @@
 import React from "react"
-import styled from "@emotion/Styled"
+import styled from "@emotion/styled"
 import { Container, Row, Col } from "react-bootstrap"
-import FrontForm from "../components/Frontform"
+import FrontForm from "../components/frontform"
 
 const Newsletterform = () => {
   return (
