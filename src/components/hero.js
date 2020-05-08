@@ -53,7 +53,6 @@ const Hero = () => {
               style={{
                 color: `#fff`,
                 fontSize: `3rem`,
-                boxShadow: `0 .5rem 1rem rgba(0,0,0,.15)!important`,
                 padding: `0px 10px 10px 10px`,
               }}
             >
