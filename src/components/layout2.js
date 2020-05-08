@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "React"
+import PropTypes from "Prop-types"
 import Header from "./header"
 
 const LayoutTwo = ({ children }) => {

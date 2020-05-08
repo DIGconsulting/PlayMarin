@@ -1,4 +1,4 @@
-import React from "react"
+import React from "React"
 import styled from "@emotion/styled"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Play from "../images/playMarinLogo-v2.png"
