@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import styled from "@emotion/styled"
 import Layout from "../components/layout.js"
 import Footer from "../components/footer.js"

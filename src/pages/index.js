@@ -4,11 +4,11 @@ import SEO from "../components/seo"
 import Banner from "../components/banner"
 import Hero from "../components/hero"
 import Footer from "../components/footer"
-import Homepagethreeup from "../components/Homepagethreeup"
+import Homepagethreeup from "../components/homepagethreeup"
 import Timeline from "../components/timeline"
-import Newsletterform from "../components/Newsletterform"
-import Insta from "../components/Insta"
-import Video from "../components/Video"
+import Newsletterform from "../components/newsletterform"
+import Insta from "../components/insta"
+import Video from "../components/video"
 
 const IndexPage = () => (
   <>

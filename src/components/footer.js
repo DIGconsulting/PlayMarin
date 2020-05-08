@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import Logo from "../images/Play.logo.ROUND2.jpeg"
 import { Container, Row, Col } from "react-bootstrap"
 

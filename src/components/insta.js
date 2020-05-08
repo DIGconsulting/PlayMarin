@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import Image from "gatsby-image"
 import { css } from "@emotion/core"
 import useInstagram from "../components/Use-instagram"
