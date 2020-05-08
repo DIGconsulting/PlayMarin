@@ -3,16 +3,16 @@ import Layout from "../components/layout.js"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Container, Row, Col, Button } from "react-grid-system"
-import basketball from "../images/Basketball.jpg"
-import volleyball from "../images/Volley_girls.jpg"
-import lacrosse from "../images/Lacrosse.jpg"
-import playdates from "../images/Playdates.jpg"
-import summercamp from "../images/Banner.jpg"
-import track from "../images/ Track.jpg"
-import bikes from "../images/Bikes.jpg"
-import skate from "../images/Skate.jpg"
-import trips from "../images/Trips.jpg"
-import clinics from "../images/Clinics.jpg"
+import Basketball from "../images/basketball.jpg"
+import Volleyball from "../images/volley_girls.jpg"
+import Lacrosse from "../images/lacrosse.jpg"
+import Playdates from "../images/playdates.jpg"
+import Summercamp from "../images/banner.jpg"
+import Track from "../images/ track.jpg"
+import Bikes from "../images/bikes.jpg"
+import Skate from "../images/skate.jpg"
+import Trips from "../images/trips.jpg"
+import Clinics from "../images/clinics.jpg"
 
 function Card(props) {
   return (
@@ -42,7 +42,7 @@ function Programs() {
         <Row>
           <Col lg={4}>
             <Card
-              featureImage={basketball}
+              featureImage={Basketball}
               title="Basketball"
               description="Let's write some interactive form with React"
               link="https://sebhastian.com/interactive-react-form"
@@ -50,7 +50,7 @@ function Programs() {
           </Col>
           <Col lg={4}>
             <Card
-              featureImage={track}
+              featureImage={Track}
               title="	Track & Field"
               description="Babel make JavaScript code browser-compatible."
               link="https://sebhastian.com/babel-guide"
@@ -58,7 +58,7 @@ function Programs() {
           </Col>
           <Col lg={4}>
             <Card
-              featureImage={volleyball}
+              featureImage={Volleyball}
               title="Girl’s Volleyball"
               description="Learn the prerequisites of learning React fast"
               link="https://sebhastian.com/js-before-react"
@@ -68,7 +68,7 @@ function Programs() {
         <Row>
           <Col lg={4}>
             <Card
-              featureImage={lacrosse}
+              featureImage={Lacrosse}
               title="Lacrosse"
               description="Let's write some interactive form with React"
               link="https://sebhastian.com/interactive-react-form"
@@ -76,7 +76,7 @@ function Programs() {
           </Col>
           <Col lg={4}>
             <Card
-              featureImage={bikes}
+              featureImage={Bikes}
               title="Mountain Bike Club"
               description="Babel make JavaScript code browser-compatible."
               link="https://sebhastian.com/babel-guide"
@@ -84,7 +84,7 @@ function Programs() {
           </Col>
           <Col lg={4}>
             <Card
-              featureImage={skate}
+              featureImage={Skate}
               title="Skate Park"
               description="Learn the prerequisites of learning React fast"
               link="https://sebhastian.com/js-before-react"
@@ -94,7 +94,7 @@ function Programs() {
         <Row>
           <Col lg={4}>
             <Card
-              featureImage={playdates}
+              featureImage={Playdates}
               title="Play dates"
               description="Let's write some interactive form with React"
               link="https://sebhastian.com/interactive-react-form"
@@ -102,7 +102,7 @@ function Programs() {
           </Col>
           <Col lg={4}>
             <Card
-              featureImage={trips}
+              featureImage={Trips}
               title="Field trips"
               description="Babel make JavaScript code browser-compatible."
               link="https://sebhastian.com/babel-guide"
@@ -110,7 +110,7 @@ function Programs() {
           </Col>
           <Col lg={4}>
             <Card
-              featureImage={summercamp}
+              featureImage={Summercamp}
               title="Summer camp"
               description="Learn the prerequisites of learning React fast"
               link="https://sebhastian.com/js-before-react"
@@ -120,7 +120,7 @@ function Programs() {
         <Row>
           <Col lg={4}>
             <Card
-              featureImage={clinics}
+              featureImage={Clinics}
               title="Sports Clinics"
               description="Learn the prerequisites of learning React fast"
               link="https://sebhastian.com/js-before-react"
