@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { Container, Row, Col, Jumbotron } from "react-grid-system"
