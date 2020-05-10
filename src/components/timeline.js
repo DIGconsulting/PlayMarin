@@ -11,7 +11,7 @@ const Timeline = () => {
       >
         <h3
           style={{
-            fontFamily: `SF Pro Display SF Pro Display SF Pro Icons Helvetica NeueHelvetica Arial sans-serif`,
+            fontFamily: `avenir`,
             fontWeight: `600`,
             fontWeight: `600`,
           }}
@@ -19,9 +19,25 @@ const Timeline = () => {
           We provide year-long programming to ensure kids are engaged throughout
           the school year and summer
         </h3>
-        <p>
+        <p
+          style={{
+            fontFamily: `avenir`,
+          }}
+        >
           Serving 300 kids annually in Marin City and greater Southern Marin
         </p>
+        <h3
+          style={{
+            fontFamily: `avenir`,
+            color: `#4F4F4F`,
+            fontSize: `20px`,
+            fontFamily: `avenir`,
+            fontWeight: `700`,
+            paddingTop: `20px`,
+          }}
+        >
+          Program Timeline
+        </h3>
 
         <div
           style={{
@@ -124,18 +140,6 @@ const Timeline = () => {
             Summer Camp
           </span>
         </div>
-        <h3
-          style={{
-            fontFamily: `avenir`,
-            color: `#4F4F4F`,
-            fontSize: `20px`,
-            fontFamily: `SF Pro Display SF Pro Display SF Pro Icons Helvetica NeueHelvetica Arial sans-serif`,
-            fontWeight: `700`,
-            paddingTop: `20px`,
-          }}
-        >
-          Program Timeline
-        </h3>
       </center>
     </>
   )

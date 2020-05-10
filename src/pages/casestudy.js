@@ -13,10 +13,12 @@ const CaseStudy = () => {
       <Header />
       <Container
         style={{
-          paddingTop: `100px`,
           display: `flex`,
           flexDirection: `column`,
           alignItems: `center`,
+          margin: `100px auto`,
+          maxWidth: 960,
+          padding: `0 1rem`,
         }}
       >
         <h1>The Play Marin Case study</h1>

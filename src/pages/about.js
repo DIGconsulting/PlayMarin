@@ -7,7 +7,13 @@ const About = () => {
   return (
     <>
       <Header />
-      <Container>
+      <Container
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1rem`,
+        }}
+      >
         <div
           style={{
             backgroundColor: `#000`,

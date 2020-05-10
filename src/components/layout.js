@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+import Media from "react-media"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -25,7 +27,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Media
+        query="(min-width: 599px)"
+        render={() => <Header siteTitle={data.site.siteMetadata.title} />}
+      />
       <div
         style={{
           margin: `0 auto`,
