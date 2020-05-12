@@ -51,8 +51,19 @@ const updateFieldValue = field => event => {
     event.preventDefault();
     setStatus('PENDING')
 
-    console.log(state)
-    setTimeout(() => setStatus('success'), 1000)
+    // fetch('/api/contact', {
+    //   method: 'POST',
+    //   body: JSON.stringify(state)
+    // })
+     .then(response => response.json())
+     .then(response => {
+       console.log(response);
+       setStatus('SUCCESS');
+     })
+     .catch(error => {
+       console.log(error);
+       setStatus('ERROR')
+     })
   };
 
 if (state.status === 'success')  {
@@ -76,6 +87,7 @@ if (state.status === 'success')  {
       Please try again. </p>
     )}
     <form className={`${styles.form} ${state.status ==='PENDING' && styles.pending}`} onSubmit={handleSubmit}>
+    <h3>Sign up for our Newsletter</h3>
     <label className={styles.label}>
       Name
       <input className={styles.input}

@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 import Layout from "../components/layout.css"
 import Logo from "../images/playMarinLogo.png"
+import { Container, Row, Col, Button } from "react-grid-system"
 
 const Header = () => {
   const StyledLink = styled(Link)`

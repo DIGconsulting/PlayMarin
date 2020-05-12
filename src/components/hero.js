@@ -2,9 +2,10 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Play from "../images/playMarinLogo-v2.png"
+import Desktop from "../images/desktop.jpg"
 
 const ImageBackground = styled("div")`
-  background: url("https://i.postimg.cc/FzSHSbhQ/img-soccer.jpg") no-repeat;
+  background-image: url(${Desktop});
   background-position: top 50% center;
   background: #efefefe;
   background-size: cover;
@@ -14,11 +15,12 @@ const ImageBackground = styled("div")`
   }
 `
 const TextBox = styled("div")`
+  background-image: linear-gradient(to top, #ddbbffdd 2rem , #ddbbff00 );
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;
-  padding 0 calc((100vw - 950px) / 2) 10rem;
+  padding 0 calc((100vw - 450px) / 2) 10rem;
   width: 100%;
 
   h1 {

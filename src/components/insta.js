@@ -35,7 +35,7 @@ const Insta = () => {
                 alt={photo.caption}
                 style={{
                   maxWidth: `100%`,
-                  marginTop: `0`,
+                  marginTop: `24px`,
                 }}
               />
             </a>

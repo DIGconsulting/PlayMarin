@@ -1,29 +1,24 @@
 import React from "react"
+import Layout from "../components/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUsers } from "@fortawesome/free-solid-svg-icons"
 import { faRunning } from "@fortawesome/free-solid-svg-icons"
 import { faBusinessTime } from "@fortawesome/free-solid-svg-icons"
-import { Container, Row, Col, Button } from "react-grid-system"
+// import { Container, Row, Col, Button } from "react-grid-system"
 
 const Homepagethreeup = () => {
   return (
     <>
+    <Layout>
       <center
         style={{
           paddingBottom: `50px`,
           paddingTop: `50px`,
         }}
       >
-        <Container
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1rem`,
-          }}
-        >
           <div
             style={{
-              paddingTop: `20px`,
+              paddingTop: `80px`,
               fontSize: `30px`,
               lineHeight: `1.05`,
               fontWeight: 700,
@@ -49,7 +44,7 @@ const Homepagethreeup = () => {
           </div>
           <p
             style={{
-              paddingTop: `20px`,
+              paddingTop: `80px`,
               fontSize: `30px`,
               lineHeight: `1.05`,
               fontWeight: 700,
@@ -141,8 +136,8 @@ const Homepagethreeup = () => {
               transition: `200ms box-shadow linear`,
             }}
           ></div>
-        </Container>
       </center>
+    </Layout>
     </>
   )
 }

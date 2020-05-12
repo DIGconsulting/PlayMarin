@@ -11,21 +11,23 @@ import Video from "../components/video"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 import Form from "../components/form.js"
+import Header from "../components/header"
 
 const IndexPage = () => (
   <>
-    <Hero />
+  <Hero />
+   <Header/>
+  <Banner />
     <Layout>
       <SEO title="Home" />
-      <Banner />
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Homepagethreeup />
-      <Timeline />
       <Video />
+      <Timeline />
       <Form />
       <Insta />
-      <Footer />
     </Layout>
+  <Footer />
   </>
 )
 

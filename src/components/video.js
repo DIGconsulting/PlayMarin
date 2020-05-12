@@ -6,7 +6,8 @@ const Video = () => {
     <>
       <center
         style={{
-          marginTop: `100px`,
+          marginTop: `80px`,
+          marginBottom: `80px`,
         }}
       >
         <div>

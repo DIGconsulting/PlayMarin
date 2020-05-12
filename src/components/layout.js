@@ -27,14 +27,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Media
-        query="(min-width: 599px)"
-        render={() => <Header siteTitle={data.site.siteMetadata.title} />}
-      />
       <div
         style={{
           margin: `0 auto`,
           padding: `0 1.0875rem 1.45rem`,
+          maxWidth: 960
         }}
       >
         <main>{children}</main>

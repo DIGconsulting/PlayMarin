@@ -1,4 +1,5 @@
 import React from "react"
+import { Container, Row, Col, Button } from "react-grid-system"
 
 const Timeline = () => {
   return (
@@ -7,6 +8,7 @@ const Timeline = () => {
         style={{
           paddingTop: `50px`,
           paddingBottom: `50px`,
+          maxWidth: 960,
         }}
       >
         <h3
@@ -100,8 +102,8 @@ const Timeline = () => {
         <div
           style={{
             display: `flex`,
-            maxWidth: 1000,
-            marginLeft: `375px`,
+            maxWidth: 960,
+            marginLeft: `100px`,
             color: `#000`,
           }}
         >
@@ -111,7 +113,6 @@ const Timeline = () => {
               color: `#fff`,
               marginLeft: `110px`,
               paddingRight: `75px`,
-              paddingLeft: `200px`,
               textAlign: `center`,
             }}
           >
