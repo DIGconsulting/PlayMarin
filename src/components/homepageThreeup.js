@@ -10,12 +10,6 @@ const Homepagethreeup = () => {
   return (
     <>
     <Layout>
-      <center
-        style={{
-          paddingBottom: `50px`,
-          paddingTop: `50px`,
-        }}
-      >
           <div
             style={{
               paddingTop: `80px`,
@@ -24,24 +18,28 @@ const Homepagethreeup = () => {
               fontWeight: 700,
               letterSpacing: `-.015em`,
               fontFamily: `avenir`,
+              display: `flex`,
+              justifyContent: `center`
             }}
           >
-            The Problem
+            Our Vision
           </div>
           <div
             style={{
               fontSize: `22px`,
               fontFamily: `avenir`,
               paddingTop: `20px`,
+              textAlign: `center`,
+              lineHeight: 1.4
             }}
           >
             <p>
-              Not only do Marin City youth lack access to recreational
-              opportunities, but kids-at-large in Southern Marin lack exposure
-              to diverse peers. This problem can’t be ignored, as racial tension
-              in Southern Marin is prevalent.
+            We are PLAY Marin and we envision Marin as an integrated and unified community where both individuals and families live, work and most importantly, play together. We believe that play is an integral component of forming lasting friendships, developing critical skills and teaching valuable life lessons. This play can take shape in various forms from participation in organized sports to a simple play date.
             </p>
+            <p>"It's important that children spread amongst the many small towns in Marin have the opportunity to learn about others, not by competing with them, but instead through the lens of playing with them". - Paul Austin</p>
           </div>
+
+
           <p
             style={{
               paddingTop: `80px`,
@@ -50,6 +48,8 @@ const Homepagethreeup = () => {
               fontWeight: 700,
               letterSpacing: `-.015em`,
               fontFamily: `avenir`,
+              display: `flex`,
+              justifyContent: `center`
             }}
           >
             Play and diversity are essential for a 21st century education
@@ -58,6 +58,8 @@ const Homepagethreeup = () => {
             style={{
               fontSize: `22px`,
               fontFamily: `avenir`,
+              display: `flex`,
+              justifyContent: `center`
             }}
           >
             Why it matters
@@ -66,9 +68,9 @@ const Homepagethreeup = () => {
           <div
             style={{
               display: `flex`,
-              justifyContent: `space-around`,
+              justifyContent: `space-between`,
               maxWidth: 1000,
-              textAlign: `left`,
+              textAlign: `center`,
             }}
           >
             <div>
@@ -136,7 +138,6 @@ const Homepagethreeup = () => {
               transition: `200ms box-shadow linear`,
             }}
           ></div>
-      </center>
     </Layout>
     </>
   )

@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../components/layout.js"
+import Header from "../components/header.js"
 
 const Gallery = () => {
   return (
     <>
+    <Header/>
       <Layout>
         <center
           style={{
