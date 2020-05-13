@@ -12,22 +12,23 @@ import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 import Form from "../components/form.js"
 import Header from "../components/header"
+import Newsletter from "../components/newsletter"
 
 const IndexPage = () => (
   <>
-  <Hero />
-   <Header/>
-  <Banner />
+    <Hero />
+    <Header />
+    <Banner />
     <Layout>
       <SEO title="Home" />
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Homepagethreeup />
       <Video />
       <Timeline />
-      <Form />
+      <Newsletter />
       <Insta />
     </Layout>
-  <Footer />
+    <Footer />
   </>
 )
 

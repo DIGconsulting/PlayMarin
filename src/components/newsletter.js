@@ -24,7 +24,7 @@ const reducer = (state, action) => {
   }
 }
 
-const Form = () => {
+const Newsletter = () => {
   const [state, dispatch] = useReducer(reducer, INITAL_STATE)
 
   const setStatus = status => dispatch({ type: "updatesStatus", status })
@@ -107,30 +107,10 @@ const Form = () => {
             onChange={updateFieldValue("email")}
           />
         </label>
-        <label className={styles.label}>
-          Subject
-          <input
-            className={styles.input}
-            type="text"
-            name="subject"
-            value={state.subject}
-            onChange={updateFieldValue("subject")}
-          />
-        </label>
-        <label className={styles.label}>
-          Body
-          <textarea
-            className={styles.input}
-            type="text"
-            name="body"
-            value={state.body}
-            onChange={updateFieldValue("body")}
-          />
-        </label>
         <button className={styles.button}>Send</button>
       </form>
     </>
   )
 }
 
-export default Form
+export default Newsletter

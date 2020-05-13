@@ -5,7 +5,7 @@ import Header from "../components/header.js"
 const Gallery = () => {
   return (
     <>
-    <Header/>
+      <Header />
       <Layout>
         <center
           style={{

@@ -5,6 +5,8 @@ import { css } from "@emotion/core"
 import Layout from "../components/layout.css"
 import Logo from "../images/playMarinLogo.png"
 import { Container, Row, Col, Button } from "react-grid-system"
+import { ExternalLink } from 'react-external-link';
+
 
 const Header = () => {
   const StyledLink = styled(Link)`
@@ -52,9 +54,9 @@ const Header = () => {
           <StyledLink to="/" className="work">
             Login
           </StyledLink>
-          <StyledLink to="/" className="points">
-            Sign up
-          </StyledLink>
+          <ExternalLink href="https://5ebb9625bbbe31e6bfb35dcc--xenodochial-newton-8f0cd9.netlify.app/">
+          Donate
+          </ExternalLink>
           <li>
             <i className="fas fa-bell bell"></i>
           </li>

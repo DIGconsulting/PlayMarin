@@ -47,6 +47,14 @@ module.exports = {
         height: 400,
       },
     },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Sku", "Product"],
+        secretKey: `sk_test_1nbmLkBnfJg4TPyPSNqpEF1x00kwXWftcw`,
+        downloadFiles: false,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
