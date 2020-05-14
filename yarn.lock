@@ -2643,6 +2643,11 @@
     lodash "^4.17.15"
     lodash-es "^4.17.15"
 
+"@scarf/scarf@^1.0.4":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@scarf/scarf/-/scarf-1.0.5.tgz#accee0bce88a9047672f7c8faf3cada59c996b81"
+  integrity sha512-9WKaGVpQH905Aqkk+BczFEeLQxS07rl04afFRPUG9IcSlOwmo5EVVuuNu0d4M9LMYucObvK0LoAe+5HfMW2QhQ==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -8788,6 +8793,14 @@ gatsby-remark-embed-youtube@^0.0.7:
     babel-runtime "^6.26.0"
     unist-util-visit "^1.1.3"
 
+gatsby-remark-grid-tables@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-grid-tables/-/gatsby-remark-grid-tables-0.1.0.tgz#bb0344e5b64d034b522347219836e5c71a767483"
+  integrity sha512-SSwvXyasAAigrLtgm0O0Vwb2L8f4T3y6oMCAAyLZzZ+Dkrh6mI6unhyHJZOGq/2G2Vh2JbYqSmaliaumvAW4wA==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+    remark-grid-tables "^2.1.1"
+
 gatsby-source-drive@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-source-drive/-/gatsby-source-drive-0.0.2.tgz#79fe23271afffbd043021489363778bca83f1c1c"
@@ -9544,6 +9557,11 @@ graceful-fs@^4.1.3, graceful-fs@^4.2.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
+
+grapheme-splitter@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
+  integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
 
 graphql-compose@^6.3.8:
   version "6.3.8"
@@ -12183,6 +12201,11 @@ lodash.transform@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.transform/-/lodash.transform-4.6.0.tgz#12306422f63324aed8483d3f38332b5f670547a0"
   integrity sha1-EjBkIvYzJK7YSD0/ODMrX2cFR6A=
+
+lodash.trimend@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/lodash.trimend/-/lodash.trimend-4.5.1.tgz#12804437286b98cad8996b79414e11300114082f"
+  integrity sha1-EoBENyhrmMrYmWt5QU4RMAEUCC8=
 
 lodash.union@^4.6.0, lodash.union@~4.6.0:
   version "4.6.0"
@@ -15956,6 +15979,13 @@ react-stripe-elements@^6.1.2:
   dependencies:
     prop-types "15.7.2"
 
+react-table@^7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-7.0.5.tgz#619c069dc585bb1dbfaa2ad4384de8d267267054"
+  integrity sha512-zm6NvcHlg3r4E4le6ESXKneaHEpPHAZJn+FAZDCleS0++JEKs1rPq9AtHMcZmiiqxKkerM4wco9mH2ztaX0zYQ==
+  dependencies:
+    "@scarf/scarf" "^1.0.4"
+
 react-text-mask@^5.4.3:
   version "5.4.3"
   resolved "https://registry.yarnpkg.com/react-text-mask/-/react-text-mask-5.4.3.tgz#991efb4299e30c2e6c2c46d13f617169463e0d2d"
@@ -16414,6 +16444,16 @@ remark-footnotes@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/remark-footnotes/-/remark-footnotes-1.0.0.tgz#9c7a97f9a89397858a50033373020b1ea2aad011"
   integrity sha512-X9Ncj4cj3/CIvLI2Z9IobHtVi8FVdUrdJkCNaL9kdX8ohfsi18DXHsCVd/A7ssARBdccdDb5ODnt62WuEWaM/g==
+
+remark-grid-tables@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/remark-grid-tables/-/remark-grid-tables-2.1.1.tgz#c88683ec89d35498fd86e79af3450776f9d76f6a"
+  integrity sha512-YNI57fKiHdwkOGfDoT8xCqSBYjvuu6ZIUOtbvxr8wrvp59dHwzOcusAuzJYXrbnPtjLzNvvNPNbURW8ytrfLfA==
+  dependencies:
+    grapheme-splitter "^1.0.4"
+    lodash.trimend "^4.5.1"
+    string-width "^4.2.0"
+    unist-util-visit "^2.0.1"
 
 remark-mdx@^1.6.1:
   version "1.6.1"
@@ -18733,7 +18773,7 @@ unist-util-visit-parents@^3.0.0:
     "@types/unist" "^2.0.0"
     unist-util-is "^4.0.0"
 
-unist-util-visit@2.0.2, unist-util-visit@^2.0.0, unist-util-visit@^2.0.2:
+unist-util-visit@2.0.2, unist-util-visit@^2.0.0, unist-util-visit@^2.0.1, unist-util-visit@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-2.0.2.tgz#3843782a517de3d2357b4c193b24af2d9366afb7"
   integrity sha512-HoHNhGnKj6y+Sq+7ASo2zpVdfdRifhTgX2KTU3B/sO/TTlZchp7E3S4vjRzDJ7L60KmrCPsQkVK3lEF3cz36XQ==

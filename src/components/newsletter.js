@@ -42,10 +42,10 @@ const Newsletter = () => {
   const handleSubmit = event => {
     event.preventDefault()
     setStatus("PENDING")
-      fetch('/api/contact', {
-        method: 'POST',
-        body: JSON.stringify(state)
-      })
+    fetch("/api/newsletter", {
+      method: "POST",
+      body: JSON.stringify(state),
+    })
       .then(response => response.json())
       .then(response => {
         console.log(response)
@@ -57,7 +57,7 @@ const Newsletter = () => {
       })
   }
 
-  if(state.status === "SUCCESS") {
+  if (state.status === "SUCCESS") {
     return (
       <p className={styles.success}>
         Message Sent!

@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <Header />
       <Layout>
-      <Form />
+        <Form />
       </Layout>
       <Footer />
     </>
