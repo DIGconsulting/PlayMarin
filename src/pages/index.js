@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Container, Row, Col, Button } from "react-grid-system"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
 import Hero from "../components/hero"

@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import { Container, Row, Col, Jumbotron } from "react-grid-system"
+import { Container, Row, Col } from "react-grid-system"
 import Roxie from "../images/roxie.jpg"
 import Paul from "../images/Paul.jpeg"
 import Lawrance from "../images/Lawrance.jpeg"
@@ -28,7 +28,7 @@ const About = () => {
         >
           <Col md={2} sm={12} xs={12}>
             <div>
-              <img src={Paul} />
+              <img src={Paul} alt="Paul" />
               <p>Play Marin Founder & CEO Paul Austin</p>
             </div>
           </Col>

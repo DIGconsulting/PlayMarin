@@ -1,6 +1,4 @@
 import React from "react"
-import Iframe from "react-iframe"
-import { Container, Row, Col, Button } from "react-grid-system"
 import ResponsiveEmbed from 'react-responsive-embed'
 
 const Video = () => {

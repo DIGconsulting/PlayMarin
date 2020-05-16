@@ -1,8 +1,7 @@
 import React from "react"
-import Layout from "../components/layout.js"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
-import { Container, Row, Col, Button } from "react-grid-system"
+import { Container, Row, Col } from "react-grid-system"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 
