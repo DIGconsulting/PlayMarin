@@ -3,6 +3,8 @@ import Layout from "../components/layout.js"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Container, Row, Col, Button } from "react-grid-system"
+import Mobilenav from "../components/mobilenav"
+import Media from "react-media"
 
 function Card(props) {
   return (
@@ -26,7 +28,9 @@ function Card(props) {
 function CardList() {
   return (
     <>
-      <Header />
+      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+
       <Container>
         <Row>
           <Col lg={4}>

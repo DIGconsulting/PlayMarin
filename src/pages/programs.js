@@ -13,6 +13,8 @@ import Bikes from "../images/bikes.jpg"
 import Skate from "../images/skate.jpg"
 import Trips from "../images/trips.jpg"
 import Clinics from "../images/clinics.jpg"
+import Mobilenav from "../components/mobilenav"
+import Media from "react-media"
 
 function Card(props) {
   return (
@@ -36,7 +38,9 @@ function Card(props) {
 function Programs() {
   return (
     <>
-      <Header />
+      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+
       <Container>
         <h1>Programs</h1>
         <Row>

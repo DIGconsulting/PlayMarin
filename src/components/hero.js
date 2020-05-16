@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import Play from "../images/playMarinLogo-v2.png"
-import Desktop from "../images/desktop.jpg"
+import Image from "gatsby-image"
+import { Container, Row, Col, Button } from "react-grid-system"
 
-const ImageBackground = styled("div")`
-  background-image: url(${Desktop});
+
+const ImageBackground = styled(BackgroundImage)`
   background-position: top 50% center;
   background: #efefefe;
   background-size: cover;
@@ -41,47 +43,66 @@ const TextBox = styled("div")`
 `
 
 const Hero = () => {
+  const { image, play } = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "desktop.jpg" }) {
+        sharp:childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+    },
+    play: file(relativePath: { eq: "playMarinLogo-v2.png" }) {
+      sharp:childImageSharp {
+        fluid{
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+   }
+  }
+  `)
   return (
-    <ImageBackground>
-      <TextBox>
-        <div style={{}}>
-          <h1
-            style={{
-              fontSize: `3rem`,
-            }}
-          >
-            Diverse & Inclusion
-            <span
+    <>
+  <Row>
+    <Col lg={12} md={12} sm={12} xs={12}>
+      <ImageBackground tag="section" fluid={image.sharp.fluid} fadeIn="soft">
+        <TextBox>
+          <div>
+            <h1
               style={{
-                color: `#fff`,
                 fontSize: `3rem`,
-                padding: `0px 10px 10px 10px`,
               }}
             >
-              <img
+              Diverse & Inclusion
+              <span
                 style={{
-                  marginBottom: `-5px`,
+                  color: `#fff`,
+                  fontSize: `3rem`,
+                  padding: `0px 10px 10px 10px`,
                 }}
-                src={Play}
-                width={150}
-                height={46}
-              />
-            </span>
-          </h1>
+              >
+                <Image
+                  fluid={play.sharp.fluid}
+                />
+              </span>
+            </h1>
 
-          <p
-            style={{
-              fontWeight: 500,
-            }}
-          ></p>
-          <p>
-            <a>
-              <Link to="/">Become a Petition &rarr;</Link>
-            </a>
-          </p>
-        </div>
-      </TextBox>
-    </ImageBackground>
+            <p
+              style={{
+                fontWeight: 500,
+              }}
+            ></p>
+            <p>
+              <a>
+                <Link to="/">Become a Petition &rarr;</Link>
+              </a>
+            </p>
+          </div>
+        </TextBox>
+      </ImageBackground>
+      </Col>
+      </Row>
+    </>
   )
 }
 

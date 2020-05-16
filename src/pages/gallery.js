@@ -1,11 +1,15 @@
 import React from "react"
 import Layout from "../components/layout.js"
 import Header from "../components/header.js"
+import Mobilenav from "../components/mobilenav"
+import Media from "react-media"
 
 const Gallery = () => {
   return (
     <>
-      <Header />
+      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+
       <Layout>
         <center
           style={{

@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-breakpoints`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -44,7 +45,8 @@ module.exports = {
       resolve: "gatsby-remark-embed-youtube",
       options: {
         width: 800,
-        height: 400,
+        height: `auto`,
+        preload: 'auto',
       },
     },
     {

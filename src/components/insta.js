@@ -14,7 +14,8 @@ const Insta = () => {
           style={{
             display: `flex`,
             flexWrap: `wrap`,
-            width: 960,
+            flexFlow: `row-wrap`,
+            Maxwidth: 960,
             justifyContent: `space-between`,
           }}
         >

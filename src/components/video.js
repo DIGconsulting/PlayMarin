@@ -1,5 +1,7 @@
 import React from "react"
 import Iframe from "react-iframe"
+import { Container, Row, Col, Button } from "react-grid-system"
+import ResponsiveEmbed from 'react-responsive-embed'
 
 const Video = () => {
   return (
@@ -10,16 +12,8 @@ const Video = () => {
           marginBottom: `80px`,
         }}
       >
-        <div>
-          <iframe
-            width="960"
-            height="500"
-            src="https://www.youtube.com/embed/p0LfbN2J4c8"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          />
-        </div>
+      <ResponsiveEmbed src='https://www.youtube.com/embed/p0LfbN2J4c8' ratio='4:2' />
+
 
         <div
           style={{
@@ -62,7 +56,7 @@ const Video = () => {
             through play, Marin will move past tolerance and become a more
             inclusive place to live.
           </p>
-        </div>
+          </div>
       </center>
     </>
   )

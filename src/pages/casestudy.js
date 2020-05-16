@@ -10,11 +10,15 @@ import SideChart from "../components/sidebarchart.js"
 import Upchart from "../components/upchart"
 import Upcharttwo from "../components/upcharttwo"
 import Closerlook from "../components/closerlook"
+import Mobilenav from "../components/mobilenav"
+import Media from "react-media"
 
 const CaseStudy = () => {
   return (
     <>
-      <Header />
+      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+
       <Container
         style={{
           display: `flex`,
@@ -33,7 +37,11 @@ const CaseStudy = () => {
           diverse peers. This problem can’t be ignored, as racial tension in
           Southern Marin is prevalent.
         </p>
-        <ul>
+        <ul
+          style={{
+            listStyleType: `none`,
+          }}
+        >
           <li>
             Kids come together when they attend Tamalpais High School, the one
             high school in Southern Marin

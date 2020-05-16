@@ -9,7 +9,6 @@ import { faBusinessTime } from "@fortawesome/free-solid-svg-icons"
 const Homepagethreeup = () => {
   return (
     <>
-      <Layout>
         <div
           style={{
             paddingTop: `80px`,
@@ -20,6 +19,7 @@ const Homepagethreeup = () => {
             fontFamily: `avenir`,
             display: `flex`,
             justifyContent: `center`,
+            display: `flex`,
           }}
         >
           Our Vision
@@ -78,9 +78,13 @@ const Homepagethreeup = () => {
         <div
           style={{
             display: `flex`,
-            justifyContent: `space-between`,
-            maxWidth: 1000,
-            textAlign: `center`,
+              flexwrap: `wrap`,
+             flexFlow: `row-wrap`,
+             justifyContent: `space-evenly`,
+              display: `flex`,
+              boxShadow: `0`,
+              margin: `0.5rem`,
+              transition: `200ms box-shadow linear`,
           }}
         >
           <div>
@@ -137,18 +141,6 @@ const Homepagethreeup = () => {
             </p>
           </div>
         </div>
-        <div
-          style={{
-            display: `flex`,
-            justifyContent: `space-around`,
-            maxWidth: 1000,
-            boxShadow: `0`,
-            margin: `0.5rem`,
-            maxWidth: `calc(75% - 1rem)`,
-            transition: `200ms box-shadow linear`,
-          }}
-        ></div>
-      </Layout>
     </>
   )
 }
