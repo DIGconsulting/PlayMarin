@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/header"
 import Banner from "../components/banner"
 import Hero from "../components/hero"
 import Footer from "../components/footer"
@@ -10,7 +11,6 @@ import Insta from "../components/insta"
 import Video from "../components/video"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
-import Header from "../components/header"
 import Newsletter from "../components/newsletter"
 
 const IndexPage = () => {
