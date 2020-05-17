@@ -65,7 +65,7 @@ const Hero = () => {
     <>
   <Row>
     <Col lg={12} md={12} sm={12} xs={12}>
-      <ImageBackground tag="section" fluid={image.sharp.fluid} fadeIn="soft">
+      <ImageBackground tag="section" fluid={image.sharp.fluid}>
         <TextBox>
           <div>
             <h1
