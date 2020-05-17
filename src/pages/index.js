@@ -16,8 +16,8 @@ import Newsletter from "../components/newsletter"
 const IndexPage = () => {
   return (
     <>
+    <Hero />
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
-      <Hero />
       <Media query="(min-width: 599px)" render={() => <Header />} />
       <Banner />
       <Layout>
