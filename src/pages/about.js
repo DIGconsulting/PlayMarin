@@ -11,8 +11,8 @@ import Media from "react-media"
 const About = () => {
   return (
     <>
+    <Media query="(max-width: 900px)" render={() => <Mobilenav />} />
       <Media query="(min-width: 900px)" render={() => <Header />} />
-      <Media query="(max-width: 900px)" render={() => <Mobilenav />} />
       <Container
         style={{
           margin: `0 auto`,

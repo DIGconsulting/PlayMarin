@@ -8,44 +8,49 @@ var styles = {
     position: "fixed",
     width: "36px",
     height: "30px",
-    top: "36px",
+    top: "0px",
+
   },
   bmBurgerBars: {
-    background: "#373a47",
+    background: "#000",
   },
   bmBurgerBarsHover: {
     background: "#a90000",
   },
   bmCrossButton: {
-    height: "24px",
-    width: "24px",
+    height: "30px",
+    width: "30px",
   },
   bmCross: {
-    background: "#fff",
+    background: "#000",
+    height: "30px",
+    marginLeft: "-20px"
   },
   bmMenuWrap: {
     position: "fixed",
     height: "100%",
   },
   bmMenu: {
-    background: "#373a47",
-    padding: "2.5em 1.5em 0 2.7em",
+    background: "#fff",
+    padding: "2.5em 1.5em 0 0.7em",
     fontSize: "1.15em",
-    marginRight: `20px`,
+    lineHeight: 2,
   },
   bmMorphShape: {
     fill: "#373a47",
   },
   bmItemList: {
-    color: "#b8b7ad",
-    padding: "0.8em",
+    color: "#000",
+    padding: "0.1em",
   },
   bmItem: {
-    display: "inline-block",
+    display: "block",
+    textDecoration: "none"
   },
 }
 
 class Mobilenav extends React.Component {
+
   showSettings(event) {
     event.preventDefault()
   }
@@ -54,14 +59,26 @@ class Mobilenav extends React.Component {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
       <Menu styles={styles}>
+      <Link id="about" className="menu-item" to="/">
+        Home
+      </Link>
         <Link id="about" className="menu-item" to="/about">
           About
         </Link>
-        <Link id="contact" className="menu-item" to="/contact">
-          Contact
+        <Link id="contact" className="menu-item" to="/casestudy">
+          Play Study
         </Link>
-        <Link onClick={this.showSettings} className="menu-item--small" to="">
-          Settings
+        <Link  className="menu-item"  to="/programs">
+          Program
+        </Link>
+        <Link  className="menu-item"  to="/contact">
+          Contact Us
+        </Link>
+        <Link  className="menu-item"  to="">
+          Login
+        </Link>
+        <Link  className="menu-item"  to="">
+          Donate
         </Link>
       </Menu>
     )
