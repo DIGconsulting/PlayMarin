@@ -22,12 +22,12 @@ const TextBox = styled("div")`
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;
-  padding 0 calc((100vw - 450px) / 2) 10rem;
+  padding 0 calc((100vw - 550px) / 2) 17rem;
   width: 100%;
 
   h1 {
     text-shadow: 1px 1px 3px #eeddff66;
-    font-size: 2.25rem;
+    font-size: 3rem;
     color: #fff;
   }
   p,
@@ -40,6 +40,16 @@ const TextBox = styled("div")`
       margin-top: 0.5rem;
   }
 
+  @media only screen and (max-width: 600px) {
+
+    padding 0 calc((100vw - 550px) / 2) 13rem;
+    padding-left: 40px;
+
+    h1 {
+      font-size: 2.45rem;
+    }
+
+}
 `
 
 const Hero = () => {
@@ -54,7 +64,7 @@ const Hero = () => {
     },
     play: file(relativePath: { eq: "playMarinLogo-v2.png" }) {
       sharp:childImageSharp {
-        fluid{
+        fluid(maxWidth: 100){
           ...GatsbyImageSharpFluid_withWebp
         }
       }
@@ -68,35 +78,18 @@ const Hero = () => {
       <ImageBackground tag="section" fluid={image.sharp.fluid}>
         <TextBox>
           <div>
-            <h1
-              style={{
-                fontSize: `3rem`,
-              }}
-            >
+            <h1>
               Diverse & Inclusion
-              <span
-                style={{
-                  color: `#fff`,
-                  fontSize: `3rem`,
-                  padding: `0px 10px 10px 10px`,
-                }}
-              >
                 <Image
+                style={{
+                  maxWidth: `200px`,
+                }}
                   fluid={play.sharp.fluid}
                 />
-              </span>
             </h1>
-
-            <p
-              style={{
-                fontWeight: 500,
-              }}
-            ></p>
-            <p>
               <a>
                 <Link to="/">Become a Petition &rarr;</Link>
               </a>
-            </p>
           </div>
         </TextBox>
       </ImageBackground>
