@@ -37,8 +37,8 @@ const About = () => {
 
   return (
     <>
+    <Media query="(min-width: 600px)" render={() => <Header />} />
     <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
-      <Media query="(min-width: 600px)" render={() => <Header />} />
       <Container
         style={{
           margin: `0 auto`,
