@@ -47,24 +47,21 @@ function Programs() {
             <Card
               featureImage={Basketball}
               title="Basketball"
-              description="Let's write some interactive form with React"
-              link="https://sebhastian.com/interactive-react-form"
+              description="cancelled until further notice"
             />
           </Col>
           <Col lg={4}>
             <Card
               featureImage={Track}
               title="	Track & Field"
-              description="Babel make JavaScript code browser-compatible."
-              link="https://sebhastian.com/babel-guide"
+              description="cancelled until further notice"
             />
           </Col>
           <Col lg={4}>
             <Card
               featureImage={Volleyball}
               title="Girl’s Volleyball"
-              description="Learn the prerequisites of learning React fast"
-              link="https://sebhastian.com/js-before-react"
+              description="cancelled until further notice"
             />
           </Col>
         </Row>
@@ -73,24 +70,21 @@ function Programs() {
             <Card
               featureImage={Lacrosse}
               title="Lacrosse"
-              description="Let's write some interactive form with React"
-              link="https://sebhastian.com/interactive-react-form"
+              description="cancelled until further notice"
             />
           </Col>
           <Col lg={4}>
             <Card
               featureImage={Bikes}
               title="Mountain Bike Club"
-              description="Babel make JavaScript code browser-compatible."
-              link="https://sebhastian.com/babel-guide"
+              description="cancelled until further notice"
             />
           </Col>
           <Col lg={4}>
             <Card
               featureImage={Skate}
               title="Skate Park"
-              description="Learn the prerequisites of learning React fast"
-              link="https://sebhastian.com/js-before-react"
+              description="cancelled until further notice"
             />
           </Col>
         </Row>{" "}
@@ -99,24 +93,22 @@ function Programs() {
             <Card
               featureImage={Playdates}
               title="Play dates"
-              description="Let's write some interactive form with React"
-              link="https://sebhastian.com/interactive-react-form"
+              description="cancelled until further notice"
             />
           </Col>
           <Col lg={4}>
             <Card
               featureImage={Trips}
               title="Field trips"
-              description="Babel make JavaScript code browser-compatible."
-              link="https://sebhastian.com/babel-guide"
+              description="cancelled until further notice"
             />
           </Col>
           <Col lg={4}>
             <Card
               featureImage={Summercamp}
               title="Summer camp"
-              description="Learn the prerequisites of learning React fast"
-              link="https://sebhastian.com/js-before-react"
+              description="cancelled until further notice"
+
             />
           </Col>
         </Row>
@@ -125,8 +117,7 @@ function Programs() {
             <Card
               featureImage={Clinics}
               title="Sports Clinics"
-              description="Learn the prerequisites of learning React fast"
-              link="https://sebhastian.com/js-before-react"
+              description="cancelled until further notice"
             />
           </Col>
         </Row>
