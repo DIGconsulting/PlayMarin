@@ -32,8 +32,8 @@ const Video = () => {
             fontSize: `22px`,
             fontFamily: `avenir`,
             paddingTop: `20px`,
-            textAlign: `center`,
             lineHeight: 1.5,
+            textAlign: `left`
           }}
         >
           <p>

@@ -29,7 +29,6 @@ const Homepagethreeup = () => {
             fontSize: `22px`,
             fontFamily: `avenir`,
             paddingTop: `20px`,
-            textAlign: `center`,
             lineHeight: 1.4,
           }}
         >
