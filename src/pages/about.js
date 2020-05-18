@@ -38,6 +38,8 @@ const About = () => {
   return (
     <>
     <Media query="(min-width: 600px)" render={() => <Header />} />
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Container
         style={{
