@@ -2,123 +2,193 @@ import React from "react"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Container, Row, Col } from "react-grid-system"
-import Basketball from "../images/basketball.jpg"
-import Volleyball from "../images/volley_girls.jpg"
-import Lacrosse from "../images/lacrosse.jpg"
-import Playdates from "../images/playdates_2.jpg"
-import Summercamp from "../images/banner.jpg"
-import Track from "../images/ track.jpg"
-import Bikes from "../images/bikes.jpg"
-import Skate from "../images/skate.jpg"
-import Trips from "../images/trips.jpg"
-import Clinics from "../images/clinics.jpg"
+import Image from "gatsby-image"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
+import { graphql, useStaticQuery } from "gatsby"
 
-function Card(props) {
-  return (
-    <div className="card">
-      <img
-        className="card-img-top"
-        src={props.featureImage}
-        alt={props.title}
-      />
-      <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.description}</p>
-        <a href={props.link} className="btn btn-primary">
-          Learn more
-        </a>
-      </div>
-    </div>
-  )
-}
 
 function Programs() {
+  const { basketball, volleygirl, lacrosse, playdates, track, bikes, skate, trips,clinics, summercamp} = useStaticQuery(graphql`
+    query {
+      basketball: file(relativePath: { eq: "basketball.jpg" }) {
+        sharp:childImageSharp {
+          fluid(maxWidth:500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+    },
+    volleygirl: file(relativePath: { eq: "volley_girls.jpg" }) {
+      sharp:childImageSharp {
+        fluid(maxWidth:500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+   },
+   lacrosse: file(relativePath: { eq: "lacrosse.jpg" }) {
+     sharp:childImageSharp {
+       fluid(maxWidth:500) {
+         ...GatsbyImageSharpFluid_withWebp
+       }
+     }
+  },
+  playdates: file(relativePath: { eq: "playdates_2.jpg" }) {
+    sharp:childImageSharp {
+      fluid(maxWidth:500) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+ },
+ track: file(relativePath: { eq: " track.jpg" }) {
+   sharp:childImageSharp {
+     fluid(maxWidth:500) {
+       ...GatsbyImageSharpFluid_withWebp
+     }
+   }
+},   bikes: file(relativePath: { eq: "bikes.jpg" }) {
+     sharp:childImageSharp {
+       fluid(maxWidth:500) {
+         ...GatsbyImageSharpFluid_withWebp
+       }
+     }
+  },    skate: file(relativePath: { eq: "skate.jpg" }) {
+       sharp:childImageSharp {
+         fluid(maxWidth:500) {
+           ...GatsbyImageSharpFluid_withWebp
+         }
+       }
+    },
+     trips: file(relativePath: { eq: "trips.jpg" }) {
+      sharp:childImageSharp {
+        fluid(maxWidth:500) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+   },
+ clinics: file(relativePath: { eq: "clinics.jpg" }) {
+     sharp:childImageSharp {
+       fluid(maxWidth:500) {
+         ...GatsbyImageSharpFluid_withWebp
+       }
+     }
+  },
+  summercamp: file(relativePath: { eq: "swimming.jpg" }) {
+      sharp:childImageSharp {
+        fluid(maxHeight:300) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+   }
+
+ }
+
+  `)
   return (
     <>
       <Media query="(min-width: 599px)" render={() => <Header />} />
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
 
-      <Container>
+      <Container
+      style={{
+      }}
+      >
         <h1>Programs</h1>
         <Row>
-          <Col lg={4}>
-            <Card
-              featureImage={Basketball}
+          <Col md={4}>
+            <Image
+              fluid={basketball.sharp.fluid}
               title="Basketball"
               description="cancelled until further notice"
             />
+            <h4>Basketball</h4>
+            <p>cancelled until further notice</p>
           </Col>
-          <Col lg={4}>
-            <Card
-              featureImage={Track}
-              title="	Track & Field"
+          <Col md={4}>
+            <Image
+              fluid={track.sharp.fluid}
+              title="Track & Field"
               description="cancelled until further notice"
             />
+            <h4>Track</h4>
+            <p>cancelled until further notice</p>
           </Col>
-          <Col lg={4}>
-            <Card
-              featureImage={Volleyball}
+          <Col md={4}>
+            <Image
+              fluid={volleygirl.sharp.fluid}
               title="Girl’s Volleyball"
               description="cancelled until further notice"
             />
+            <h4>Girl volleyball</h4>
+            <p>cancelled until further notice</p>
           </Col>
         </Row>
         <Row>
-          <Col lg={4}>
-            <Card
-              featureImage={Lacrosse}
+          <Col md={4}>
+            <Image
+              fluid={lacrosse.sharp.fluid}
               title="Lacrosse"
               description="cancelled until further notice"
             />
+            <h4>Lacrosse</h4>
+            <p>cancelled until further notice</p>
           </Col>
-          <Col lg={4}>
-            <Card
-              featureImage={Bikes}
+          <Col md={4}>
+            <Image
+              fluid={bikes.sharp.fluid}
               title="Mountain Bike Club"
               description="cancelled until further notice"
             />
+            <h4>Bike</h4>
           </Col>
-          <Col lg={4}>
-            <Card
-              featureImage={Skate}
+          <Col md={4}>
+            <Image
+              fluid={skate.sharp.fluid}
               title="Skate Park"
               description="cancelled until further notice"
             />
+            <h4>Skate Park</h4>
+            <p>closed until further notice</p>
           </Col>
         </Row>{" "}
         <Row>
-          <Col lg={4}>
-            <Card
-              featureImage={Playdates}
+          <Col md={4}>
+            <Image
+              fluid={playdates.sharp.fluid}
               title="Play dates"
               description="cancelled until further notice"
             />
+            <h4>Playdates</h4>
+            <p>cancelled until further notice</p>
           </Col>
-          <Col lg={4}>
-            <Card
-              featureImage={Trips}
+          <Col md={4}>
+            <Image
+              fluid={trips.sharp.fluid}
               title="Field trips"
               description="cancelled until further notice"
             />
+            <h4>Trips</h4>
+            <p>cancelled until further notice</p>
           </Col>
-          <Col lg={4}>
-            <Card
-              featureImage={Summercamp}
+          <Col md={4}>
+            <Image
+              fluid={summercamp.sharp.fluid}
               title="Summer camp"
               description="cancelled until further notice"
 
             />
+            <h4>Summer Camp</h4>
+            <p>cancelled until further notice</p>
           </Col>
         </Row>
         <Row>
-          <Col lg={4}>
-            <Card
-              featureImage={Clinics}
+          <Col md={4}>
+            <Image
+              fluid={clinics.sharp.fluid}
               title="Sports Clinics"
               description="cancelled until further notice"
             />
+            <h4>Clinics</h4>
+            <p>cancelled until further notice</p>
           </Col>
         </Row>
       </Container>

@@ -33,11 +33,12 @@ const Header = () => {
               <img to="/" width={100} height={42} src={Logo} className="work" />
             </StyledLink>
           </li>
-          <StyledLink to="/about/" activeStyle={activeStyle}>
-            Board
-          </StyledLink>
+
           <StyledLink to="/casestudy" activeStyle={activeStyle}>
             PLAY Study
+          </StyledLink>
+          <StyledLink to="/about/" activeStyle={activeStyle}>
+            Board
           </StyledLink>
           <StyledLink to="/programs/" activeStyle={activeStyle}>
             Programs
