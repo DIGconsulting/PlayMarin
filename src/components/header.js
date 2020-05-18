@@ -34,7 +34,7 @@ const Header = () => {
             </StyledLink>
           </li>
           <StyledLink to="/about/" activeStyle={activeStyle}>
-            About
+            Board
           </StyledLink>
           <StyledLink to="/casestudy" activeStyle={activeStyle}>
             PLAY Study
