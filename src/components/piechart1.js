@@ -2,7 +2,7 @@ import React from "react"
 import { RadialChart } from "react-vis"
 import Layout from "./layout"
 
-const myData = [{ angle: 2, label: "Super Custom label" }, { angle: 5 }]
+const myData = [{ angle: 3.6}, { angle: 10 }]
 
 const PieChart = () => {
   return (
@@ -10,6 +10,8 @@ const PieChart = () => {
       <Layout>
         <div>POPULATION BY RACE</div>
         <RadialChart data={myData} width={175} height={175} />
+          <div>non-white: 28% </div>
+          <div>White: 72% </div>
       </Layout>
     </>
   )

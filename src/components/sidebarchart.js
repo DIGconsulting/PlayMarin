@@ -24,12 +24,12 @@ export default class SideChart extends React.Component {
         <XYPlot width={175} height={175} stackBy="x">
           <VerticalGridLines />
           <HorizontalGridLines />
-          <XAxis />
-          <YAxis />
           <BarSeries
             data={[
-              { y: 2, x: 12 },
-              { y: 4, x: 2 },
+              { y: 1, x:2.5 },
+              { y: 2, x: 3 },
+              { y: 3, x: 5 },
+              { y: 4, x: 6 },
             ]}
           />
         </XYPlot>

@@ -22,12 +22,11 @@ export default class Upcharttwo extends React.Component {
         <XYPlot width={175} height={175} stackBy="y">
           <VerticalGridLines />
           <HorizontalGridLines />
-          <XAxis />
-          <YAxis />
+
           <BarSeries
             data={[
               { x: 2, y: 6 },
-              { x: 3, y: 4 },
+              { x: 3, y: 5 },
             ]}
           />
         </XYPlot>

@@ -76,14 +76,47 @@ const CaseStudy = () => {
               <Col lg={3}>
                 MEDIAN HOUSEHOLD INCOME BY RACE
                 <SideChart />
+                <ol
+                style={{
+                  display: `flex`,
+                  flexDirection: 'column',
+                  textDecoration: `none`,
+                  marginTop: `-20px`
+                }}
+                >
+                <li>White: 120k</li>
+                <li>Asia: 90k</li>
+                <li>Black: 52k</li>
+                <li>Latino: 50k</li>
+                </ol>
               </Col>
               <Col lg={3}>
                 3RD GRADE READING PROFICIENCY
                 <Upchart />
+                <div    style={{
+                      display: `flex`,
+                      flexDirection: 'column',
+                      textDecoration: `none`,
+                      marginTop: `-20px`,
+                    }}
+                >
+                <div>White: 73%</div>
+                <div>Black/Latino: 30%</div>
+                </div>
               </Col>
               <Col lg={3}>
                 HIGH SCHOOL GRADUATION RATE
                 <Upcharttwo />
+                <div    style={{
+                      display: `flex`,
+                      flexDirection: 'column',
+                      textDecoration: `none`,
+                      marginTop: `-20px`,
+                    }}
+                >
+                <div>White: 95%</div>
+                <div>Black/Latino: 83%</div>
+                </div>
               </Col>
             </Row>
             <Row>
