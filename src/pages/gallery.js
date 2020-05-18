@@ -7,7 +7,7 @@ import Media from "react-media"
 const Gallery = () => {
   return (
     <>
-      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Media query="(min-width: 600px)" render={() => <Header />} />
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
 
       <Layout>

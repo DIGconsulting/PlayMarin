@@ -9,7 +9,7 @@ import Media from "react-media"
 const Contact = () => {
   return (
     <>
-    <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+    <Media query="(max-width: 600px)" render={() => <Mobilenav />} />
       <Media query="(min-width: 599px)" render={() => <Header />} />
 
       <Layout>
