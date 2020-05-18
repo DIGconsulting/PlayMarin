@@ -1,14 +1,40 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import Image from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import { Container, Row, Col } from "react-grid-system"
-import Roxie from "../images/roxie.jpg"
-import Paul from "../images/Paul.jpeg"
-import Lawrance from "../images/Lawrance.jpeg"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 
 const About = () => {
+  const { paul, roxie, lawrance } = useStaticQuery(graphql`
+    query {
+      paul: file(relativePath: { eq: "paul.jpeg" }) {
+        sharp:childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+    },
+    roxie: file(relativePath: { eq: "roxie.jpg" }) {
+      sharp:childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+   },
+   lawrance: file(relativePath: { eq: "lawrance.jpeg" }) {
+     sharp:childImageSharp {
+       fluid {
+         ...GatsbyImageSharpFluid_withWebp
+       }
+     }
+  }
+  }
+
+  `)
+
   return (
     <>
     <Media query="(max-width: 900px)" render={() => <Mobilenav />} />
@@ -28,7 +54,7 @@ const About = () => {
         >
           <Col md={2} sm={12} xs={12}>
             <div>
-              <img src={Paul} alt="Paul" />
+              <Image fluid={paul.sharp.fluid} alt="paul"/>
               <p>Play Marin Founder & CEO Paul Austin</p>
             </div>
           </Col>
@@ -63,7 +89,7 @@ const About = () => {
         >
           <Col md={2} sm={12} xs={12}>
             <div>
-              <img src={Roxie} />
+              <Image fluid={roxie.sharp.fluid} alt="Roxie" />
               <p>Roxie Baker, Secretary</p>
             </div>
           </Col>
@@ -97,7 +123,7 @@ const About = () => {
           }}
         >
           <Col md={2} sm={12} xs={12}>
-            <img src={Lawrance} />
+            <Image fluid={lawrance.sharp.fluid} alt="Roxie" />
             <div>Lawrence P. Bancroft, Treasurer </div>
           </Col>
           <Col md={10} sm={12} xs={12}>
