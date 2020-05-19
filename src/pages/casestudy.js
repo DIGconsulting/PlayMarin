@@ -10,6 +10,8 @@ import Upcharttwo from "../components/upcharttwo"
 import Closerlook from "../components/closerlook"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
+import { Jumbotron, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CaseStudy = () => {
   return (
@@ -18,7 +20,21 @@ const CaseStudy = () => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
-
+      <Jumbotron fluid>
+        <Container>
+        <center>
+          <h1>The Play Marin Play Study</h1>
+          <p>
+          </p>
+          <p>
+We provide year-long programming to ensure kids are engaged throughout the school year and summer
+          </p>
+          <p>
+  <Button variant="primary">Download PDF</Button>
+</p>
+        </center>
+        </Container>
+      </Jumbotron>
       <Container
         style={{
           display: `flex`,
@@ -29,14 +45,7 @@ const CaseStudy = () => {
           padding: `0 1rem`,
         }}
       >
-        <h1>The Play Marin Play Study</h1>
         <h3>The Problem</h3>
-        <p>
-          Not only do Marin City youth lack access to recreational
-          opportunities, but kids-at-large in Southern Marin lack exposure to
-          diverse peers. This problem can’t be ignored, as racial tension in
-          Southern Marin is prevalent.
-        </p>
         <ul
           style={{
             listStyleType: `none`,

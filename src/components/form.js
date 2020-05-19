@@ -86,7 +86,6 @@ const Form = () => {
         }`}
         onSubmit={handleSubmit}
       >
-        <h3>Sign up for our Newsletter</h3>
         <label className={styles.label}>
           Name
           <input
