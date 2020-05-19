@@ -6,8 +6,8 @@ import Footer from "../components/footer"
 import { Container, Row, Col } from "react-grid-system"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
-import { Jumbotron, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Jumbotron, Button } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const About = () => {
   const { paul, roxie, lawrance } = useStaticQuery(graphql`
@@ -44,18 +44,15 @@ const About = () => {
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Jumbotron fluid>
         <Container>
-        <center>
-          <h1>Leadership Team</h1>
-          <p>
-          </p>
-          <p>
-          Today, Play Marin touches approximately 300 kids annually
-          in Marin City and greater Southern Marin.
-          </p>
-          <p>
-
-</p>
-        </center>
+          <center>
+            <h1>Leadership Team</h1>
+            <p></p>
+            <p>
+              Today, Play Marin touches approximately 300 kids annually in Marin
+              City and greater Southern Marin.
+            </p>
+            <p></p>
+          </center>
         </Container>
       </Jumbotron>
       <Container

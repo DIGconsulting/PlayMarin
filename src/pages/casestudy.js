@@ -10,8 +10,8 @@ import Upcharttwo from "../components/upcharttwo"
 import Closerlook from "../components/closerlook"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
-import { Jumbotron, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Jumbotron, Button } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const CaseStudy = () => {
   return (
@@ -22,17 +22,17 @@ const CaseStudy = () => {
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Jumbotron fluid>
         <Container>
-        <center>
-          <h1>The Play Marin Play Study</h1>
-          <p>
-          </p>
-          <p>
-We provide year-long programming to ensure kids are engaged throughout the school year and summer
-          </p>
-          <p>
-  <Button variant="primary">Download PDF</Button>
-</p>
-        </center>
+          <center>
+            <h1>The Play Marin Play Study</h1>
+            <p></p>
+            <p>
+              We provide year-long programming to ensure kids are engaged
+              throughout the school year and summer
+            </p>
+            <p>
+              <Button variant="primary">Download PDF</Button>
+            </p>
+          </center>
         </Container>
       </Jumbotron>
       <Container

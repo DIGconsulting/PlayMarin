@@ -9,27 +9,29 @@ import Image from "gatsby-image"
 const Gallery = () => {
   return (
     <>
-    <Media query="(min-width: 600px)" render={() => <Header />} />
-    <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+      <Media query="(min-width: 600px)" render={() => <Header />} />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
 
-    <center>
-      <h2 style={{
-        marginTop: `100px`,
-      }}
-      >Play Marin Photo Gallery</h2>
-      <Usegallery/>
-      <div
-        style={{
-          display: `flex`,
-          flexWrap: `wrap`,
-          flexFlow: `row-wrap`,
-          Maxwidth: 960,
-          justifyContent: `space-between`,
-        }}
-      >
-        </div>
-    </center>
-  </>
+      <center>
+        <h2
+          style={{
+            marginTop: `100px`,
+          }}
+        >
+          Play Marin Photo Gallery
+        </h2>
+        <Usegallery />
+        <div
+          style={{
+            display: `flex`,
+            flexWrap: `wrap`,
+            flexFlow: `row-wrap`,
+            Maxwidth: 960,
+            justifyContent: `space-between`,
+          }}
+        ></div>
+      </center>
+    </>
   )
 }
 

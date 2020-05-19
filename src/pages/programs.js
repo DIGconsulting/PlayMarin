@@ -6,8 +6,8 @@ import Image from "gatsby-image"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 import { graphql, useStaticQuery } from "gatsby"
-import { Jumbotron, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Jumbotron, Button } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function Programs() {
   const {
@@ -103,22 +103,24 @@ function Programs() {
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Jumbotron fluid>
         <Container>
-        <center>
-          <h1>Programs</h1>
-          <p>
-          </p>
-          <p>
-We provide year-long programming to ensure kids are engaged throughout the school year and summer
-          </p>
-          <p>
-  <Button variant="primary">Register</Button>
-</p>
-        </center>
+          <center>
+            <h1>Programs</h1>
+            <p></p>
+            <p>
+              We provide year-long programming to ensure kids are engaged
+              throughout the school year and summer
+            </p>
+            <p>
+              <Button variant="primary">Register</Button>
+            </p>
+          </center>
         </Container>
       </Jumbotron>
-      <Container style={{
-        marginTop: `100px`,
-      }}>
+      <Container
+        style={{
+          marginTop: `100px`,
+        }}
+      >
         <Row>
           <Col md={4}>
             <Image

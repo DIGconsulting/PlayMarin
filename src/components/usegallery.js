@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Usegallery = () => (
   <StaticQuery
     query={graphql`
-      query{
+      query {
         allImageSharp {
           edges {
             node {
@@ -19,19 +19,13 @@ const Usegallery = () => (
           }
         }
       }
-
     `}
     // render={data => data.allDirectory.edges.node.allImageSharp.map(allImageSharp => ({
     //     ...allImageSharp.nodes.fluid
     // }))}
 
-    render={data => (
-    <div>
-      {data.allImageSharp}
-    </div>
-)}
-  >
-  </StaticQuery>
+    render={data => <div>{data.allImageSharp}</div>}
+  ></StaticQuery>
 )
 
 export default Usegallery

@@ -10,7 +10,6 @@ const Banner = () => (
       color: `#ffffff`,
       margin: `auto`,
       display: `flex`,
-
     }}
   >
     <p

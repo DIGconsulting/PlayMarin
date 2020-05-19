@@ -21,7 +21,6 @@ const Header = () => {
 
   const activeStyle = {
     color: `#555`,
-    borderBottom: `2px solid #000`,
   }
 
   return (
@@ -48,7 +47,6 @@ const Header = () => {
           </StyledLink>
         </ul>
         <ul className="right-ui">
-
           <ExternalLink href="https://5ebb9625bbbe31e6bfb35dcc--xenodochial-newton-8f0cd9.netlify.app/">
             Donate
           </ExternalLink>

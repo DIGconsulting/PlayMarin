@@ -5,9 +5,8 @@ import Layout from "../components/layout"
 import Form from "../components/form"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
-import { Jumbotron, Button,Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Jumbotron, Button, Container } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Contact = () => {
   return (
@@ -16,15 +15,11 @@ const Contact = () => {
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Jumbotron fluid>
         <Container>
-        <center>
-          <h1>Contact Us</h1>
-          <p>
-          +1 (415) 686-5045
-          </p>
-          <p>
-          We look forward to hearing from you.
-          </p>
-        </center>
+          <center>
+            <h1>Contact Us</h1>
+            <p>+1 (415) 686-5045</p>
+            <p>We look forward to hearing from you.</p>
+          </center>
         </Container>
       </Jumbotron>
       <Layout>
