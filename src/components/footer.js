@@ -69,7 +69,7 @@ const Footer = () => {
                   <StyledLink to="/programs/" activeStyle={activeStyle}>Programs</StyledLink>
                   <StyledLink to="/about/" activeStyle={activeStyle}>Board</StyledLink>
                   <StyledLink to="/contact/" activeStyle={activeStyle}>Contact-Us</StyledLink>
-                <StyledLink> <a href="https://www.playmarin.org/#contact"> Donate</a></StyledLink>
+                <ExternalLink> <a href="playmarin.org/#contact"> Donate</a></ExternalLink>
               </div>
             </Col>
           </Row>
