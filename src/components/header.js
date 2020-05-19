@@ -47,7 +47,7 @@ const Header = () => {
           </StyledLink>
         </ul>
         <ul className="right-ui">
-          <ExternalLink href="https://5ebb9625bbbe31e6bfb35dcc--xenodochial-newton-8f0cd9.netlify.app/">
+          <ExternalLink href="https://xenodochial-newton-8f0cd9.netlify.app/">
             Donate
           </ExternalLink>
           <li>
