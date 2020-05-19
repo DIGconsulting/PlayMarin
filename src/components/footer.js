@@ -41,7 +41,6 @@ const Footer = () => {
               {" "}
               <div className="footer__addr">
                 <img width={175} src={Logo} />
-                <p>Contact Us</p>
                 <p> P.O. Box 530 Sausalito, Ca 94966</p>
                 <p>+1 (415) 686-5045</p>
                 <p>paustin@playmarin.org</p>
