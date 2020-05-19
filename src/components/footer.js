@@ -19,10 +19,11 @@ const Footer = () => {
     border-bottom-width: 5px;
     position: relatve;
     font-family: avenir;
+    color: #000;
   `
 
   const activeStyle = {
-    color: `#555`,
+    color: `#0B7BFF`,
   }
   return (
     <>

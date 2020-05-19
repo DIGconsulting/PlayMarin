@@ -20,7 +20,7 @@ const Header = () => {
   `
 
   const activeStyle = {
-    color: `#555`,
+    color: `#0B7BFF`,
   }
 
   return (
