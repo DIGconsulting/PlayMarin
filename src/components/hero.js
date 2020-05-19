@@ -78,7 +78,7 @@ const Hero = () => {
             <TextBox>
               <div>
                 <h1>
-                  Diverse & Inclusion
+                  Diversity & Inclusion
                   <Image
                     style={{
                       maxWidth: `200px`,

@@ -12,7 +12,7 @@ import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-
+import uploadedFileLink from "../images/playstudy.pdf"
 const CaseStudy = () => {
   return (
     <>
@@ -30,7 +30,10 @@ const CaseStudy = () => {
               throughout the school year and summer
             </p>
             <p>
+            <a href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
+
               <Button variant="primary">Download PDF</Button>
+              </a>
             </p>
           </center>
         </Container>

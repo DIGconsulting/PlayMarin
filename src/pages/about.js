@@ -10,7 +10,7 @@ import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 const About = () => {
-  const { paul, roxie, lawrance } = useStaticQuery(graphql`
+  const { paul, roxie, lawrance, board} = useStaticQuery(graphql`
     query {
       paul: file(relativePath: { eq: "paul.jpeg" }) {
         sharp: childImageSharp {
@@ -27,6 +27,13 @@ const About = () => {
         }
       }
       lawrance: file(relativePath: { eq: "lawrance.jpeg" }) {
+        sharp: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      board: file(relativePath: { eq: "board.jpg" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -101,6 +108,67 @@ const About = () => {
             margin: `0 auto`,
             padding: `0 1rem`,
             paddingTop: `80px`,
+            paddingBottom: `80px`,
+          }}
+        >
+          <Col md={2} sm={12} xs={12}>
+            <Image fluid={lawrance.sharp.fluid} alt="Roxie" />
+            <p>Lawrence P. Bancroft, Treasurer </p>
+          </Col>
+          <Col md={10} sm={12} xs={12}>
+            <div>
+              <p>
+                President and CEO of Bivium Capital, Lawrence leads a seasoned
+                and dedicated team of investment professionals with expertise
+                across every asset class and type of investment. Prior to
+                founding Bivium in 2002, Lawrence was an initial member of
+                Goldman Sachs IMD’s external manager selection team, where he
+                worked on developing all areas of its manager of managers
+                business; and evaluated minority-owned investment companies as
+                part of the firm’s Urban Investment Group for capital
+                allocation. Previously the Board Chair for Big Brothers Big
+                Sisters of the North Bay, Lawrence currently sits on the
+                governance and finance committees for the Bay Area chapter of
+                Big Brothers Big Sisters. He earned his B.S. from Cornell
+                University’s School of Industrial and Labor Relations, and his
+                M.P.A. from Cornell University’s School of Public Affairs.
+              </p>
+            </div>
+          </Col>
+        </Row>
+        <Row
+          style={{
+            margin: `0 auto`,
+            padding: `0 1rem`,
+            paddingTop: `80px`,
+          }}
+        >
+          <Col md={2} sm={12} xs={12}>
+            <div>
+              <Image fluid={board.sharp.fluid} alt="board chair" />
+              <p>Board Chair Bruce & Kirsten Edwards</p>
+            </div>
+          </Col>
+          <Col md={10}>
+            <div>
+              <p>
+              Board Chair Bruce Edwards lives in Mill Valley with his wife Kirsten, and sons Dillon, JP, and
+              Reed. With over 20 years of financial services experience, Bruce is a Family CFO for
+              approximately 25 families. In these endeavors Bruce assists his clients with tax-efficient
+              charitable giving through a combination of donor-advised funds and foundations. A devoted
+              family man, some of Bruce’s other passions include fly fishing throughout the world, surfing, and
+              playing music with friends and family. His dedication to wilderness conservation and charitable
+              youth development led Bruce to serve on the boards of the Henry’s Fork Foundation in Idaho,
+              and Mt Carmel CYO basketball in Mill Valley.
+              </p>
+            </div>
+          </Col>
+        </Row>
+        <Row
+          style={{
+            margin: `0 auto`,
+            padding: `0 1rem`,
+            paddingTop: `80px`,
           }}
         >
           <Col md={2} sm={12} xs={12}>
@@ -126,39 +194,6 @@ const About = () => {
                 volunteer swim instructor for their summer camp program. Roxie
                 has a B.A. in Psychology from San Francisco State University and
                 graduate studies in Health Education at JFK University.
-              </p>
-            </div>
-          </Col>
-        </Row>
-        <Row
-          style={{
-            margin: `0 auto`,
-            padding: `0 1rem`,
-            paddingTop: `80px`,
-            paddingBottom: `80px`,
-          }}
-        >
-          <Col md={2} sm={12} xs={12}>
-            <Image fluid={lawrance.sharp.fluid} alt="Roxie" />
-            <div>Lawrence P. Bancroft, Treasurer </div>
-          </Col>
-          <Col md={10} sm={12} xs={12}>
-            <div>
-              <p>
-                President and CEO of Bivium Capital, Lawrence leads a seasoned
-                and dedicated team of investment professionals with expertise
-                across every asset class and type of investment. Prior to
-                founding Bivium in 2002, Lawrence was an initial member of
-                Goldman Sachs IMD’s external manager selection team, where he
-                worked on developing all areas of its manager of managers
-                business; and evaluated minority-owned investment companies as
-                part of the firm’s Urban Investment Group for capital
-                allocation. Previously the Board Chair for Big Brothers Big
-                Sisters of the North Bay, Lawrence currently sits on the
-                governance and finance committees for the Bay Area chapter of
-                Big Brothers Big Sisters. He earned his B.S. from Cornell
-                University’s School of Industrial and Labor Relations, and his
-                M.P.A. from Cornell University’s School of Public Affairs.
               </p>
             </div>
           </Col>
