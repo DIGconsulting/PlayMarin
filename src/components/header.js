@@ -58,9 +58,7 @@ const Header = () => {
           </StyledLink>
         </ul>
         <ul className="right-ui">
-          <ExternalLink href="http://www.playmarin.org/#contact">
-            Donate
-          </ExternalLink>
+        <StyledLink> <a href="https://www.playmarin.org/#contact"> Donate</a></StyledLink>
           <li>
             <i className="fas fa-bell bell"></i>
           </li>

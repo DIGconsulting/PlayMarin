@@ -76,9 +76,7 @@ class Mobilenav extends React.Component {
         <Link className="menu-item" to="">
           Login
         </Link>
-        <ExternalLink className="menu-item" href="https://www.playmarin.org/#contact">
-          Donate
-        </ExternalLink>
+        <Link> <a href="https://www.playmarin.org/#contact"> Donate</a></Link>
       </Menu>
     )
   }

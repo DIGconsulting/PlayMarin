@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import Layout from "./layout"
 import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Link } from "gatsby"
+import { Link, external } from "gatsby"
 import { ExternalLink } from "react-external-link"
 
 
@@ -68,8 +68,8 @@ const Footer = () => {
                   <StyledLink to="/casestudy/" activeStyle={activeStyle}>Play Study</StyledLink>
                   <StyledLink to="/programs/" activeStyle={activeStyle}>Programs</StyledLink>
                   <StyledLink to="/about/" activeStyle={activeStyle}>Board</StyledLink>
-                  <ExternalLink href="https://www.playmarin.org/#contact" activeStyle={activeStyle}>Donate</ExternalLink>
                   <StyledLink to="/contact/" activeStyle={activeStyle}>Contact-Us</StyledLink>
+                <StyledLink> <a href="https://www.playmarin.org/#contact"> Donate</a></StyledLink>
               </div>
             </Col>
           </Row>
