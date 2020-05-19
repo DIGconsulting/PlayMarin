@@ -21,6 +21,17 @@ const Footer = () => {
     font-family: avenir;
     color: #000;
   `
+  const ExternalLink = styled(Link)`
+    padding-left: 20px;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom-width: 5px;
+    position: relatve;
+    font-family: avenir;
+    color: #000;
+  `
 
   const activeStyle = {
     color: `#0B7BFF`,
@@ -57,7 +68,7 @@ const Footer = () => {
                   <StyledLink to="/casestudy/" activeStyle={activeStyle}>Play Study</StyledLink>
                   <StyledLink to="/programs/" activeStyle={activeStyle}>Programs</StyledLink>
                   <StyledLink to="/about/" activeStyle={activeStyle}>Board</StyledLink>
-                  <StyledLink to="/donate/" activeStyle={activeStyle}>Donate</StyledLink>
+                  <ExternalLink href="https://www.playmarin.org/#contact" activeStyle={activeStyle}>Donate</ExternalLink>
                   <StyledLink to="/contact/" activeStyle={activeStyle}>Contact-Us</StyledLink>
               </div>
             </Col>

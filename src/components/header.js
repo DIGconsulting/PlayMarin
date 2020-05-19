@@ -18,6 +18,17 @@ const Header = () => {
     position: relatve;
     font-family: avenir;
   `
+  const ExternalLink = styled(Link)`
+    padding-left: 20px;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom-width: 5px;
+    position: relatve;
+    font-family: avenir;
+    color: #000;
+  `
 
   const activeStyle = {
     color: `#0B7BFF`,
@@ -47,7 +58,7 @@ const Header = () => {
           </StyledLink>
         </ul>
         <ul className="right-ui">
-          <ExternalLink href="https://xenodochial-newton-8f0cd9.netlify.app/">
+          <ExternalLink href="http://www.playmarin.org/#contact">
             Donate
           </ExternalLink>
           <li>

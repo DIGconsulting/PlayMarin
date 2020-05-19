@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { slide as Menu } from "react-burger-menu"
 import MediaQuery from "react-responsive"
+import { ExternalLink } from "react-external-link"
 
 var styles = {
   bmBurgerButton: {
@@ -75,9 +76,9 @@ class Mobilenav extends React.Component {
         <Link className="menu-item" to="">
           Login
         </Link>
-        <Link className="menu-item" to="">
+        <ExternalLink className="menu-item" href="https://www.playmarin.org/#contact">
           Donate
-        </Link>
+        </ExternalLink>
       </Menu>
     )
   }
