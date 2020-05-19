@@ -16,10 +16,10 @@ import Newsletter from "../components/newsletter"
 const IndexPage = () => {
   return (
     <>
-    <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <Hero />      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <Hero /> <Media query="(min-width: 599px)" render={() => <Header />} />
       <Banner />
       <Layout>
         <SEO title="Home" />

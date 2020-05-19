@@ -14,10 +14,10 @@ import Media from "react-media"
 const CaseStudy = () => {
   return (
     <>
-    <Media query="(min-width: 600px)" render={() => <Header />} />
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+      <Media query="(min-width: 600px)" render={() => <Header />} />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
 
       <Container
         style={{
@@ -79,45 +79,47 @@ const CaseStudy = () => {
                 MEDIAN HOUSEHOLD INCOME BY RACE
                 <SideChart />
                 <ol
-                style={{
-                  display: `flex`,
-                  flexDirection: 'column',
-                  textDecoration: `none`,
-                  marginTop: `-20px`
-                }}
+                  style={{
+                    display: `flex`,
+                    flexDirection: "column",
+                    textDecoration: `none`,
+                    marginTop: `-20px`,
+                  }}
                 >
-                <li>White: 120k</li>
-                <li>Asia: 90k</li>
-                <li>Black: 52k</li>
-                <li>Latino: 50k</li>
+                  <li>White: 120k</li>
+                  <li>Asia: 90k</li>
+                  <li>Black: 52k</li>
+                  <li>Latino: 50k</li>
                 </ol>
               </Col>
               <Col lg={3}>
                 3RD GRADE READING PROFICIENCY
                 <Upchart />
-                <div    style={{
-                      display: `flex`,
-                      flexDirection: 'column',
-                      textDecoration: `none`,
-                      marginTop: `-20px`,
-                    }}
+                <div
+                  style={{
+                    display: `flex`,
+                    flexDirection: "column",
+                    textDecoration: `none`,
+                    marginTop: `-20px`,
+                  }}
                 >
-                <div>White: 73%</div>
-                <div>Black/Latino: 30%</div>
+                  <div>White: 73%</div>
+                  <div>Black/Latino: 30%</div>
                 </div>
               </Col>
               <Col lg={3}>
                 HIGH SCHOOL GRADUATION RATE
                 <Upcharttwo />
-                <div    style={{
-                      display: `flex`,
-                      flexDirection: 'column',
-                      textDecoration: `none`,
-                      marginTop: `-20px`,
-                    }}
+                <div
+                  style={{
+                    display: `flex`,
+                    flexDirection: "column",
+                    textDecoration: `none`,
+                    marginTop: `-20px`,
+                  }}
                 >
-                <div>White: 95%</div>
-                <div>Black/Latino: 83%</div>
+                  <div>White: 95%</div>
+                  <div>Black/Latino: 83%</div>
                 </div>
               </Col>
             </Row>

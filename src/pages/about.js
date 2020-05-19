@@ -11,36 +11,35 @@ const About = () => {
   const { paul, roxie, lawrance } = useStaticQuery(graphql`
     query {
       paul: file(relativePath: { eq: "paul.jpeg" }) {
-        sharp:childImageSharp {
+        sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-    },
-    roxie: file(relativePath: { eq: "roxie.jpg" }) {
-      sharp:childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+      }
+      roxie: file(relativePath: { eq: "roxie.jpg" }) {
+        sharp: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
-   },
-   lawrance: file(relativePath: { eq: "lawrance.jpeg" }) {
-     sharp:childImageSharp {
-       fluid {
-         ...GatsbyImageSharpFluid_withWebp
-       }
-     }
-  }
-  }
-
+      lawrance: file(relativePath: { eq: "lawrance.jpeg" }) {
+        sharp: childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
   `)
 
   return (
     <>
-    <Media query="(min-width: 600px)" render={() => <Header />} />
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+      <Media query="(min-width: 600px)" render={() => <Header />} />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <Container
         style={{
           margin: `0 auto`,
@@ -56,7 +55,7 @@ const About = () => {
         >
           <Col md={2} sm={12} xs={12}>
             <div>
-              <Image fluid={paul.sharp.fluid} alt="paul"/>
+              <Image fluid={paul.sharp.fluid} alt="paul" />
               <p>Play Marin Founder & CEO Paul Austin</p>
             </div>
           </Col>

@@ -7,10 +7,26 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+    resolve: `gatsby-plugin-sharp`,
+    options: {
+      useMozJpeg: false,
+      stripMetadata: true,
+      defaultQuality: 75,
+      path: `${__dirname}/src/gallery-images/`,
+    },
+  },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `gallery-images`,
+        path: `${__dirname}/src/gallery-images/`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -46,7 +62,7 @@ module.exports = {
       options: {
         width: 800,
         height: `auto`,
-        preload: 'auto',
+        preload: "auto",
       },
     },
     {

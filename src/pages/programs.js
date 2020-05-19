@@ -7,81 +7,91 @@ import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 import { graphql, useStaticQuery } from "gatsby"
 
-
 function Programs() {
-  const { basketball, volleygirl, lacrosse, playdates, track, bikes, skate, trips,clinics, summercamp} = useStaticQuery(graphql`
+  const {
+    basketball,
+    volleygirl,
+    lacrosse,
+    playdates,
+    track,
+    bikes,
+    skate,
+    trips,
+    clinics,
+    summercamp,
+  } = useStaticQuery(graphql`
     query {
       basketball: file(relativePath: { eq: "basketball.jpg" }) {
-        sharp:childImageSharp {
-          fluid(maxWidth:500) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-    },
-    volleygirl: file(relativePath: { eq: "volley_girls.jpg" }) {
-      sharp:childImageSharp {
-        fluid(maxWidth:500) {
-          ...GatsbyImageSharpFluid_withWebp
+      }
+      volleygirl: file(relativePath: { eq: "volley_girls.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
-   },
-   lacrosse: file(relativePath: { eq: "lacrosse.jpg" }) {
-     sharp:childImageSharp {
-       fluid(maxWidth:500) {
-         ...GatsbyImageSharpFluid_withWebp
-       }
-     }
-  },
-  playdates: file(relativePath: { eq: "playdates_2.jpg" }) {
-    sharp:childImageSharp {
-      fluid(maxWidth:500) {
-        ...GatsbyImageSharpFluid_withWebp
+      lacrosse: file(relativePath: { eq: "lacrosse.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      playdates: file(relativePath: { eq: "playdates_2.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      track: file(relativePath: { eq: " track.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      bikes: file(relativePath: { eq: "bikes.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      skate: file(relativePath: { eq: "skate.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      trips: file(relativePath: { eq: "trips.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      clinics: file(relativePath: { eq: "clinics.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      summercamp: file(relativePath: { eq: "swimming.jpg" }) {
+        sharp: childImageSharp {
+          fluid(maxHeight: 300) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
       }
     }
- },
- track: file(relativePath: { eq: " track.jpg" }) {
-   sharp:childImageSharp {
-     fluid(maxWidth:500) {
-       ...GatsbyImageSharpFluid_withWebp
-     }
-   }
-},   bikes: file(relativePath: { eq: "bikes.jpg" }) {
-     sharp:childImageSharp {
-       fluid(maxWidth:500) {
-         ...GatsbyImageSharpFluid_withWebp
-       }
-     }
-  },    skate: file(relativePath: { eq: "skate.jpg" }) {
-       sharp:childImageSharp {
-         fluid(maxWidth:500) {
-           ...GatsbyImageSharpFluid_withWebp
-         }
-       }
-    },
-     trips: file(relativePath: { eq: "trips.jpg" }) {
-      sharp:childImageSharp {
-        fluid(maxWidth:500) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-   },
- clinics: file(relativePath: { eq: "clinics.jpg" }) {
-     sharp:childImageSharp {
-       fluid(maxWidth:500) {
-         ...GatsbyImageSharpFluid_withWebp
-       }
-     }
-  },
-  summercamp: file(relativePath: { eq: "swimming.jpg" }) {
-      sharp:childImageSharp {
-        fluid(maxHeight:300) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-   }
-
- }
-
   `)
   return (
     <>
@@ -90,10 +100,7 @@ function Programs() {
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
 
-      <Container
-      style={{
-      }}
-      >
+      <Container style={{}}>
         <h1>Programs</h1>
         <Row>
           <Col md={4}>
@@ -176,7 +183,6 @@ function Programs() {
               fluid={summercamp.sharp.fluid}
               title="Summer camp"
               description="cancelled until further notice"
-
             />
             <h4>Summer Camp</h4>
             <p>cancelled until further notice</p>
