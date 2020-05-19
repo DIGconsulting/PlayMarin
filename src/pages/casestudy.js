@@ -1,7 +1,6 @@
 import React from "react"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
-import { Container, Row, Col } from "react-grid-system"
 import PieChart from "../components/piechart1.js"
 import PieChartTwo from "../components/piechart2.js"
 import SideChart from "../components/sidebarchart.js"
@@ -10,9 +9,10 @@ import Upcharttwo from "../components/upcharttwo"
 import Closerlook from "../components/closerlook"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
-import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import uploadedFileLink from "../images/playstudy.pdf"
+import {Jumbotron,Button, Container, Row, Col } from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 const CaseStudy = () => {
   return (
     <>
@@ -48,27 +48,32 @@ const CaseStudy = () => {
           padding: `0 1rem`,
         }}
       >
+      <Row>
         <h3>The Problem</h3>
-        <ul
-          style={{
-            listStyleType: `none`,
-          }}
-        >
-          <li>
-            Kids come together when they attend Tamalpais High School, the one
-            high school in Southern Marin
-          </li>
-          <li>
-            In 2017, racist slurs were spray painted at Tam High targeting
-            Principal J.C. Farr, the schools first African American principal
-          </li>
-          <li>
-            Continued attempts to promote student unity and mend issues of
-            racism, such as Tam High’s “Breakthrough Day” have been claimed as
-            ineffective by minority students
-          </li>
-        </ul>
-        <Row>
+        </Row>
+  <Row>
+  <Col sm>
+  <p>
+    Kids come together when they attend Tamalpais High School, the one
+    high school in Southern Marin
+  </p>
+  </Col>
+  <Col sm>
+  <p>
+    In 2017, racist slurs were spray painted at Tam High targeting
+    Principal J.C. Farr, the schools first African American principal
+  </p>
+  </Col>
+
+  <Col sm>
+  <p>
+    Continued attempts to promote student unity and mend issues of
+    racism, such as Tam High’s “Breakthrough Day” have been claimed as
+    ineffective by minority students
+  </p>
+  </Col>
+  </Row>
+      <Row>
           <Col lg={12}>
             <h2
               style={{
