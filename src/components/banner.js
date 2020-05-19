@@ -18,8 +18,7 @@ const Banner = () => (
         fontFamily: `avenir`,
       }}
     >
-      We are offering complimentary dinners for family's
-      affected by COVID-19.
+      We are offering complimentary dinners for family's affected by COVID-19.
     </p>
   </div>
 )

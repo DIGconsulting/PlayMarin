@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           maxWidth: 960,
         }}
       >
-      {children}
+        {children}
       </div>
     </>
   )

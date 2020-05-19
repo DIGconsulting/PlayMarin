@@ -43,17 +43,12 @@ const Header = () => {
           <StyledLink to="/programs/" activeStyle={activeStyle}>
             Programs
           </StyledLink>
-          <StyledLink to="/gallery/" activeStyle={activeStyle}>
-            Gallery
-          </StyledLink>
           <StyledLink to="/contact/" activeStyle={activeStyle}>
             Contact Us
           </StyledLink>
         </ul>
         <ul className="right-ui">
-          <StyledLink to="/" className="work">
-            Login
-          </StyledLink>
+
           <ExternalLink href="https://5ebb9625bbbe31e6bfb35dcc--xenodochial-newton-8f0cd9.netlify.app/">
             Donate
           </ExternalLink>

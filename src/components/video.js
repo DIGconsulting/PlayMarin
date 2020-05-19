@@ -1,5 +1,5 @@
 import React from "react"
-import ResponsiveEmbed from 'react-responsive-embed'
+import ResponsiveEmbed from "react-responsive-embed"
 
 const Video = () => {
   return (
@@ -10,8 +10,10 @@ const Video = () => {
           marginBottom: `80px`,
         }}
       >
-      <ResponsiveEmbed src='https://www.youtube.com/embed/p0LfbN2J4c8' ratio='4:2' />
-
+        <ResponsiveEmbed
+          src="https://www.youtube.com/embed/p0LfbN2J4c8"
+          ratio="4:2"
+        />
 
         <div
           style={{
@@ -33,7 +35,7 @@ const Video = () => {
             fontFamily: `avenir`,
             paddingTop: `20px`,
             lineHeight: 1.5,
-            textAlign: `left`
+            textAlign: `left`,
           }}
         >
           <p>
@@ -54,7 +56,7 @@ const Video = () => {
             through play, Marin will move past tolerance and become a more
             inclusive place to live.
           </p>
-          </div>
+        </div>
       </center>
     </>
   )

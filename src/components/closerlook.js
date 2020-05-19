@@ -4,9 +4,7 @@ import Table from "remark-grid-tables"
 const Closerlook = () => {
   return (
     <>
-    <center>
-      Southern Marin - A closer look
-    </center>
+      <center>Southern Marin - A closer look</center>
       <p
         style={{
           display: `flex`,

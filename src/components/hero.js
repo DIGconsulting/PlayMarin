@@ -6,7 +6,6 @@ import Play from "../images/playMarinLogo-v2.png"
 import Image from "gatsby-image"
 import { Container, Row, Col, Button } from "react-grid-system"
 
-
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 50% center;
   background: #efefefe;
@@ -56,44 +55,44 @@ const Hero = () => {
   const { image, play } = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "desktop.jpg" }) {
-        sharp:childImageSharp {
+        sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
-    },
-    play: file(relativePath: { eq: "playMarinLogo-v2.png" }) {
-      sharp:childImageSharp {
-        fluid(maxWidth: 100){
-          ...GatsbyImageSharpFluid_withWebp
+      }
+      play: file(relativePath: { eq: "playMarinLogo-v2.png" }) {
+        sharp: childImageSharp {
+          fluid(maxWidth: 100) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
-   }
-  }
+    }
   `)
   return (
     <>
-  <Row>
-    <Col lg={12} md={12} sm={12} xs={12}>
-      <ImageBackground tag="section" fluid={image.sharp.fluid}>
-        <TextBox>
-          <div>
-            <h1>
-              Diverse & Inclusion
-                <Image
-                style={{
-                  maxWidth: `200px`,
-                }}
-                  fluid={play.sharp.fluid}
-                />
-            </h1>
-              <a>
-                <Link to="/">Become a Petition &rarr;</Link>
-              </a>
-          </div>
-        </TextBox>
-      </ImageBackground>
-      </Col>
+      <Row>
+        <Col lg={12} md={12} sm={12} xs={12}>
+          <ImageBackground tag="section" fluid={image.sharp.fluid}>
+            <TextBox>
+              <div>
+                <h1>
+                  Diverse & Inclusion
+                  <Image
+                    style={{
+                      maxWidth: `200px`,
+                    }}
+                    fluid={play.sharp.fluid}
+                  />
+                </h1>
+                <a>
+                  <Link to="/">Become a Petition &rarr;</Link>
+                </a>
+              </div>
+            </TextBox>
+          </ImageBackground>
+        </Col>
       </Row>
     </>
   )
