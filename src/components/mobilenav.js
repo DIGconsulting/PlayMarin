@@ -12,7 +12,7 @@ var styles = {
     top: "0px",
   },
   bmBurgerBars: {
-    background: "#000",
+    background: "purple",
   },
   bmBurgerBarsHover: {
     background: "#a90000",

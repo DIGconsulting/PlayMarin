@@ -86,7 +86,11 @@ const Hero = () => {
                     fluid={play.sharp.fluid}
                   />
                 </h1>
-                <a>
+                <a
+                style={{
+                  fontSize: `20px`
+                }}
+                >
                   <Link to="/">Become a Petition &rarr;</Link>
                 </a>
               </div>
