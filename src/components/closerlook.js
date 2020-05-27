@@ -4,7 +4,17 @@ import Table from "remark-grid-tables"
 const Closerlook = () => {
   return (
     <>
-      <center>Southern Marin - A closer look</center>
+<div>
+        <h2
+          style={{
+            paddingTop: `80px`,
+            display: `flex`,
+            justifyContent: `center`,
+            textAlign: "center",
+          }}
+        >
+      Southern Marin - A closer look
+        </h2>
       <p
         style={{
           display: `flex`,
@@ -13,7 +23,7 @@ const Closerlook = () => {
         }}
       >
         {" "}
-        Tw0 cities, Marin City and Mill Valley are only 4 miles apart, but they
+        Two cities, Marin City and Mill Valley are only 4 miles apart, but they
         are vastly different across race, income, and recreation.
       </p>
       <table class="rwd-table">
@@ -48,6 +58,7 @@ const Closerlook = () => {
           <td data-th="Gross">2</td>
         </tr>
       </table>
+      </div>
     </>
   )
 }
