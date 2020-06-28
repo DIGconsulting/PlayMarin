@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { Link, external } from "gatsby"
 import { ExternalLink } from "react-external-link"
 
-
 const Footer = () => {
   const StyledLink = styled(Link)`
     padding-left: 20px;
@@ -43,46 +42,129 @@ const Footer = () => {
         style={{
           marginBottom: `0px`,
           paddingTop: `50px`,
-          paddingBottom: `50px`
+          paddingBottom: `50px`,
+          backgroundImage: "linear-gradient(#558EDE, #6514AF)",
         }}
       >
-        <Container>
+        <Container fluid>
           <Row>
-            <Col>
-              {" "}
-              <div className="footer__addr">
+            <Col style={{ display: "flex" }}>
+              <div>
                 <img width={175} src={Logo} />
-                <p> P.O. Box 530 Sausalito, Ca 94966</p>
-                <p>+1 (415) 686-5045</p>
-                <p>paustin@playmarin.org</p>
-                <a className="footer__btn" href="mailto:example@gmail.com">
-                  Email Us
+              </div>
+              <div>
+                <StyledLink to="/casestudy/" activeStyle={activeStyle}>
+                  Home
+                </StyledLink>
+                <StyledLink to="/programs/" activeStyle={activeStyle}>
+                  Programs
+                </StyledLink>
+                <StyledLink to="/about/" activeStyle={activeStyle}>
+                  Support
+                </StyledLink>
+                <StyledLink to="/contact/" activeStyle={activeStyle}>
+                  About
+                </StyledLink>
+                <StyledLink to="/contact/" activeStyle={activeStyle}>
+                  Contact-Us
+                </StyledLink>
+                {/* <ExternalLink>
+                  {" "}
+                  <a href="playmarin.org/#contact"> Donate</a>
+                </ExternalLink> */}
+              </div>
+              <div className="legal">
+                <div className="legal__Link"></div>
+
+                <a href="">
+                  Copyright &#169; {new Date().getFullYear()} Play Marin, a
+                  <br />
+                  California public benefit
+                  <br />
+                  coporation. All rights reserved
                 </a>
               </div>
             </Col>
-            <Col md="auto">
+            <Col style={{ color: "white" }}>
+              <h5>Follow PLAY Marin</h5>
+              <div style={{ display: "flex" }}>
+                <p
+                  style={{
+                    borderRadius: "50%",
+                    backgroundColor: "#D3D3D3",
+                    width: "2rem",
+                    textAlign: "center",
+                    marginRight: ".5rem",
+                    color: "white",
+                  }}
+                >
+                  FB
+                </p>
+                <p
+                  style={{
+                    borderRadius: "50%",
+                    backgroundColor: "#D3D3D3",
+                    width: "2rem",
+                    textAlign: "center",
+                    color: "white",
+                  }}
+                >
+                  IG
+                </p>
+              </div>
               <div>
-                <h6>
-                  <b>Quick Link</b>
-                </h6>
-                  <StyledLink to="/casestudy/" activeStyle={activeStyle}>Play Study</StyledLink>
-                  <StyledLink to="/programs/" activeStyle={activeStyle}>Programs</StyledLink>
-                  <StyledLink to="/about/" activeStyle={activeStyle}>Board</StyledLink>
-                  <StyledLink to="/contact/" activeStyle={activeStyle}>Contact-Us</StyledLink>
-                <ExternalLink> <a href="playmarin.org/#contact"> Donate</a></ExternalLink>
+                <h6>Stay in touch</h6>
+                <p>
+                  Sign up for our newletter today and stay up to date with
+                  everything PLay Marin
+                </p>
+              </div>
+              <div>
+                <form method="post" action="contact.php">
+                  <input type="email"></input>
+                  <input type="submit" name="Sign Up"></input>
+                </form>
+                {/* <form action="#">
+                  <label for="email">Enter your email:</label>
+                  <input type="email" id="email" name="email">
+                    Email
+                  </input>
+                  <input type="submit">Sign Up</input>
+                </form> */}
+              </div>
+            </Col>
+            <Col style={{ color: "white" }}>
+              <p>
+                Your support helps Play Marin close the actiivty gap in Marin
+                City and provides a more diverse peer group fro over 300 kids
+                annually throughout Sourthern Marin
+              </p>
+              <div>
+                <div>$50</div>
+                <div>
+                  <form>
+                    <input
+                      type="radio"
+                      id="Annually"
+                      name="donation"
+                      value="annually"
+                    ></input>
+                    <label for="annually">Annually</label>
+                    <br />
+                    <input
+                      type="radio"
+                      id="just-once"
+                      name="donation"
+                      value="just-once"
+                    ></input>
+                    <label for="just-once">Just Once</label>
+                    <br />
+                    <input type="submit" name="Support Play Marin"></input>
+                  </form>
+                </div>
               </div>
             </Col>
           </Row>
-
-          <div className="legal">
-            <div className="legal__Link"></div>
-
-            <a href="">
-              Built and Maintained By OFF THE LAND SOFTWARE ©{" "}
-              {new Date().getFullYear()}
-              {` `}{" "}
-            </a>
-          </div>
         </Container>
       </Jumbotron>
     </>

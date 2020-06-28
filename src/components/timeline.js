@@ -18,15 +18,15 @@ const Timeline = () => {
             fontWeight: `600`,
           }}
         >
-          We provide year-long programming to ensure kids are engaged throughout
-          the school year and summer
+          Programs
         </h3>
         <p
           style={{
             fontFamily: `avenir`,
           }}
         >
-          Serving 300 kids annually in Marin City and greater Southern Marin
+          We provide year-long programming to ensure kids are engaged
+          throughtout the school year and summer.
         </p>
         <h3
           style={{

@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Timeline from "../components/timeline"
 import MissionImg from "../gallery-images/ZKMJm6IJQB2kTjsOnHmYAw_thumb_36ce.jpg"
 import ProblemImg from "../gallery-images/yUn2Cz+nSdGF5OkcREeMQA_thumb_36ff.jpg"
 import SolutionImg from "../gallery-images/vSHWBX8iTjOVGTiaPAHy4Q_thumb_36a4.jpg"
@@ -69,7 +70,7 @@ const About = () => {
           </center>
         </Container>
       </Jumbotron>
-      <Jumbotron fluid style={{ backgroundColor: "white" }}>
+      <Jumbotron fluid style={{ backgroundColor: "white", height: "4800px" }}>
         <Container fluid>
           <center>
             <Col>
@@ -233,18 +234,18 @@ const About = () => {
                   grow together we attack the problem in 3 key ways:
                 </p>
                 <ol>
-                  <li>
+                  <p>
                     Delivering seasonal sports and activities in Marin City for
                     3rd-8th graders.
-                  </li>
-                  <li>
+                  </p>
+                  <p>
                     Implementing monthly Play Days focused around team-building
                     for children and families.
-                  </li>
-                  <li>
+                  </p>
+                  <p>
                     Recruiting youth of color to participate in sports and
                     activities in Southern Marin County.
-                  </li>
+                  </p>
                 </ol>
               </div>
             </div>
@@ -436,6 +437,7 @@ const About = () => {
                 padding: "100px",
                 color: "white",
                 width: "100vw",
+                height: "30rem",
               }}
             >
               <div
@@ -448,34 +450,63 @@ const About = () => {
                   height: "30rem",
                   paddingRight: "2rem",
                   paddingLeft: "2rem",
-                  paddingTop: "1rem",
+                  paddingTop: "3rem",
                   paddingBottom: "1rem",
                 }}
               >
-                <h1 style={{ textAlign: "center" }}>Our Partners</h1>
-                <p style={{ textAlign: "center" }}>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aliquam tincidunt mauris eu risus.
-                </p>
-
-                <ul style={{ listStyleType: "none" }}>
-                  <li>County Bears AAU Basketball</li>
-                  <li>Dave Fromer Soccer</li>
-                  <li>Good Tidings Foundation</li>
-                  <li>Jennifer Azzi, Azzi Acedemy Camps</li>
-                  <li>Marin City Community District</li>
-                  <li>Next Level Flag Football</li>
-                </ul>
-                <ul style={{ listStyleType: "none" }}>
-                  <li>ProofLab</li>
-                  <li>St Mary Star Of the Sea</li>
-                  <li>Southern Marin Lacrosse</li>
-                  <li>Trips4Kids</li>
-                  <li>Warriors Community Foundation</li>
-                </ul>
+                <div
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
+                    height: "24rem",
+                  }}
+                >
+                  <h1 style={{ textAlign: "center" }}>Our Partners</h1>
+                  <p style={{ textAlign: "center" }}>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aliquam tincidunt mauris eu risus.
+                  </p>
+                  <div
+                    style={{
+                      height: "15rem",
+                      paddingLeft: "4rem",
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-around",
+                    }}
+                  >
+                    <div>
+                      <p>County Bears AAU Basketball</p>
+                      <p>Dave Fromer Soccer</p>
+                      <p>Good Tidings Foundation</p>
+                      <p>Jennifer Azzi, Azzi Acedemy Camps</p>
+                      <p>Marin City Community District</p>
+                      <p>Next Level Flag Football</p>
+                    </div>
+                    <div>
+                      <p>ProofLab</p>
+                      <p>St Mary Star Of the Sea</p>
+                      <p>Southern Marin Lacrosse</p>
+                      <p>Trips4Kids</p>
+                      <p>Warriors Community Foundation</p>
+                    </div>
+                  </div>
+                  <div>
+                    <h5 style={{ textAlign: "center", height: "1rem" }}>
+                      Become a Partner
+                    </h5>
+                  </div>
+                </div>
               </div>
             </div>
           </Row>
+        </Container>
+        <Container>
+          <center>
+            <Timeline />
+            <a href="#" style={{ color: "black" }}>
+              Learn More
+            </a>
+          </center>
         </Container>
       </Jumbotron>
       <Footer />
