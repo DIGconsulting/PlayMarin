@@ -12,7 +12,7 @@ const Header = () => {
     padding-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    color: #000;
+    color: #6512ae;
     margin-right: 20px;
     border-bottom-width: 5px;
     position: relatve;
@@ -31,7 +31,8 @@ const Header = () => {
   `
 
   const activeStyle = {
-    color: `#0B7BFF`,
+    color: `#598BDD`,
+    // color: `#0B7BFF`,
   }
 
   return (
@@ -45,20 +46,28 @@ const Header = () => {
           </li>
 
           <StyledLink to="/casestudy" activeStyle={activeStyle}>
-            PLAY Study
+            Home
           </StyledLink>
           <StyledLink to="/about/" activeStyle={activeStyle}>
-            Board
+            About
           </StyledLink>
           <StyledLink to="/programs/" activeStyle={activeStyle}>
             Programs
           </StyledLink>
           <StyledLink to="/contact/" activeStyle={activeStyle}>
-            Contact Us
+            Support
           </StyledLink>
         </ul>
-        <ul className="right-ui">
-        <StyledLink> <a href="https://www.playmarin.org/#contact"> Donate</a></StyledLink>
+        <ul className="donation-btn">
+          <StyledLink>
+            {" "}
+            <a
+              href="https://www.playmarin.org/#contact"
+              style={{ color: "#fff" }}
+            >
+              Donate
+            </a>
+          </StyledLink>
           <li>
             <i className="fas fa-bell bell"></i>
           </li>
