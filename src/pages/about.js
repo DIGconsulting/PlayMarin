@@ -91,7 +91,6 @@ const About = () => {
               >
                 <div
                   style={{
-                    // margin: "auto",
                     paddingTop: "10rem ",
                     paddingBottom: "30rem",
                     paddingRight: "30rem",
@@ -159,10 +158,6 @@ const About = () => {
                   width: "50%",
                   backgroundPosition: "center center",
                   color: "white",
-                  // paddingTop: "150px",
-                  // paddingBottom: "150px",
-                  // paddingRight: "150px",
-                  // paddingLeft: "150px",
                 }}
               >
                 <div
@@ -199,7 +194,6 @@ const About = () => {
               >
                 <div
                   style={{
-                    // margin: "auto",
                     paddingTop: "150px",
                     paddingBottom: "150px",
                     paddingRight: "150px",
@@ -209,16 +203,6 @@ const About = () => {
                   }}
                 ></div>
               </div>
-
-              {/* <div
-                  style={{
-                    // margin: "auto",
-                    padding: "296px",
-                    backgroundImage:
-                      "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                  }}
-                ></div> */}
-              {/* </div> */}
               <div
                 style={{
                   backgroundColor: "#992168",
@@ -254,7 +238,6 @@ const About = () => {
         <Container
           style={{
             margin: `0 auto`,
-            // maxWidth: 1000,
             padding: `0 1rem`,
           }}
         >

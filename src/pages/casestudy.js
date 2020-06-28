@@ -42,7 +42,6 @@ const CaseStudy = () => {
           >
             <div
               style={{
-                // margin: "auto",
                 paddingTop: "10rem ",
                 paddingRight: "7rem",
                 paddingLeft: "7rem",
@@ -82,7 +81,6 @@ const CaseStudy = () => {
                               backgroundColor: "#838E9E",
                               height: "1.5rem",
                               width: "5rem",
-                              // marginTop: ".45rem",
                               color: "white",
                               fontWeight: "600",
                               marginRight: ".25rem",
@@ -93,8 +91,6 @@ const CaseStudy = () => {
                         </center>
                         <div
                           style={{
-                            // display: "flex",
-                            // flexDirection: "row",
                             width: "5rem",
                             lineHeight: ".5rem",
                           }}
@@ -184,16 +180,6 @@ const CaseStudy = () => {
                 color: "white",
               }}
             ></div>
-
-            {/* <div
-                  style={{
-                    // margin: "auto",
-                    padding: "296px",
-                    backgroundImage:
-                      "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                  }}
-                ></div> */}
-            {/* </div> */}
             <div
               style={{
                 backgroundColor: "#992168",
@@ -276,9 +262,6 @@ const CaseStudy = () => {
           style={{
             backgroundColor: "#007E26",
             color: "white",
-            // height: "50rem",
-            // paddingRight: "7rem",
-            // width: "100%",
           }}
         >
           <div>

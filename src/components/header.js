@@ -32,7 +32,6 @@ const Header = () => {
 
   const activeStyle = {
     color: `#598BDD`,
-    // color: `#0B7BFF`,
   }
 
   return (

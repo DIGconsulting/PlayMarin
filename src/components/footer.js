@@ -170,8 +170,6 @@ const Footer = () => {
                     </center>
                     <div
                       style={{
-                        // display: "flex",
-                        // flexDirection: "row",
                         width: "5rem",
                         lineHeight: ".5rem",
                       }}
