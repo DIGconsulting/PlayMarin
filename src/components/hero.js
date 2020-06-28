@@ -5,8 +5,10 @@ import BackgroundImage from "gatsby-background-image"
 import Play from "../images/playMarinLogo-v2.png"
 import Image from "gatsby-image"
 import { Container, Row, Col, Button } from "react-grid-system"
+import BackgroundVideo from "./BackgroundVideo"
 
-const ImageBackground = styled(BackgroundImage)`
+
+const ImageBackground = styled(BackgroundVideo)`
   background-position: top 50% center;
   background: #efefefe;
   background-size: cover;
@@ -78,20 +80,13 @@ const Hero = () => {
             <TextBox>
               <div>
                 <h1>
-                  Diversity & Inclusion
-                  <Image
-                    style={{
-                      maxWidth: `200px`,
-                    }}
-                    fluid={play.sharp.fluid}
-                  />
                 </h1>
                 <a
                 style={{
                   fontSize: `20px`
                 }}
                 >
-                  <Link to="/">Become a Petition &rarr;</Link>
+                  <Link to="/"></Link>
                 </a>
               </div>
             </TextBox>

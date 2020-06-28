@@ -6,6 +6,7 @@ import Layout from "../components/layout.css"
 import Logo from "../images/playMarinLogo.png"
 import { Container, Row, Col, Button } from "react-grid-system"
 import { ExternalLink } from "react-external-link"
+import Sticky from 'react-sticky-el';
 
 const Header = () => {
   const StyledLink = styled(Link)`
@@ -36,6 +37,7 @@ const Header = () => {
 
   return (
     <>
+    <Sticky>
       <nav className="navbar">
         <ul className="left-ui">
           <li>
@@ -64,6 +66,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+ </Sticky>
     </>
   )
 }
