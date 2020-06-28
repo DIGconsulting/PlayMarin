@@ -11,6 +11,8 @@ import Closerlook from "../components/closerlook"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 import HomeImg from "../gallery-images/pYdpk5lbQYSWbUmuEMyfsw_thumb_36ad.jpg"
+import PlayImg from "../images/hero_image.jpg"
+import PaulProfileImg from "../images/paul.jpeg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import uploadedFileLink from "../images/playstudy.pdf"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
@@ -22,26 +24,7 @@ const CaseStudy = () => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <Media query="(min-width: 599px)" render={() => <Header />} />
-      {/* <Jumbotron fluid>
-        <Container>
-          <center>
-            <h1>The Play Marin Play Study</h1>
-            <p></p>
-            <p>
-              We provide year-long programming to ensure kids are engaged
-              throughout the school year and summer
-            </p>
-            <p>
-            <a href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
-
-              <Button variant="primary">Download PDF</Button>
-              </a>
-            </p>
-          </center>
-        </Container>
-      </Jumbotron> */}
       <Container fluid>
-        {/* <center> */}
         <Col>
           <div
             style={{
@@ -67,7 +50,7 @@ const CaseStudy = () => {
                   "linear-gradient(rgba(85,142,222,0.7), rgb(101, 20, 175, 0.7))",
               }}
             >
-              <div style={{ marginBottom: "10rem" }}>
+              <div style={{ marginBottom: "10rem", fontWeight: "600" }}>
                 <center>
                   <p>
                     Play Marin started 8 years ago with one <br />
@@ -78,11 +61,13 @@ const CaseStudy = () => {
               <div
                 style={{
                   backgroundColor: "rgba(64, 75, 107, .9)",
-                  padding: "3rem",
+                  padding: "2rem",
                   display: "flex",
                 }}
               >
-                <p style={{ width: "50%" }}>
+                <p
+                  style={{ width: "50%", fontSize: "12px", fontWeight: "600" }}
+                >
                   Your support helps Play Marin close the actiivty gap in <br />
                   Marin City and provides a more diverse peer group for
                   <br /> over 300 kids annually throughout Sourthern Marin
@@ -97,7 +82,10 @@ const CaseStudy = () => {
                               backgroundColor: "#838E9E",
                               height: "1.5rem",
                               width: "5rem",
-                              marginTop: ".45rem",
+                              // marginTop: ".45rem",
+                              color: "white",
+                              fontWeight: "600",
+                              marginRight: ".25rem",
                             }}
                           >
                             $50
@@ -108,6 +96,7 @@ const CaseStudy = () => {
                             // display: "flex",
                             // flexDirection: "row",
                             width: "5rem",
+                            lineHeight: ".5rem",
                           }}
                         >
                           <input
@@ -116,10 +105,17 @@ const CaseStudy = () => {
                             name="donation"
                             value="anually"
                             backgroundColor="#838E9E"
+                            style={{
+                              marginRight: ".25rem",
+                            }}
                           ></input>
                           <label
                             for="anually"
-                            style={{ fontSize: "10px", marginBottom: "0px" }}
+                            style={{
+                              fontSize: "10px",
+                              marginBottom: "0px",
+                              fontWeight: "600",
+                            }}
                           >
                             Anually
                           </label>
@@ -129,10 +125,17 @@ const CaseStudy = () => {
                             id="just-once"
                             name="donation"
                             value="just-once"
+                            style={{
+                              marginRight: ".25rem",
+                            }}
                           ></input>
                           <label
                             for="just-once"
-                            style={{ fontSize: "10px", marginBottom: "0px" }}
+                            style={{
+                              fontSize: "10px",
+                              marginBottom: "0px",
+                              fontWeight: "600",
+                            }}
                           >
                             Just Once
                           </label>
@@ -141,8 +144,19 @@ const CaseStudy = () => {
                       </div>
                       <input
                         type="submit"
-                        name="Support Play Marin"
-                        style={{ width: "10rem", display: "relative" }}
+                        value="Support Play Marin"
+                        style={{
+                          marginTop: ".25rem",
+                          width: "9.5rem",
+                          display: "relative",
+                          backgroundColor: "#007E26",
+                          borderColor: "#fff",
+                          color: "white",
+                          fontSize: "10px",
+                          paddingTop: ".25rem",
+                          paddingBottom: ".25rem",
+                          fontWeight: "600",
+                        }}
                       ></input>
                     </form>
                   </div>
@@ -169,20 +183,7 @@ const CaseStudy = () => {
                 backgroundPosition: "center center",
                 color: "white",
               }}
-            >
-              <div
-                style={{
-                  // margin: "auto",
-                  padding: "302px",
-                  paddingTop: "150px",
-                  paddingBottom: "150px",
-                  paddingRight: "150px",
-                  paddingLeft: "150px",
-                  backgroundImage:
-                    "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                }}
-              ></div>
-            </div>
+            ></div>
 
             {/* <div
                   style={{
@@ -201,32 +202,126 @@ const CaseStudy = () => {
                 padding: "7rem",
               }}
             >
-              <h1>Our Solution</h1>
+              <h1>Everyone wins with Play Marin</h1>
               <p>
-                By providing opportunities for children of diverse ethnic and
-                socioeconomic backgrounds in Southern Marin to learn, play and
-                grow together we attack the problem in 3 key ways:
+                PLAY Marin provides sports and other extracurricular activities
+                to intentionally give diverse ethinic and socioeconomic
+                backgrounds the opportunity to learn and grow together through
+                play.
               </p>
-              <ol>
-                <p>
-                  Delivering seasonal sports and activities in Marin City for
-                  3rd-8th graders.
-                </p>
-                <p>
-                  Implementing monthly Play Days focused around team-building
-                  for children and families.
-                </p>
-                <p>
-                  Recruiting youth of color to participate in sports and
-                  activities in Southern Marin County.
-                </p>
-              </ol>
+              <button
+                style={{
+                  width: "15rem",
+                  height: "2.5rem",
+                  color: "#992168",
+                  borderColor: "#992168",
+                }}
+              >
+                Learn More
+              </button>
             </div>
           </div>
         </Col>
       </Container>
+      <Container fluid>
+        <div
+          style={{
+            color: "white",
+            backgroundImage: "linear-gradient(#558EDE, #6514AF)",
+          }}
+        >
+          <div>
+            <p
+              style={{
+                paddingLeft: "30rem",
+                paddingTop: "7rem",
+              }}
+            >
+              "It's important that children spread amounst the <br />
+              many small towns in Marin have the opportunity to <br />
+              learn about others, not by competing with them, but <br />
+              instead through the lens of playing with them."
+            </p>
+            <p
+              style={{
+                paddingLeft: "50rem",
+                fontSize: "10px",
+                marginBottom: "0",
+              }}
+            >
+              Paul Austin
+            </p>
+            <p style={{ paddingLeft: "50rem", fontSize: "10px" }}>
+              Founder, Play Marin
+            </p>
+          </div>
+          <div>
+            <img
+              src={PaulProfileImg}
+              alt="paul's profile pic"
+              style={{ borderRadius: "50%", height: "7rem" }}
+            />
+          </div>
+        </div>
+      </Container>
+      <Container
+        fluid
+        style={{
+          backgroundImage: `url(${PlayImg})`,
+          height: "50rem",
+        }}
+      >
+        <div
+          fluid
+          style={{
+            backgroundColor: "#007E26",
+            color: "white",
+            // height: "50rem",
+            // paddingRight: "7rem",
+            // width: "100%",
+          }}
+        >
+          <div>
+            <h1>
+              Play and diversigy are essential for a 21st century education
+            </h1>
+            <p>
+              Play Marin envisions Marin as an integrated and unifed community.
+              The lessions learned through the play and expereinces we provide
+              instills valuable skills, create friendships, and enhances well
+              being and solidarity amoung the young people of Marin, improving
+              their prospects for a successful future and benefiting the health
+              of our broader Marin community.{" "}
+            </p>
+          </div>
+          <div style={{ display: "flex" }}>
+            <div>
+              <p>
+                Extracurricular actvities develop essential skills, such as
+                teamwork, responsibility, grit, endurance, and a sense of
+                culture and community (NCES)
+              </p>
+            </div>
+            <div>
+              <p>
+                Play, such as sports, has a positive correlation on student
+                attendance, GPA, and test scores (NCES)
+              </p>
+            </div>
+            <div>
+              <p>
+                Society is becoming increaingly diverse. Employers hire those
+                who can work with colleagues and customers from diverse cultural
+                backgrounds
+              </p>
+            </div>
+          </div>
+        </div>
+      </Container>
       <Container>
-        <Timeline />
+        <center>
+          <Timeline />
+        </center>
       </Container>
 
       <Footer />
