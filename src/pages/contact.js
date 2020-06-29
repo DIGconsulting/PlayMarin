@@ -15,15 +15,24 @@ const Contact = () => {
     <meta charSet="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <Media query="(min-width: 599px)" render={() => <Header />} />
-      <Jumbotron fluid>
-        <Container>
-          <center>
-            <h1>Contact Us</h1>
-            <p>+1 (415) 686-5045</p>
-            <p>We look forward to hearing from you.</p>
-          </center>
-        </Container>
-      </Jumbotron>
+
+    <Jumbotron fluid style={{ backgroundColor: "white" }}>
+      <Container>
+        <center>
+          <h1>Contact Us</h1>
+          <p>+1 (415) 686-5045</p>
+          <p>We look forward to hearing from you.</p>
+          <div
+            style={{
+              margin: "auto",
+              backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
+              width: "550px",
+              height: "10px",
+            }}
+          ></div>
+        </center>
+      </Container>
+    </Jumbotron>
       <Layout>
         <Form />
       </Layout>

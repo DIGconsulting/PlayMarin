@@ -47,7 +47,7 @@ const Header = () => {
             </StyledLink>
           </li>
 
-          <StyledLink to="/casestudy" activeStyle={activeStyle}>
+          <StyledLink to="/" activeStyle={activeStyle}>
             Home
           </StyledLink>
           <StyledLink to="/about/" activeStyle={activeStyle}>

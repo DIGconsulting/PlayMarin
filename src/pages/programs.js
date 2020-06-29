@@ -101,21 +101,29 @@ function Programs() {
     <meta charSet="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <Media query="(min-width: 599px)" render={() => <Header />} />
-      <Jumbotron fluid>
-        <Container>
+    <Jumbotron fluid style={{ backgroundColor: "white" }}>
+      <Container>
+        <center>
+          <h1>Programs</h1>
+          <p>
+            We provide year-long programming to ensure kids are engaged
+            throughout the school year and summer
+          </p>
+          <div
+            style={{
+              margin: "auto",
+              backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
+              width: "550px",
+              height: "10px",
+            }}
+          ></div>
+
           <center>
-            <h1>Programs</h1>
-            <p></p>
-            <p>
-              We provide year-long programming to ensure kids are engaged
-              throughout the school year and summer
-            </p>
-            <p>
-              <Button variant="primary">Register</Button>
-            </p>
+
           </center>
-        </Container>
-      </Jumbotron>
+        </center>
+      </Container>
+    </Jumbotron>
       <Container
         style={{
           marginTop: `100px`,
