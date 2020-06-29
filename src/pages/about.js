@@ -70,10 +70,9 @@ const About = () => {
           </center>
         </Container>
       </Jumbotron>
-      <Jumbotron fluid style={{ backgroundColor: "white", height: "4800px" }}>
-        <Container fluid>
-          <center>
-            <Col>
+      <Jumbotron fluid style={{ backgroundColor: "white", }}>
+      <Row>
+            <Col sm={12} md={12} sm={12} style={{marginRight:"0px"}}>
               <div
                 style={{
                   backgroundImage: `url(${MissionImg})`,
@@ -94,15 +93,15 @@ const About = () => {
                     // margin: "auto",
                     paddingTop: "10rem ",
                     paddingBottom: "30rem",
-                    paddingRight: "30rem",
-                    paddingLeft: "30rem",
+                    paddingRight: "5rem",
+                    paddingLeft: "5rem",
                     backgroundImage:
                       "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
                   }}
                 >
                   <div style={{ marginBottom: "10rem" }}>
-                    <h1 style={{ textAlign: "left" }}>Our Mission</h1>
-                    <p style={{ textAlign: "justify" }}>
+                    <h1 style={{ textAlign: "center" }}>Our Mission</h1>
+                    <p style={{ textAlign: "left" }}>
                       Play Marin intentionally provides opportunities for
                       children of diverse ethnic and socioeconomic backgrounds
                       in Southern Marin to learn and grow together through play.
@@ -126,17 +125,17 @@ const About = () => {
                 </div>
               </div>
             </Col>
-          </center>
-        </Container>
-        <Container fluid>
-          <Col>
+          </Row>
+        <Row>
+          <Col sm={12} md={6} lg={12}>
             <div style={{ display: "flex" }}>
               <div
                 style={{
                   backgroundColor: "#992168",
                   width: "50%",
                   color: "white",
-                  padding: "7rem",
+                  padding: "5rem",
+                  paddingLeft: "3rem"
                 }}
               >
                 <h1>The Problem</h1>
@@ -167,21 +166,18 @@ const About = () => {
               >
                 <div
                   style={{
-                    width: "50%",
                     backgroundImage:
                       "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                    paddingTop: "235px",
                     paddingBottom: "235px",
                     height: "26rem",
-                    width: "47.35rem",
                   }}
                 ></div>
               </div>
             </div>
           </Col>
-        </Container>
-        <Container fluid>
-          <Col>
+      </Row>
+        <Row>
+          <Col md={6} lg={12}>
             <div style={{ display: "flex" }}>
               <div
                 style={{
@@ -200,12 +196,10 @@ const About = () => {
                 <div
                   style={{
                     // margin: "auto",
-                    paddingTop: "150px",
-                    paddingBottom: "150px",
-                    paddingRight: "150px",
-                    paddingLeft: "150px",
                     backgroundImage:
                       "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
+                      paddingBottom: "235px",
+                      height: "31rem",
                   }}
                 ></div>
               </div>
@@ -224,7 +218,7 @@ const About = () => {
                   backgroundColor: "#992168",
                   color: "white",
                   width: "50%",
-                  padding: "7rem",
+                  padding: "5rem",
                 }}
               >
                 <h1>Our Solution</h1>
@@ -250,7 +244,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-        </Container>
+          </Row>
         <Container
           style={{
             margin: `0 auto`,
