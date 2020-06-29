@@ -1,14 +1,13 @@
 import React from 'react';
 import classes from './hero.module.css';
-
+import PlayMarin from "../images/playMarin.mp4"
 
 
 const Hero = () => {
-    const videoSource = "/src/images/playMarin.mp4"
     return (
         <div className={classes.Container} >
             <video autoPlay="autoplay" loop="loop" muted className={classes.Video} >
-                <source src={videoSource} type="video/mp4" />
+                <source src={PlayMarin} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
@@ -129,6 +128,7 @@ const Hero = () => {
 
                 </div>
         </div>
+
     )
 }
 
