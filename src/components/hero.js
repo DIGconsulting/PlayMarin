@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './hero.module.css';
 import PlayMarin from "../images/playMarin.mp4"
+import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 
 
 const Hero = () => {
@@ -14,45 +15,47 @@ const Hero = () => {
             <div className={classes.Content}>
                 <div className={classes.SubContent} >
                           <div>
-                            <div style={{ marginBottom: "10rem", fontWeight: "600" }}>
+                            <div style={{fontWeight: "600",paddingBottom: "50px", paddingTop: "100px"}}>
                               <center>
-                                <p>
-                                  Play Marin started 8 years ago with one <br />
-                                  Marin City Basketball team of 9 players.
+                                <p style={{
+                                  width: "50%",
+                                  fontFamily: "avenir",
+                                  textAlign: "left",
+                                  FontSize: "20px"
+                                }}>
+                                With the goal of closing the activity gap in Marin City while promoting diversity and inclusion throughout Marin County, Play Marin started 8 years ago with one Marin City basketball team of 9 players.
                                 </p>
+                                <p style={{
+                                  width: "50%",
+                                  fontFamily: "avenir",
+                                  textAlign: "left"
+                                }}
+                                > Today, Play Marin reaches more than 300 kids annually throughout Marin with our mission of diversity and inclusion through Play.</p>
                               </center>
                             </div>
                             <div
                               style={{
                                 backgroundColor: "rgba(64, 75, 107, .9)",
-                                padding: "2rem",
+                                padding: "4rem",
+                                marginRight: "10rem",
+                                marginLeft: "10rem",
                                 display: "flex",
                               }}
                             >
                               <p
-                                style={{ width: "50%", fontSize: "12px", fontWeight: "600" }}
+                                style={{ width: "50%", fontSize: "18px", fontWeight: "600", paddingRight: "50px", fontFamily: "avenir" }}
                               >
-                                Your support helps Play Marin close the actiivty gap in <br />
+                                Your support helps Play Marin close the actiivty gap in
                                 Marin City and provides a more diverse peer group for
-                                <br /> over 300 kids annually throughout Sourthern Marin
+                                over 300 kids annually throughout Sourthern Marin
                               </p>
-                              <div style={{ width: "50%", display: "flex", height: "2rem" }}>
+                              <div style={{ width: "30%", display: "flex", height: "2rem" }}>
                                 <div>
                                   <form>
                                     <div style={{ display: "flex" }}>
                                       <center>
-                                        <div
-                                          style={{
-                                            backgroundColor: "#838E9E",
-                                            height: "1.5rem",
-                                            width: "5rem",
-                                            color: "white",
-                                            fontWeight: "600",
-                                            marginRight: ".25rem",
-                                          }}
-                                        >
-                                          $50
-                                        </div>
+
+
                                       </center>
                                       <div
                                         style={{
@@ -103,22 +106,24 @@ const Hero = () => {
                                         <br />
                                       </div>
                                     </div>
-                                    <input
+                                    <button
                                       type="submit"
                                       value="Support Play Marin"
                                       style={{
-                                        marginTop: ".25rem",
+                                        marginTop: ".75rem",
                                         width: "9.5rem",
                                         display: "relative",
                                         backgroundColor: "#007E26",
                                         borderColor: "#fff",
                                         color: "white",
-                                        fontSize: "10px",
-                                        paddingTop: ".25rem",
-                                        paddingBottom: ".25rem",
+                                        fontSize: "16px",
+                                        paddingTop: "0.45rem",
+                                        paddingBottom: "0.45rem",
                                         fontWeight: "600",
                                       }}
-                                    ></input>
+                                    >
+                                    Support Play Marin
+                                    </button>
                                   </form>
                                 </div>
                               </div>
