@@ -13,7 +13,6 @@ import uploadedFileLink from "../images/playstudy.pdf"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ResponsiveEmbed from "react-responsive-embed"
-
 const IndexPage = () => {
   return (
     <>
@@ -32,8 +31,14 @@ const IndexPage = () => {
               paddingLeft: "0px"
         }}>
           <ResponsiveEmbed
-            src="https://www.youtube.com/embed/p0LfbN2J4c8"
-            ratio="5:4"
+            src="https://www.youtube-nocookie.com/embed/p0LfbN2J4c8"
+            start="10"
+            ratio="7:4"
+            frameborder="0"
+            controls="no"
+            allow="accelerometer"
+            height="50px"
+
           />
           </Col>
 
@@ -42,7 +47,7 @@ const IndexPage = () => {
             backgroundColor: "#992168",
             color: "white",
             width: "50%",
-            padding: "7rem",
+            padding: "4rem",
           }}
           >
               <h1>Everyone wins with Play Marin</h1>
