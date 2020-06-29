@@ -55,19 +55,19 @@ const Footer = () => {
               <div>
                 <img width={175} src={Logo} style={{ color: "white", fontSize: "12px",paddingTop: "20px", paddingLeft: "20px", fontFamily: "avenir"}} />
                 <div style={{ }}>
-                  <StyledLink to="/casestudy/" activeStyle={activeStyle}>
+                  <StyledLink to="/" activeStyle={activeStyle}>
                     Home
                   </StyledLink>
                   <StyledLink to="/programs/" activeStyle={activeStyle}>
                     Programs
                   </StyledLink>
-                  <StyledLink to="/about/" activeStyle={activeStyle}>
+                  <StyledLink to="/support/" activeStyle={activeStyle}>
                     Support
                   </StyledLink>
-                  <StyledLink to="/contact/" activeStyle={activeStyle}>
+                  <StyledLink to="/about/" activeStyle={activeStyle}>
                     About
                   </StyledLink>
-                  <StyledLink to="/contact/" activeStyle={activeStyle}>
+                  <StyledLink to="/support/" activeStyle={activeStyle}>
                     Contact-Us
                   </StyledLink>
                 </div>

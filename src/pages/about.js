@@ -228,18 +228,18 @@ const About = () => {
                   grow together we attack the problem in 3 key ways:
                 </p>
                 <ol>
-                  <p>
+                  <li>
                     Delivering seasonal sports and activities in Marin City for
                     3rd-8th graders.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     Implementing monthly Play Days focused around team-building
                     for children and families.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     Recruiting youth of color to participate in sports and
                     activities in Southern Marin County.
-                  </p>
+                  </li>
                 </ol>
               </div>
             </div>
