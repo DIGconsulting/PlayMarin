@@ -177,7 +177,7 @@ const About = () => {
           </Col>
       </Row>
         <Row>
-          <Col md={6} lg={12}>
+          <Col  md={6} lg={12}>
             <div style={{ display: "flex" }}>
               <div
                 style={{
