@@ -23,9 +23,14 @@ const IndexPage = () => {
       <Media query="(min-width: 599px)" render={() => <Header />} />
     <Hero />
 
-      <Container fluid>
+      <Container fluid  style={{
+            paddingTop: "0px",
+      }}>
       <Row>
-        <Col xs={12} sm={12} md={6} lg={6}>
+        <Col xs={12} sm={12} md={6} lg={6} style={{
+              paddingRight: "0px",
+              paddingLeft: "0px"
+        }}>
           <ResponsiveEmbed
             src="https://www.youtube.com/embed/p0LfbN2J4c8"
             ratio="5:4"
