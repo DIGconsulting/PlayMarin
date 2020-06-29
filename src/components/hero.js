@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './hero.module.css';
 import PlayMarin from "../images/playMarin.mp4"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
+import styles from "./form.module.css"
 
 
 const Hero = () => {
@@ -54,13 +55,23 @@ const Hero = () => {
                                   <form>
                                     <div style={{ display: "flex" }}>
                                       <center>
+                                      <label className={styles.label} style={{
+                                        paddingRight: "20px",
+                                      }} >
+                                        <input
+                                        type="input"
+                                        name="donation"
+                                        placeholder= " $ Enter Amount"
+                                        fontFamily="Avenir"
 
+                                        />
+                                      </label>
 
                                       </center>
                                       <div
                                         style={{
                                           width: "5rem",
-                                          lineHeight: ".5rem",
+                                          lineHeight: ".3rem",
                                         }}
                                       >
                                         <input
@@ -76,9 +87,10 @@ const Hero = () => {
                                         <label
                                           for="anually"
                                           style={{
-                                            fontSize: "10px",
-                                            marginBottom: "0px",
+                                            fontSize: "15px",
+                                            marginBottom: "10px",
                                             fontWeight: "600",
+                                            fontFamily: `avenir`
                                           }}
                                         >
                                           Anually
@@ -96,9 +108,10 @@ const Hero = () => {
                                         <label
                                           for="just-once"
                                           style={{
-                                            fontSize: "10px",
+                                            fontSize: "15px",
                                             marginBottom: "0px",
                                             fontWeight: "600",
+                                            fontFamily: `avenir`
                                           }}
                                         >
                                           Just Once
@@ -110,16 +123,18 @@ const Hero = () => {
                                       type="submit"
                                       value="Support Play Marin"
                                       style={{
-                                        marginTop: ".75rem",
-                                        width: "9.5rem",
+                                        marginTop: ".10rem",
+                                        width: "9.0rem",
                                         display: "relative",
                                         backgroundColor: "#007E26",
-                                        borderColor: "#fff",
                                         color: "white",
                                         fontSize: "16px",
                                         paddingTop: "0.45rem",
                                         paddingBottom: "0.45rem",
                                         fontWeight: "600",
+                                        fontFamily: `avenir`,
+                                        borderColor: "#007E26",
+
                                       }}
                                     >
                                     Support Play Marin
