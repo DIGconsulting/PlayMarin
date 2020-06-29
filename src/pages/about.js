@@ -273,7 +273,7 @@ const About = () => {
                 <Image
                   fluid={paul.sharp.fluid}
                   alt="paul"
-                  style={{ borderRadius: "50%", height: "7rem" }}
+                  style={{ borderRadius: "100%", height: "7rem", width: "7rem" }}
                 />
                 <p>Play Marin Founder & CEO Paul Austin</p>
               </div>
@@ -312,7 +312,7 @@ const About = () => {
               <Image
                 fluid={lawrance.sharp.fluid}
                 alt="Roxie"
-                style={{ borderRadius: "50%", height: "7rem" }}
+                style={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
               />
               <p>Lawrence P. Bancroft, Treasurer </p>
             </Col>
@@ -358,7 +358,7 @@ const About = () => {
                 <Image
                   fluid={board.sharp.fluid}
                   alt="board chair"
-                  style={{ borderRadius: "50%", height: "7rem" }}
+                  style={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
                 />
                 <p>Board Chair Bruce & Kirsten Edwards</p>
               </div>
@@ -394,7 +394,7 @@ const About = () => {
                 <Image
                   fluid={roxie.sharp.fluid}
                   alt="Roxie"
-                  style={{ borderRadius: "50%", height: "7rem" }}
+                  style={{ borderRadius: "50%", height: "7rem" , width: "7rem"}}
                 />
                 <p>Roxie Baker, Secretary</p>
               </div>
@@ -422,8 +422,8 @@ const About = () => {
             </Col>
           </Row>
         </Container>
-        <Container>
           <Row>
+          <Col sm={12} md={12} lg={12}>
             <div
               style={{
                 backgroundImage: `url(${PartnersImg})`,
@@ -492,8 +492,8 @@ const About = () => {
                 </div>
               </div>
             </div>
+            </Col>
           </Row>
-        </Container>
         <Container>
           <center>
             <Timeline />
