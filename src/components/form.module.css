@@ -1,10 +1,5 @@
 .form {
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
   display: block;
-  margin: 7rem auto 7rem;
-  max-width: 500px;
-  padding: 1rem;
 }
 
 .label,
@@ -19,12 +14,8 @@
 }
 
 .input {
-  border: 1px solid #ddd;
-  border-radius: 0.25rem;
   font-size: 1rem;
-  margin-bottom: 0.75rem;
-  padding: 0.25rem;
-  width: 100%;
+  width: 75%;
 }
 
 .button {

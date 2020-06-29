@@ -140,12 +140,10 @@ const IndexPage = () => {
             width: `80%`,
           }}>
             <p>
-              Play Marin envisions Marin as an integrated and unifed community.
-              The lessions learned through the play and expereinces we provide
-              instills valuable skills, create friendships, and enhances well
-              being and solidarity amoung the young people of Marin, improving
-              their prospects for a successful future and benefiting the health
-              of our broader Marin community.{" "}
+            Play Marin envisions Marin as an integrated and unified community.
+            The lessons learned through the play and experiences we provide instills valuable skills,
+            creates friendships, and enhances well being and solidarity among the young people of Marin,
+            improving their prospects for a successful future and benefiting the health of our broader Marin community. {" "}
             </p>
           </div>
           </Col>
