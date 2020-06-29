@@ -1,7 +1,6 @@
 import React from "react"
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
-import Layout from "../components/layout"
 import Form from "../components/form"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
@@ -17,7 +16,6 @@ const Contact = () => {
     <Media query="(min-width: 599px)" render={() => <Header />} />
 
     <Jumbotron fluid style={{ backgroundColor: "white" }}>
-      <Container>
         <center>
           <h1>Contact Us</h1>
           <p>+1 (415) 686-5045</p>
@@ -31,11 +29,12 @@ const Contact = () => {
             }}
           ></div>
         </center>
-      </Container>
     </Jumbotron>
-      <Layout>
+    <div style={{paddingRight: "300px",paddingLeft: "300px"}}>
+    <center>
         <Form />
-      </Layout>
+      </center>
+  </div>
       <Footer />
     </>
   )

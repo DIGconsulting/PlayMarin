@@ -81,15 +81,18 @@ const Form = () => {
         </p>
       )}
       <form
+      style={{
+        mariginTop: "20px"
+      }}
         className={`${styles.form} ${
           state.status === "PENDING" && styles.pending
         }`}
         onSubmit={handleSubmit}
       >
         <label className={styles.label}>
-          Name
           <input
             className={styles.input}
+            placeholder="name"
             type="text"
             name="name"
             value={state.name}
@@ -97,9 +100,9 @@ const Form = () => {
           />
         </label>
         <label className={styles.label}>
-          Email
           <input
             className={styles.input}
+            placeholder="email"
             type="email"
             name="email"
             value={state.email}
@@ -107,9 +110,9 @@ const Form = () => {
           />
         </label>
         <label className={styles.label}>
-          Subject
           <input
             className={styles.input}
+            placeholder="Subject"
             type="text"
             name="subject"
             value={state.subject}
@@ -117,9 +120,9 @@ const Form = () => {
           />
         </label>
         <label className={styles.label}>
-          Body
           <textarea
             className={styles.input}
+            placeholder="body"
             type="text"
             name="body"
             value={state.body}
