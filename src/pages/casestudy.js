@@ -166,9 +166,10 @@ const CaseStudy = () => {
       <Container fluid>
         <Col>
           <div style={{ display: "flex" }}>
-            <div
+            <iframe
+              src="https://www.youtube.com/embed/YuMifqcvsBw"
               style={{
-                backgroundImage: `url(${HomeImg})`,
+                // backgroundImage: `url(${HomeImg})`,
                 "-webkit-background-size": "cover",
                 "-moz-background-size": "cover",
                 "-o-background-size": "cover",
@@ -178,8 +179,9 @@ const CaseStudy = () => {
                 width: "50%",
                 backgroundPosition: "center center",
                 color: "white",
+                marginBottom: "0",
               }}
-            ></div>
+            ></iframe>
             <div
               style={{
                 backgroundColor: "#992168",
