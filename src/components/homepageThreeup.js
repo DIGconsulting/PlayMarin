@@ -10,74 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 const Homepagethreeup = () => {
   return (
     <>
-      <div
-        style={{
-          paddingTop: `80px`,
-          fontSize: `30px`,
-          lineHeight: `1.05`,
-          fontWeight: 700,
-          letterSpacing: `-.015em`,
-          fontFamily: `avenir`,
-          display: `flex`,
-          justifyContent: `center`,
-          display: `flex`,
-        }}
-      >
-        Our Vision
-      </div>
-      <div
-        style={{
-          fontSize: `22px`,
-          fontFamily: `avenir`,
-          paddingTop: `20px`,
-          lineHeight: 1.4,
-        }}
-      >
-        <p>
-          We are PLAY Marin and we envision Marin as an integrated and unified
-          community where both individuals and families live, work and most
-          importantly, play together. We believe that play is an integral
-          component of forming lasting friendships, developing critical skills
-          and teaching valuable life lessons. This play can take shape in
-          various forms from participation in organized sports to a simple play
-          date.
-        </p>
-        <p>
-          "It's important that children spread amongst the many small towns in
-          Marin have the opportunity to learn about others, not by competing
-          with them, but instead through the lens of playing with them". - Paul
-          Austin
-        </p>
-      </div>
 
-      <p
-        style={{
-          paddingTop: `80px`,
-          fontSize: `30px`,
-          lineHeight: `1.05`,
-          fontWeight: 700,
-          letterSpacing: `-.015em`,
-          fontFamily: `avenir`,
-          display: `flex`,
-          justifyContent: `center`,
-        }}
-      >
-        Play and diversity are essential for a 21st century education
-      </p>
-      <p
-        style={{
-          fontSize: `22px`,
-          fontFamily: `avenir`,
-          display: `flex`,
-          justifyContent: `center`,
-        }}
-      >
-        Why it matters
-      </p>
-
-
-
-      <Container>
+    <Container>
         <Row>
           <Col sm>
           <div>
@@ -88,11 +22,11 @@ const Homepagethreeup = () => {
                   fontSize: `75px`,
                   marginTop: `20px`,
                   paddingBottom: `20px`,
-                  color: `#8c8c8c`,
+                  color: `#fff`
                 }}
               />
             </center>
-            <p style={{ fontSize: `16px`, fontFamily: `avenir` }}>
+            <p style={{ fontSize: `16px`, fontFamily: `avenir`, color: `#fff` }}>
               Extracurricular activities develop essential skills, such as
               teamwork, responsibility, grit, endurance, and a sense of culture
               and community (NCES)
@@ -110,11 +44,11 @@ const Homepagethreeup = () => {
                   fontSize: `75px`,
                   marginTop: `20px`,
                   paddingBottom: `20px`,
-                  color: `#8c8c8c`,
+                    color: `#fff`
                 }}
               />
             </center>
-            <p style={{ fontSize: `16px`, fontFamily: `avenir` }}>
+            <p style={{ fontSize: `16px`, fontFamily: `avenir` , color: `#fff`}}>
               Play, such as sports, has a positive correlation on student
               attendance, GPA, and test scores (NCES)
             </p>
@@ -131,10 +65,11 @@ const Homepagethreeup = () => {
                   marginTop: `20px`,
                   paddingBottom: `20px`,
                   color: `#8c8c8c`,
+                  color: `#fff`
                 }}
               />
             </center>
-            <p style={{ fontSize: `16px`, fontFamily: `avenir` }}>
+            <p style={{ fontSize: `16px`, fontFamily: `avenir` , color: `#fff`}}>
               Society is becoming increasingly diverse. Employers hire those who
               can work with colleagues and customers from diverse cultural
               backgrounds

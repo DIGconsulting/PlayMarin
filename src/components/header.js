@@ -37,7 +37,7 @@ const Header = () => {
   }
 
   return (
-    <>
+    <div>
     <Sticky>
       <nav className="navbar">
         <ul className="left-ui">
@@ -76,7 +76,7 @@ const Header = () => {
         </ul>
       </nav>
  </Sticky>
-    </>
+    </div>
   )
 }
 
