@@ -33,7 +33,7 @@
     "gatsby-remark-grid-tables": "^0.1.0",
     "gatsby-source-drive": "^0.0.2",
     "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-source-instagram": "^0.7.0",
+    "gatsby-source-instagram": "^0.8.0",
     "gatsby-source-stripe": "^3.0.7",
     "gatsby-transformer-ffmpeg": "^0.3.8",
     "gatsby-transformer-sharp": "^2.4.3",
