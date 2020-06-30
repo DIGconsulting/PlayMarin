@@ -10,72 +10,85 @@ import "bootstrap/dist/css/bootstrap.min.css"
 const Homepagethreeup = () => {
   return (
     <>
-
-    <Container>
+      <Container>
         <Row>
           <Col sm>
-          <div>
-            <center>
-              <FontAwesomeIcon
-                icon={faUsers}
+            <div>
+              <center>
+                <FontAwesomeIcon
+                  icon={faUsers}
+                  style={{
+                    fontSize: `75px`,
+                    marginTop: `20px`,
+                    paddingBottom: `20px`,
+                    color: `#fff`,
+                  }}
+                />
+              </center>
+              <p
                 style={{
-                  fontSize: `75px`,
-                  marginTop: `20px`,
-                  paddingBottom: `20px`,
-                  color: `#fff`
+                  fontSize: `16px`,
+                  fontFamily: `avenir`,
+                  color: `#fff`,
                 }}
-              />
-            </center>
-            <p style={{ fontSize: `16px`, fontFamily: `avenir`, color: `#fff` }}>
-              Extracurricular activities develop essential skills, such as
-              teamwork, responsibility, grit, endurance, and a sense of culture
-              and community (NCES)
-            </p>
-          </div>
-
-
+              >
+                Extracurricular activities develop essential skills, such as
+                teamwork, responsibility, grit, endurance, and a sense of
+                culture and community (NCES)
+              </p>
+            </div>
           </Col>
           <Col sm>
-          <div>
-            <center>
-              <FontAwesomeIcon
-                icon={faRunning}
+            <div>
+              <center>
+                <FontAwesomeIcon
+                  icon={faRunning}
+                  style={{
+                    fontSize: `75px`,
+                    marginTop: `20px`,
+                    paddingBottom: `20px`,
+                    color: `#fff`,
+                  }}
+                />
+              </center>
+              <p
                 style={{
-                  fontSize: `75px`,
-                  marginTop: `20px`,
-                  paddingBottom: `20px`,
-                    color: `#fff`
+                  fontSize: `16px`,
+                  fontFamily: `avenir`,
+                  color: `#fff`,
                 }}
-              />
-            </center>
-            <p style={{ fontSize: `16px`, fontFamily: `avenir` , color: `#fff`}}>
-              Play, such as sports, has a positive correlation on student
-              attendance, GPA, and test scores (NCES)
-            </p>
-          </div>
-
+              >
+                Play, such as sports, has a positive correlation on student
+                attendance, GPA, and test scores (NCES)
+              </p>
+            </div>
           </Col>
           <Col sm>
-          <div>
-            <center>
-              <FontAwesomeIcon
-                icon={faBusinessTime}
+            <div>
+              <center>
+                <FontAwesomeIcon
+                  icon={faBusinessTime}
+                  style={{
+                    fontSize: `75px`,
+                    marginTop: `20px`,
+                    paddingBottom: `20px`,
+                    color: `#8c8c8c`,
+                    color: `#fff`,
+                  }}
+                />
+              </center>
+              <p
                 style={{
-                  fontSize: `75px`,
-                  marginTop: `20px`,
-                  paddingBottom: `20px`,
-                  color: `#8c8c8c`,
-                  color: `#fff`
+                  fontSize: `16px`,
+                  fontFamily: `avenir`,
+                  color: `#fff`,
                 }}
-              />
-            </center>
-            <p style={{ fontSize: `16px`, fontFamily: `avenir` , color: `#fff`}}>
-              Society is becoming increasingly diverse. Employers hire those who
-              can work with colleagues and customers from diverse cultural
-              backgrounds
-            </p>
-          </div>
-
+              >
+                Society is becoming increasingly diverse. Employers hire those
+                who can work with colleagues and customers from diverse cultural
+                backgrounds
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>

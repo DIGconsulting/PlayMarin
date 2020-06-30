@@ -97,33 +97,31 @@ function Programs() {
   `)
   return (
     <>
-    <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <Media query="(min-width: 599px)" render={() => <Header />} />
-    <Jumbotron fluid style={{ backgroundColor: "white" }}>
-      <Container>
-        <center>
-          <h1>Programs</h1>
-          <p>
-            We provide year-long programming to ensure kids are engaged
-            throughout the school year and summer
-          </p>
-          <div
-            style={{
-              margin: "auto",
-              backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
-              width: "550px",
-              height: "10px",
-            }}
-          ></div>
-
+      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Jumbotron fluid style={{ backgroundColor: "white" }}>
+        <Container>
           <center>
+            <h1>Programs</h1>
+            <p>
+              We provide year-long programming to ensure kids are engaged
+              throughout the school year and summer
+            </p>
+            <div
+              style={{
+                margin: "auto",
+                backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
+                width: "550px",
+                height: "10px",
+              }}
+            ></div>
 
+            <center></center>
           </center>
-        </center>
-      </Container>
-    </Jumbotron>
+        </Container>
+      </Jumbotron>
       <Container
         style={{
           marginTop: `100px`,

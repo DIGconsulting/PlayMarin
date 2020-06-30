@@ -70,62 +70,62 @@ const About = () => {
           </center>
         </Container>
       </Jumbotron>
-      <Jumbotron fluid style={{ backgroundColor: "white", }}>
-      <Row>
-            <Col sm={12} md={12} sm={12} style={{marginRight:"0px"}}>
+      <Jumbotron fluid style={{ backgroundColor: "white" }}>
+        <Row>
+          <Col sm={12} md={12} sm={12} style={{ marginRight: "0px" }}>
+            <div
+              style={{
+                backgroundImage: `url(${MissionImg})`,
+                "-webkit-background-size": "cover",
+                "-moz-background-size": "cover",
+                "-o-background-size": "cover",
+                backgroundRepeat: "no-repeat",
+                objectFit: "cover",
+                backgroundSize: "cover",
+                width: "100%",
+                height: "40rem",
+                backgroundPosition: "center center",
+                color: "white",
+              }}
+            >
               <div
                 style={{
-                  backgroundImage: `url(${MissionImg})`,
-                  "-webkit-background-size": "cover",
-                  "-moz-background-size": "cover",
-                  "-o-background-size": "cover",
-                  backgroundRepeat: "no-repeat",
-                  objectFit: "cover",
-                  backgroundSize: "cover",
-                  width: "100%",
-                  height: "40rem",
-                  backgroundPosition: "center center",
-                  color: "white",
+                  // margin: "auto",
+                  paddingTop: "10rem ",
+                  paddingBottom: "30rem",
+                  paddingRight: "5rem",
+                  paddingLeft: "5rem",
+                  backgroundImage:
+                    "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
                 }}
               >
-                <div
-                  style={{
-                    // margin: "auto",
-                    paddingTop: "10rem ",
-                    paddingBottom: "30rem",
-                    paddingRight: "5rem",
-                    paddingLeft: "5rem",
-                    backgroundImage:
-                      "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                  }}
-                >
-                  <div style={{ marginBottom: "10rem" }}>
-                    <h1 style={{ textAlign: "center" }}>Our Mission</h1>
-                    <p style={{ textAlign: "left" }}>
-                      Play Marin intentionally provides opportunities for
-                      children of diverse ethnic and socioeconomic backgrounds
-                      in Southern Marin to learn and grow together through play.
-                      We recognize the need for stronger diversity and inclusion
-                      in Marin County, and we believe that bringing together the
-                      unique expereinces of different cultures and socioeconomic
-                      backgrounds amoung us serves to enhance our larger
-                      community. Being able to understand and appreciate people
-                      from all walks of life is vital to the advancement of our
-                      society, and we see play as the vehicle to achieve this
-                      goal. In over 300 kids annually through several team
-                      sports and many other uplifting and enriching activities.
-                      Our work teaches valuable skills, creates friendships,
-                      develops people of Marin from all backgrounds, improving
-                      their propects for a successful future and benefiting the
-                      overall health of our Marin community. Come play with us.
-                    </p>
-                  </div>
-
-                  <div></div>
+                <div style={{ marginBottom: "10rem" }}>
+                  <h1 style={{ textAlign: "center" }}>Our Mission</h1>
+                  <p style={{ textAlign: "left" }}>
+                    Play Marin intentionally provides opportunities for children
+                    of diverse ethnic and socioeconomic backgrounds in Southern
+                    Marin to learn and grow together through play. We recognize
+                    the need for stronger diversity and inclusion in Marin
+                    County, and we believe that bringing together the unique
+                    expereinces of different cultures and socioeconomic
+                    backgrounds amoung us serves to enhance our larger
+                    community. Being able to understand and appreciate people
+                    from all walks of life is vital to the advancement of our
+                    society, and we see play as the vehicle to achieve this
+                    goal. In over 300 kids annually through several team sports
+                    and many other uplifting and enriching activities. Our work
+                    teaches valuable skills, creates friendships, develops
+                    people of Marin from all backgrounds, improving their
+                    propects for a successful future and benefiting the overall
+                    health of our Marin community. Come play with us.
+                  </p>
                 </div>
+
+                <div></div>
               </div>
-            </Col>
-          </Row>
+            </div>
+          </Col>
+        </Row>
         <Row>
           <Col sm={12} md={6} lg={12}>
             <div style={{ display: "flex" }}>
@@ -135,7 +135,7 @@ const About = () => {
                   width: "50%",
                   color: "white",
                   padding: "5rem",
-                  paddingLeft: "3rem"
+                  paddingLeft: "3rem",
                 }}
               >
                 <h1>The Problem</h1>
@@ -175,9 +175,9 @@ const About = () => {
               </div>
             </div>
           </Col>
-      </Row>
+        </Row>
         <Row>
-          <Col  md={6} lg={12}>
+          <Col md={6} lg={12}>
             <div style={{ display: "flex" }}>
               <div
                 style={{
@@ -198,8 +198,8 @@ const About = () => {
                     // margin: "auto",
                     backgroundImage:
                       "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                      paddingBottom: "235px",
-                      height: "31rem",
+                    paddingBottom: "235px",
+                    height: "31rem",
                   }}
                 ></div>
               </div>
@@ -244,7 +244,7 @@ const About = () => {
               </div>
             </div>
           </Col>
-          </Row>
+        </Row>
         <Container
           style={{
             margin: `0 auto`,
@@ -252,20 +252,22 @@ const About = () => {
             padding: `0 1rem`,
           }}
         >
-          <h1 style={{ textAlign: "center", paddingTop: "1rem" }}>Our Team</h1>
+          <h1 style={{ textAlign: "center", paddingTop: "40px" }}>Our Team</h1>
           <div
             style={{
               margin: "auto",
               backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
               width: "550px",
               height: "10px",
-              marginBottom: "3rem",
+              marginBottom: "40px",
+              marginTop: "40px",
             }}
           ></div>
           <Row
             style={{
               margin: `0 auto`,
-              paddingTop: `80px`,
+              paddingTop: `40px`,
+              paddingBottom: `40px`,
             }}
           >
             <Col md={2} sm={12} xs={12}>
@@ -273,7 +275,11 @@ const About = () => {
                 <Image
                   fluid={paul.sharp.fluid}
                   alt="paul"
-                  style={{ borderRadius: "100%", height: "7rem", width: "7rem" }}
+                  style={{
+                    borderRadius: "100%",
+                    height: "7rem",
+                    width: "7rem",
+                  }}
                 />
                 <p>Play Marin Founder & CEO Paul Austin</p>
               </div>
@@ -295,44 +301,30 @@ const About = () => {
                   broader Marin community the opportunity to play, learn, and
                   grow together. Starting in 2012 with just one basketball team
                   of nine players, Mr. Austin’s dedicated stewardship of Play
-                  Marin brought steady and expansive growth.
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row
-            style={{
-              margin: `0 auto`,
-              padding: `0 1rem`,
-              paddingTop: `80px`,
-              paddingBottom: `80px`,
-            }}
-          >
-            <Col md={2} sm={12} xs={12}>
-              <Image
-                fluid={lawrance.sharp.fluid}
-                alt="Roxie"
-                style={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
-              />
-              <p>Lawrence P. Bancroft, Treasurer </p>
-            </Col>
-            <Col md={10} sm={12} xs={12}>
-              <div>
-                <p>
-                  President and CEO of Bivium Capital, Lawrence leads a seasoned
-                  and dedicated team of investment professionals with expertise
-                  across every asset class and type of investment. Prior to
-                  founding Bivium in 2002, Lawrence was an initial member of
-                  Goldman Sachs IMD’s external manager selection team, where he
-                  worked on developing all areas of its manager of managers
-                  business; and evaluated minority-owned investment companies as
-                  part of the firm’s Urban Investment Group for capital
-                  allocation. Previously the Board Chair for Big Brothers Big
-                  Sisters of the North Bay, Lawrence currently sits on the
-                  governance and finance committees for the Bay Area chapter of
-                  Big Brothers Big Sisters. He earned his B.S. from Cornell
-                  University’s School of Industrial and Labor Relations, and his
-                  M.P.A. from Cornell University’s School of Public Affairs.
+                  Marin brought steady and expansive growth. The organization
+                  currently touches approximately 300 kids annually through
+                  multiple age group teams and activities. Working full time in
+                  other professional roles while driving and managing this swift
+                  and substantial growth in Play Marin, in 2018 Paul accepted
+                  the position of College Completion and Career Advisor for
+                  Bridge the Gap College Prep. Here he creates college
+                  persistence and graduation plans for low-income students,
+                  working with them from high school through college graduation
+                  and beyond. He guides every aspect of the high school to
+                  college to graduation experience for first-generation college
+                  students; including identification and application,
+                  transitioning from high school, providing motivation and
+                  support for student personal health and academic performance,
+                  and coaching on the transition from college to career.
+                  Additionally, Paul is the Community Liaison for Luminate
+                  Capital Partners, a Lulu Lemon Ambassador, and board member of
+                  Extra Food. Married to Miller Creek Middle School Principal,
+                  Tenisha Tate, and the father of two, Paul Austin’s world is
+                  dedicated to the well-being of young people. He is a
+                  long-standing advocate for Marin youth, serving as their
+                  coach, counselor, and cheerleader, while constantly promoting
+                  the invaluable mission of bringing kids of diverse backgrounds
+                  together through play.
                 </p>
               </div>
             </Col>
@@ -386,7 +378,47 @@ const About = () => {
             style={{
               margin: `0 auto`,
               padding: `0 1rem`,
-              paddingTop: `80px`,
+              paddingTop: `40px`,
+              paddingBottom: `40px`,
+            }}
+          >
+            <Col md={2} sm={12} xs={12}>
+              <Image
+                fluid={lawrance.sharp.fluid}
+                alt="Roxie"
+                style={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
+              />
+              <p>Lawrence P. Bancroft, Treasurer </p>
+            </Col>
+            <Col md={10} sm={12} xs={12}>
+              <div>
+                <p>
+                  President and CEO of Bivium Capital, Lawrence leads a seasoned
+                  and dedicated team of investment professionals with expertise
+                  across every asset class and type of investment. Prior to
+                  founding Bivium in 2002, Lawrence was an initial member of
+                  Goldman Sachs IMD’s external manager selection team, where he
+                  worked on developing all areas of its manager of managers
+                  business; and evaluated minority-owned investment companies as
+                  part of the firm’s Urban Investment Group for capital
+                  allocation. Previously the Board Chair for Big Brothers Big
+                  Sisters of the North Bay, Lawrence currently sits on the
+                  governance and finance committees for the Bay Area chapter of
+                  Big Brothers Big Sisters. He earned his B.S. from Cornell
+                  University’s School of Industrial and Labor Relations, and his
+                  M.P.A. from Cornell University’s School of Public Affairs.
+                </p>
+              </div>
+            </Col>
+          </Row>
+
+
+          <Row
+            style={{
+              margin: `0 auto`,
+              paddingTop: `40px`,
+              paddingTop: `40px`,
+              paddingBottom: `40px`,
             }}
           >
             <Col md={2} sm={12} xs={12}>
@@ -394,7 +426,7 @@ const About = () => {
                 <Image
                   fluid={roxie.sharp.fluid}
                   alt="Roxie"
-                  style={{ borderRadius: "50%", height: "7rem" , width: "7rem"}}
+                  style={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
                 />
                 <p>Roxie Baker, Secretary</p>
               </div>
@@ -422,7 +454,7 @@ const About = () => {
             </Col>
           </Row>
         </Container>
-          <Row>
+        <Row>
           <Col sm={12} md={12} lg={12}>
             <div
               style={{
@@ -492,8 +524,8 @@ const About = () => {
                 </div>
               </div>
             </div>
-            </Col>
-          </Row>
+          </Col>
+        </Row>
         <Container>
           <center>
             <Timeline />

@@ -10,7 +10,6 @@ import { Link, external } from "gatsby"
 import { ExternalLink } from "react-external-link"
 import styles from "./form.module.css"
 
-
 const Footer = () => {
   const StyledLink = styled(Link)`
     padding-left: 20px;
@@ -51,10 +50,20 @@ const Footer = () => {
       >
         <Container fluid>
           <Row>
-          <Col md={4} sm={12} style={{ color: "white" }}>
+            <Col md={4} sm={12} style={{ color: "white" }}>
               <div>
-                <img width={175} src={Logo} style={{ color: "white", fontSize: "12px",paddingTop: "20px", paddingLeft: "20px", fontFamily: "avenir"}} />
-                <div style={{ }}>
+                <img
+                  width={175}
+                  src={Logo}
+                  style={{
+                    color: "white",
+                    fontSize: "12px",
+                    paddingTop: "20px",
+                    paddingLeft: "20px",
+                    fontFamily: "avenir",
+                  }}
+                />
+                <div style={{}}>
                   <StyledLink to="/" activeStyle={activeStyle}>
                     Home
                   </StyledLink>
@@ -72,21 +81,31 @@ const Footer = () => {
                   </StyledLink>
                 </div>
                 <div
-                  style={{ color: "white", fontSize: "12px",paddingTop: "20px", paddingLeft: "20px", width: "300px"}}
+                  style={{
+                    color: "white",
+                    fontSize: "12px",
+                    paddingTop: "20px",
+                    paddingLeft: "20px",
+                    width: "300px",
+                  }}
                 >
-                  <a href="#" style={{ color: "white", fontSize: "12px", fontFamily: "avenir"}}>
+                  <a
+                    href="#"
+                    style={{
+                      color: "white",
+                      fontSize: "12px",
+                      fontFamily: "avenir",
+                    }}
+                  >
                     Copyright &#169; {new Date().getFullYear()} Play Marin, a
-                    California public benefit
-                    coporation. All rights reserved
+                    California public benefit coporation. All rights reserved
                   </a>
                 </div>
               </div>
             </Col>
-            <Col  md={4}  sm={12} style={{ color: "white",paddingTop:"50px"  }}>
-              <h3 style={{
-              }}
-              >Follow PLAY Marin</h3>
-              <div style={{  display: "flex", paddingTop:"10px"}}>
+            <Col md={4} sm={12} style={{ color: "white", paddingTop: "50px" }}>
+              <h3 style={{}}>Follow PLAY Marin</h3>
+              <div style={{ display: "flex", paddingTop: "10px" }}>
                 <p
                   style={{
                     backgroundColor: "rgba(167, 169, 227, .5)",
@@ -94,7 +113,7 @@ const Footer = () => {
                     textAlign: "center",
                     marginRight: ".5rem",
                     color: "white",
-                    fontFamily: "avenir"
+                    fontFamily: "avenir",
                   }}
                 >
                   FB
@@ -105,23 +124,32 @@ const Footer = () => {
                     width: "2rem",
                     textAlign: "center",
                     color: "white",
-                    fontFamily: "avenir"
+                    fontFamily: "avenir",
                   }}
                 >
                   IG
                 </p>
               </div>
-              <div                   style={{
-                                  fontSize: "12px",
-                                  fontFamily: "avenir"
-                                }}
-              >
-              </div>
+              <div
+                style={{
+                  fontSize: "12px",
+                  fontFamily: "avenir",
+                }}
+              ></div>
               <div>
-<Newsletter/>
+                <Newsletter />
               </div>
             </Col>
-            <Col  md={4} sm={12} style={{ color: "white", paddingTop:"50px",paddingBottom:"50px", fontFamily: "avenir" }}>
+            <Col
+              md={4}
+              sm={12}
+              style={{
+                color: "white",
+                paddingTop: "50px",
+                paddingBottom: "50px",
+                fontFamily: "avenir",
+              }}
+            >
               <p>
                 Your support helps Play Marin close
                 <br /> the actiivty gap in Marin City and
@@ -131,20 +159,21 @@ const Footer = () => {
               </p>
               <div>
                 <form>
-                  <div style={{ display: "flex",paddingTop: "20px", }}>
+                  <div style={{ display: "flex", paddingTop: "20px" }}>
                     <center>
-                    <label className={styles.label} style={{
-                      paddingRight: "20px",
-                    }} >
-                      <input
-                      type="input"
-                      name="donation"
-                      placeholder= " $ Enter Amount"
-                      fontFamily="Avenir"
-
-                      />
-                    </label>
-
+                      <label
+                        className={styles.label}
+                        style={{
+                          paddingRight: "20px",
+                        }}
+                      >
+                        <input
+                          type="input"
+                          name="donation"
+                          placeholder=" $ Enter Amount"
+                          fontFamily="Avenir"
+                        />
+                      </label>
                     </center>
                     <div
                       style={{
@@ -168,7 +197,7 @@ const Footer = () => {
                           fontSize: "15px",
                           marginBottom: "10px",
                           fontWeight: "600",
-                          fontFamily: `avenir`
+                          fontFamily: `avenir`,
                         }}
                       >
                         Anually
@@ -189,7 +218,7 @@ const Footer = () => {
                           fontSize: "15px",
                           marginBottom: "0px",
                           fontWeight: "600",
-                          fontFamily: `avenir`
+                          fontFamily: `avenir`,
                         }}
                       >
                         Just Once
@@ -212,14 +241,12 @@ const Footer = () => {
                       fontWeight: "600",
                       fontFamily: `avenir`,
                       borderColor: "#007E26",
-
                     }}
                   >
-                  Support Play Marin
+                    Support Play Marin
                   </button>
                 </form>
               </div>
-
             </Col>
           </Row>
         </Container>

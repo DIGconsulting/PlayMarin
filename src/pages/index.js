@@ -20,71 +20,82 @@ const IndexPage = () => {
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <Media query="(min-width: 599px)" render={() => <Header />} />
-    <Hero />
+      <Hero />
 
-      <Container fluid  style={{
-            paddingTop: "0px",
-      }}>
-      <Row>
-        <Col xs={12} sm={12} md={6} lg={6} style={{
+      <Container
+        fluid
+        style={{
+          paddingTop: "0px",
+        }}
+      >
+        <Row>
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            lg={6}
+            style={{
               paddingRight: "0px",
-              paddingLeft: "0px"
-        }}>
-          <ResponsiveEmbed
-            src="https://www.youtube-nocookie.com/embed/p0LfbN2J4c8"
-            start="10"
-            ratio="7:4"
-            frameborder="0"
-            controls="no"
-            allow="accelerometer"
-            height="50px"
-
-          />
+              paddingLeft: "0px",
+            }}
+          >
+            <ResponsiveEmbed
+              src="https://www.youtube-nocookie.com/embed/p0LfbN2J4c8"
+              start="10"
+              ratio="7:4"
+              frameborder="0"
+              controls="no"
+              allow="accelerometer"
+              height="50px"
+            />
           </Col>
 
-          <Col xs={12} sm={12} md={6} lg={6}
-          style={{
-            backgroundColor: "#992168",
-            color: "white",
-            width: "50%",
-            padding: "4rem",
-          }}
+          <Col
+            xs={12}
+            sm={12}
+            md={6}
+            lg={6}
+            style={{
+              backgroundColor: "#992168",
+              color: "white",
+              width: "50%",
+              padding: "4rem",
+            }}
           >
-              <h1>Everyone wins with Play Marin</h1>
-              <p>
-                PLAY Marin provides sports and other extracurricular activities
-                to intentionally give diverse ethinic and socioeconomic
-                backgrounds the opportunity to learn and grow together through
-                play.
-              </p>
-              <button
-                style={{
-                  width: "15rem",
-                  height: "2.5rem",
-                  color: "#992168",
-                  borderColor: "#992168",
-                }}
-              >
-                Learn More
-              </button>
-        </Col>
-    </Row>
+            <h1>Everyone wins with Play Marin</h1>
+            <p>
+              PLAY Marin provides sports and other extracurricular activities to
+              intentionally give diverse ethinic and socioeconomic backgrounds
+              the opportunity to learn and grow together through play.
+            </p>
+            <button
+              style={{
+                width: "15rem",
+                height: "2.5rem",
+                color: "#992168",
+                borderColor: "#992168",
+              }}
+            >
+              Learn More
+            </button>
+          </Col>
+        </Row>
       </Container>
 
       <Container fluid>
-      <Row       style={{
-                    color: "white",
-                        backgroundImage: "linear-gradient(#89D4CF, #734AE8)",
-                        paddingTop: `50px`,
-                        paddingBottom: `50px`
-                      }}>
-
-      <Col  md={{ span: 6, offset: 2 }}>
-
+        <Row
+          style={{
+            color: "white",
+            backgroundImage: "linear-gradient(#89D4CF, #734AE8)",
+            paddingTop: `50px`,
+            paddingBottom: `50px`,
+          }}
+        >
+          <Col md={{ span: 6, offset: 2 }}>
             <p
               style={{
                 paddingLeft: "10rem",
-                fontSize: "22px"
+                fontSize: "22px",
               }}
             >
               "It's important that children spread amounst the <br />
@@ -97,7 +108,7 @@ const IndexPage = () => {
                 paddingLeft: "10rem",
                 fontSize: "10px",
                 marginBottom: "0",
-                  fontSize: "12px"
+                fontSize: "12px",
               }}
             >
               Paul Austin
@@ -110,49 +121,51 @@ const IndexPage = () => {
             <img
               src={PaulProfileImg}
               alt="paul's profile pic"
-              style={{ borderRadius: "100%", height: "10rem", width: "10rem"}}
+              style={{ borderRadius: "100%", height: "10rem", width: "10rem" }}
             />
           </Col>
         </Row>
       </Container>
-      <Container
-        fluid
+      <Container fluid>
+        <Row
+          style={{
+            backgroundImage: "linear-gradient(#0BAB64, #3BB78F)",
 
-      >
-      <Row
-      style={{
-        backgroundImage: "linear-gradient(#0BAB64, #3BB78F)",
-
-              paddingRight: `50px`,
-              paddingLeft: `50px`,
-              paddingTop: `60px`,
-              paddingBottom: `60px`,
-
-              }}>
-        <Col lg={{ span: 12, offset: 1 }}>
-
-            <h1  style={{
-              color: `#fff` }}>
+            paddingRight: `50px`,
+            paddingLeft: `50px`,
+            paddingTop: `60px`,
+            paddingBottom: `60px`,
+          }}
+        >
+          <Col lg={{ span: 12, offset: 1 }}>
+            <h1
+              style={{
+                color: `#fff`,
+              }}
+            >
               Play and diversigy are essential for a 21st century education
             </h1>
-          <div style={{
-            color: `#fff`,
-            width: `80%`,
-          }}>
-            <p>
-            Play Marin envisions Marin as an integrated and unified community.
-            The lessons learned through the play and experiences we provide instills valuable skills,
-            creates friendships, and enhances well being and solidarity among the young people of Marin,
-            improving their prospects for a successful future and benefiting the health of our broader Marin community. {" "}
-            </p>
-          </div>
+            <div
+              style={{
+                color: `#fff`,
+                width: `80%`,
+              }}
+            >
+              <p>
+                Play Marin envisions Marin as an integrated and unified
+                community. The lessons learned through the play and experiences
+                we provide instills valuable skills, creates friendships, and
+                enhances well being and solidarity among the young people of
+                Marin, improving their prospects for a successful future and
+                benefiting the health of our broader Marin community.{" "}
+              </p>
+            </div>
           </Col>
 
           <Col lg={12} md={12}>
-          <Homepagethreeup />
-
-    </Col>
-      </Row>
+            <Homepagethreeup />
+          </Col>
+        </Row>
       </Container>
       <Container>
         <center>

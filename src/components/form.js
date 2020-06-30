@@ -81,9 +81,9 @@ const Form = () => {
         </p>
       )}
       <form
-      style={{
-        mariginTop: "20px"
-      }}
+        style={{
+          mariginTop: "20px",
+        }}
         className={`${styles.form} ${
           state.status === "PENDING" && styles.pending
         }`}
