@@ -9,13 +9,15 @@ var styles = {
     position: "fixed",
     width: "36px",
     height: "30px",
-    top: "0px",
+    top: "5px",
+    left: "5px"
   },
   bmBurgerBars: {
-    background: "purple",
+    backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
   },
   bmBurgerBarsHover: {
-    background: "#a90000",
+
+  backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
   },
   bmCrossButton: {
     height: "30px",
