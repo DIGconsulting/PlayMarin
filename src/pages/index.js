@@ -169,7 +169,7 @@ const IndexPage = () => {
       </Container>
       <Container>
         <center>
-        <Media query="(min-width: 717px)" render={() => <Timeline />} />
+          <Media query="(min-width: 717px)" render={() => <Timeline />} />
         </center>
       </Container>
 

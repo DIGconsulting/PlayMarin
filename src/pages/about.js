@@ -412,7 +412,6 @@ const About = () => {
             </Col>
           </Row>
 
-
           <Row
             style={{
               margin: `0 auto`,

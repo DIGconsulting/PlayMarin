@@ -19,7 +19,7 @@
     "emotion": "^10.0.27",
     "gatsby": "^2.20.12",
     "gatsby-background-image": "^1.1.1",
-    "gatsby-cli": "^2.12.51",
+    "gatsby-cli": "^2.12.52",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-breakpoints": "^1.1.2",
     "gatsby-plugin-css-system": "^0.1.0",

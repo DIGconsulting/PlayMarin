@@ -50,121 +50,125 @@ const Hero = () => {
                 </p>
               </center>
             </div>
-            <div
+            <Row
               style={{
                 backgroundColor: "rgba(64, 75, 107, .9)",
                 padding: "4rem",
                 marginRight: "10rem",
                 marginLeft: "10rem",
-                display: "flex",
               }}
             >
-              <p
-                style={{
-                  width: "50%",
-                  fontSize: "18px",
-                  fontWeight: "600",
-                  paddingRight: "50px",
-                  fontFamily: "avenir",
-                }}
-              >
-                Your support helps Play Marin close the actiivty gap in Marin
-                City and provides a more diverse peer group for over 300 kids
-                annually throughout Sourthern Marin
-              </p>
-              <div style={{ width: "30%", display: "flex", height: "2rem" }}>
+              <Col sm={12} md={6} lg={6}>
                 <div>
-                  <form>
-                    <div style={{ display: "flex" }}>
-                      <center>
-                        <label
-                          className={styles.label}
+                  <p
+                    style={{
+                      fontSize: "18px",
+                      fontWeight: "600",
+                      paddingRight: "50px",
+                      fontFamily: "avenir",
+                    }}
+                  >
+                    Your support helps Play Marin close the actiivty gap in
+                    Marin City and provides a more diverse peer group for over
+                    300 kids annually throughout Sourthern Marin
+                  </p>
+                </div>
+              </Col>
+              <Col xs={6} sm={6} md={6} lg={6}>
+                <div style={{}}>
+                  <div>
+                    <form>
+                      <div style={{ display: "flex" }}>
+                        <center>
+                          <label
+                            className={styles.label}
+                            style={{
+                              paddingRight: "20px",
+                            }}
+                          >
+                            <input
+                              type="input"
+                              name="donation"
+                              placeholder=" $ Enter Amount"
+                              fontFamily="Avenir"
+                            />
+                          </label>
+                        </center>
+                        <div
                           style={{
-                            paddingRight: "20px",
+                            width: "5rem",
+                            lineHeight: ".3rem",
                           }}
                         >
                           <input
-                            type="input"
+                            type="radio"
+                            id="Annually"
                             name="donation"
-                            placeholder=" $ Enter Amount"
-                            fontFamily="Avenir"
-                          />
-                        </label>
-                      </center>
-                      <div
+                            value="anually"
+                            backgroundColor="#838E9E"
+                            style={{
+                              marginRight: ".25rem",
+                            }}
+                          ></input>
+                          <label
+                            for="anually"
+                            style={{
+                              fontSize: "15px",
+                              marginBottom: "10px",
+                              fontWeight: "600",
+                              fontFamily: `avenir`,
+                            }}
+                          >
+                            Anually
+                          </label>
+                          <br />
+                          <input
+                            type="radio"
+                            id="just-once"
+                            name="donation"
+                            value="just-once"
+                            style={{
+                              marginRight: ".25rem",
+                            }}
+                          ></input>
+                          <label
+                            for="just-once"
+                            style={{
+                              fontSize: "15px",
+                              marginBottom: "0px",
+                              fontWeight: "600",
+                              fontFamily: `avenir`,
+                            }}
+                          >
+                            Just Once
+                          </label>
+                          <br />
+                        </div>
+                      </div>
+                      <button
+                        type="submit"
+                        value="Support Play Marin"
                         style={{
-                          width: "5rem",
-                          lineHeight: ".3rem",
+                          marginTop: ".10rem",
+                          width: "9.0rem",
+                          display: "relative",
+                          backgroundColor: "#007E26",
+                          color: "white",
+                          fontSize: "16px",
+                          paddingTop: "0.45rem",
+                          paddingBottom: "0.45rem",
+                          fontWeight: "600",
+                          fontFamily: `avenir`,
+                          borderColor: "#007E26",
                         }}
                       >
-                        <input
-                          type="radio"
-                          id="Annually"
-                          name="donation"
-                          value="anually"
-                          backgroundColor="#838E9E"
-                          style={{
-                            marginRight: ".25rem",
-                          }}
-                        ></input>
-                        <label
-                          for="anually"
-                          style={{
-                            fontSize: "15px",
-                            marginBottom: "10px",
-                            fontWeight: "600",
-                            fontFamily: `avenir`,
-                          }}
-                        >
-                          Anually
-                        </label>
-                        <br />
-                        <input
-                          type="radio"
-                          id="just-once"
-                          name="donation"
-                          value="just-once"
-                          style={{
-                            marginRight: ".25rem",
-                          }}
-                        ></input>
-                        <label
-                          for="just-once"
-                          style={{
-                            fontSize: "15px",
-                            marginBottom: "0px",
-                            fontWeight: "600",
-                            fontFamily: `avenir`,
-                          }}
-                        >
-                          Just Once
-                        </label>
-                        <br />
-                      </div>
-                    </div>
-                    <button
-                      type="submit"
-                      value="Support Play Marin"
-                      style={{
-                        marginTop: ".10rem",
-                        width: "9.0rem",
-                        display: "relative",
-                        backgroundColor: "#007E26",
-                        color: "white",
-                        fontSize: "16px",
-                        paddingTop: "0.45rem",
-                        paddingBottom: "0.45rem",
-                        fontWeight: "600",
-                        fontFamily: `avenir`,
-                        borderColor: "#007E26",
-                      }}
-                    >
-                      Support Play Marin
-                    </button>
-                  </form>
+                        Support Play Marin
+                      </button>
+                    </form>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </Col>
+            </Row>
           </div>
         </div>
       </div>

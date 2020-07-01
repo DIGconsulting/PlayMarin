@@ -5,8 +5,8 @@ import { css } from "@emotion/core"
 import Layout from "../components/layout.css"
 import Logo from "../images/playMarinLogo.png"
 import { Container, Row, Col, Button } from "react-grid-system"
-import { ExternalLink } from "react-external-link"
 import Sticky from "react-sticky-el"
+import { ExternalLink } from "react-external-link"
 
 const Header = () => {
   const StyledLink = styled(Link)`
@@ -16,7 +16,6 @@ const Header = () => {
     color: #6512ae;
     margin-right: 20px;
     border-bottom-width: 5px;
-    position: relatve;
     font-family: avenir;
   `
   const ExternalLink = styled(Link)`
@@ -28,7 +27,7 @@ const Header = () => {
     border-bottom-width: 5px;
     position: relatve;
     font-family: avenir;
-    color: #000;
+    color: #000000;
   `
 
   const activeStyle = {
@@ -52,19 +51,31 @@ const Header = () => {
                 />
               </StyledLink>
             </li>
-
-            <StyledLink to="/" activeStyle={activeStyle}>
-              Home
-            </StyledLink>
-            <StyledLink to="/about/" activeStyle={activeStyle}>
-              About
-            </StyledLink>
-            <StyledLink to="/programs/" activeStyle={activeStyle}>
-              Programs
-            </StyledLink>
-            <StyledLink to="/contact/" activeStyle={activeStyle}>
-              Support
-            </StyledLink>
+            <li>
+              <StyledLink to="/" activeStyle={activeStyle}>
+                Home
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink to="/about/" activeStyle={activeStyle}>
+                About
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink to="/programs/" activeStyle={activeStyle}>
+                Programs
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink to="/support/" activeStyle={activeStyle}>
+                Support
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink to="/contact/" activeStyle={activeStyle}>
+                Contact Us
+              </StyledLink>
+            </li>
           </ul>
           <ul className="donation-btn">
             <StyledLink>
@@ -76,9 +87,6 @@ const Header = () => {
                 Donate
               </a>
             </StyledLink>
-            <li>
-              <i className="fas fa-bell bell"></i>
-            </li>
           </ul>
         </nav>
       </Sticky>
