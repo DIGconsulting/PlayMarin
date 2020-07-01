@@ -3,14 +3,12 @@
     min-height: 300px;
     max-height: 900px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: -6px;
+
 }
 
 /* Style the video: 100% width and height to cover the entire window */
-.Video {
-    width: 100%;
-    height: 100%;
-  }
+
 
   /* Add some content at the bottom of the video/page */
   .Content {
@@ -33,8 +31,13 @@
     margin-right: 10rem;
     margin-left: 10rem;
   }
+ .Herotext {
 
-
+    font-Weight: 600;
+    padding-Bottom: 50px;
+    padding-Top: 100px;
+    width: 50%;
+}
 
   @media screen and (max-width: 700px) {
 
@@ -46,5 +49,24 @@
       padding-left: 5%;
       padding-right: 5%;
     }
+.Overlaytext{
+    font-size: 12px;
+    font-weight: 600;
+    padding-right: 0px;
+    font-family: "avenir";
+
+  }
+
+
+  .Herotext {
+    width: 90%;
+        font-family: avenir;
+        text-align: center;
+ }
+
+
+ .Video {
+   height: 800px;
+   }
 
   }
