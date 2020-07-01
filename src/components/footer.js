@@ -6,9 +6,9 @@ import Newsletter from "./newsletter.js"
 import Layout from "./layout"
 import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Link, external } from "gatsby"
-import { ExternalLink } from "react-external-link"
 import styles from "./form.module.css"
+import { ExternalLink } from "react-external-link"
+import { Link } from "gatsby"
 
 const Footer = () => {
   const StyledLink = styled(Link)`
@@ -159,14 +159,14 @@ const Footer = () => {
                 <br /> over 300 kids annually throughout
                 <br /> Sourthern Marin
               </p>
-              <div>
               <h5>Select An Amount:</h5>
+              <ExternalLink href="https://www.paypal.me/playmarin/50">
                     <button
-                      type="submit"
+                      type="button"
                       value="Support Play Marin"
                       style={{
                         marginTop: ".10rem",
-                        width: "7.0rem",
+                        width: "5.0rem",
                         display: "relative",
                         backgroundColor: "#007E26",
                         color: "white",
@@ -180,12 +180,15 @@ const Footer = () => {
                     >
                       $ 50.00
                     </button>
+                </ExternalLink>
+                <ExternalLink href="https://www.paypal.me/playmarin/100">
+
                     <button
-                      type="submit"
+                      type="button"
                       value="Support Play Marin"
                       style={{
                         marginTop: "0.50rem",
-                        width: "7.0rem",
+                        width: "5.0rem",
                         display: "relative",
                         backgroundColor: "#007E26",
                         color: "white",
@@ -199,12 +202,14 @@ const Footer = () => {
                     >
                       $ 100
                     </button>
+                  </ExternalLink>
+                  <ExternalLink href="https://www.paypal.me/playmarin/500">
                     <button
-                      type="submit"
+                      type="button"
                       value="Support Play Marin"
                       style={{
                         marginTop: "0.50rem",
-                        width: "7.0rem",
+                        width: "5.0rem",
                         display: "relative",
                         backgroundColor: "#007E26",
                         color: "white",
@@ -218,7 +223,8 @@ const Footer = () => {
                     >
                       $ 500
                     </button>
-              </div>
+              </ExternalLink>
+
             </Col>
           </Row>
         </Container>

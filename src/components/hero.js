@@ -4,6 +4,9 @@ import PlayMarin from "../images/playMarin.mp4"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import styles from "./form.module.css"
 import { Player } from 'video-react';
+import { ExternalLink } from "react-external-link"
+import { Link } from "gatsby"
+
 
 
 const Hero = () => {
@@ -56,8 +59,9 @@ const Hero = () => {
 
                 }}>
                 <h5>Select An Amount:</h5>
+                <ExternalLink href="https://www.paypal.me/playmarin/50">
                       <button
-                        type="submit"
+                        type="button"
                         value="Support Play Marin"
                         style={{
                           marginTop: ".10rem",
@@ -75,8 +79,11 @@ const Hero = () => {
                       >
                         $ 50.00
                       </button>
+                  </ExternalLink>
+                  <ExternalLink href="https://www.paypal.me/playmarin/100">
+
                       <button
-                        type="submit"
+                        type="button"
                         value="Support Play Marin"
                         style={{
                           marginTop: "0.50rem",
@@ -94,8 +101,10 @@ const Hero = () => {
                       >
                         $ 100
                       </button>
+                    </ExternalLink>
+                    <ExternalLink href="https://www.paypal.me/playmarin/500">
                       <button
-                        type="submit"
+                        type="button"
                         value="Support Play Marin"
                         style={{
                           marginTop: "0.50rem",
@@ -113,6 +122,8 @@ const Hero = () => {
                       >
                         $ 500
                       </button>
+                      </ExternalLink>
+
                 </div>
               </Col>
             </Row>
