@@ -62,19 +62,16 @@ class Mobilenav extends React.Component {
           Home
         </Link>
         <Link id="about" className="menu-item" to="/about">
-          Board
+          About
         </Link>
-        <Link id="contact" className="menu-item" to="/casestudy">
-          Play Study
-        </Link>
-        <Link className="menu-item" to="/programs">
+        <Link id="contact" className="menu-item" to="/programs">
           Programs
+        </Link>
+        <Link className="menu-item" to="/support">
+          Support
         </Link>
         <Link className="menu-item" to="/contact">
           Contact Us
-        </Link>
-        <Link className="menu-item" to="">
-          Login
         </Link>
         <Link>
           {" "}
