@@ -5,6 +5,7 @@ import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ResponsiveEmbed from "react-responsive-embed"
 import SolutionImg from "../images/playdates_2.jpg"
+import SolutionImgTwo from "../images/desktop.jpg"
 import Mobilenav from "../components/mobilenav"
 import Media from "react-media"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -44,7 +45,7 @@ const Support = () => {
             style={{
               paddingRight: "0px",
               paddingLeft: "0px",
-                              backgroundImage: `url(${SolutionImg})`,
+                              backgroundImage: `url(${SolutionImgTwo})`,
                             backgroundRepeat: "no-repeat",
                             objectFit: "cover",
                             backgroundSize: "cover",

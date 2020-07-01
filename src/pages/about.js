@@ -266,44 +266,31 @@ const About = () => {
             <Col md={10} sm={12} xs={12}>
               <div>
                 <p>
-                  Play Marin Founder & CEO Paul Austin is a longtime Marin City
-                  resident who has been a youth advocate for the majority of his
-                  professional life. After serving for several years as Director
-                  of Recreation for Marin City Community Center, Tamalpais High
-                  graduate Mr. Austin, who studied Early Childhood Education at
-                  Texas Southern University and holds a Bachelor’s in Psychology
-                  from Dominican University in San Rafael, saw a need to create
-                  opportunities for Marin City youth to engage in organized
-                  athletics and other extracurricular activities. He founded
-                  Play Marin to meet that need, and to intentionally give kids
-                  of diverse ethnic and socioeconomic backgrounds from the
-                  broader Marin community the opportunity to play, learn, and
-                  grow together. Starting in 2012 with just one basketball team
-                  of nine players, Mr. Austin’s dedicated stewardship of Play
-                  Marin brought steady and expansive growth. The organization
-                  currently touches approximately 300 kids annually through
-                  multiple age group teams and activities. Working full time in
-                  other professional roles while driving and managing this swift
-                  and substantial growth in Play Marin, in 2018 Paul accepted
-                  the position of College Completion and Career Advisor for
-                  Bridge the Gap College Prep. Here he creates college
-                  persistence and graduation plans for low-income students,
-                  working with them from high school through college graduation
-                  and beyond. He guides every aspect of the high school to
-                  college to graduation experience for first-generation college
-                  students; including identification and application,
-                  transitioning from high school, providing motivation and
-                  support for student personal health and academic performance,
-                  and coaching on the transition from college to career.
-                  Additionally, Paul is the Community Liaison for Luminate
-                  Capital Partners, a Lulu Lemon Ambassador, and board member of
-                  Extra Food. Married to Miller Creek Middle School Principal,
-                  Tenisha Tate, and the father of two, Paul Austin’s world is
-                  dedicated to the well-being of young people. He is a
-                  long-standing advocate for Marin youth, serving as their
-                  coach, counselor, and cheerleader, while constantly promoting
-                  the invaluable mission of bringing kids of diverse backgrounds
-                  together through play.
+    Play Marin Founder & CEO Paul Austin is a longtime Marin City resident who has been a youth
+advocate for the majority of his professional life. After serving for several years as Director of
+Recreation for Marin City Community Center, Tamalpais High graduate Mr. Austin, who studied
+Early Childhood Education at Texas Southern University and holds a Bachelor’s in Psychology
+from Dominican University in San Rafael, saw a need to create opportunities for Marin City
+youth to engage in organized athletics and other extracurricular activities. He founded Play
+Marin to meet that need, and to intentionally give kids of diverse ethnic and socioeconomic
+backgrounds from the broader Marin community the opportunity to play, learn, and grow
+together. Starting in 2012 with just one basketball team of nine players, Mr. Austin’s dedicated
+stewardship of Play Marin brought steady and expansive growth. The organization currently
+touches approximately 300 kids annually through multiple age group teams and activities.
+Working full time in other professional roles while driving and managing this swift and
+substantial growth in Play Marin, in 2018 Paul accepted the position of College Completion and
+Career Advisor for Bridge the Gap College Prep. Here he creates college persistence and
+graduation plans for low-income students, working with them from high school through college
+graduation and beyond. He guides every aspect of the high school to college to graduation
+experience for first-generation college students; including identification and application,
+transitioning from high school, providing motivation and support for student personal health and
+academic performance, and coaching on the transition from college to career. Additionally, Paul
+is the Community Liaison for Luminate Capital Partners, a Lulu Lemon Ambassador, and board
+member of Extra Food. Married to Miller Creek Middle School Principal, Tenisha Tate, and the
+father of two, Paul Austin’s world is dedicated to the well-being of young people. He is a
+long-standing advocate for Marin youth, serving as their coach, counselor, and cheerleader,
+while constantly promoting the invaluable mission of bringing kids of diverse backgrounds
+together through play.
                 </p>
               </div>
             </Col>
@@ -338,18 +325,14 @@ const About = () => {
             <Col md={10}>
               <div>
                 <p>
-                  Board Chair Bruce Edwards lives in Mill Valley with his wife
-                  Kirsten, and sons Dillon, JP, and Reed. With over 20 years of
-                  financial services experience, Bruce is a Family CFO for
-                  approximately 25 families. In these endeavors Bruce assists
-                  his clients with tax-efficient charitable giving through a
-                  combination of donor-advised funds and foundations. A devoted
-                  family man, some of Bruce’s other passions include fly fishing
-                  throughout the world, surfing, and playing music with friends
-                  and family. His dedication to wilderness conservation and
-                  charitable youth development led Bruce to serve on the boards
-                  of the Henry’s Fork Foundation in Idaho, and Mt Carmel CYO
-                  basketball in Mill Valley.
+Board Chair Bruce Edwards lives in Mill Valley with his wife Kirsten, and sons Dillon, JP, and
+Reed. With over 20 years of financial services experience, Bruce is a Family CFO for
+approximately 25 families. In these endeavors Bruce assists his clients with tax-efficient
+charitable giving through a combination of donor-advised funds and foundations. A devoted
+family man, some of Bruce’s other passions include fly fishing throughout the world, surfing, and
+playing music with friends and family. His dedication to wilderness conservation and charitable
+youth development led Bruce to serve on the boards of the Henry’s Fork Foundation in Idaho,
+and Mt Carmel CYO basketball in Mill Valley.
                 </p>
               </div>
             </Col>
@@ -373,20 +356,16 @@ const About = () => {
             <Col md={10} sm={12} xs={12}>
               <div>
                 <p>
-                  President and CEO of Bivium Capital, Lawrence leads a seasoned
-                  and dedicated team of investment professionals with expertise
-                  across every asset class and type of investment. Prior to
-                  founding Bivium in 2002, Lawrence was an initial member of
-                  Goldman Sachs IMD’s external manager selection team, where he
-                  worked on developing all areas of its manager of managers
-                  business; and evaluated minority-owned investment companies as
-                  part of the firm’s Urban Investment Group for capital
-                  allocation. Previously the Board Chair for Big Brothers Big
-                  Sisters of the North Bay, Lawrence currently sits on the
-                  governance and finance committees for the Bay Area chapter of
-                  Big Brothers Big Sisters. He earned his B.S. from Cornell
-                  University’s School of Industrial and Labor Relations, and his
-                  M.P.A. from Cornell University’s School of Public Affairs.
+President and CEO of Bivium Capital, Lawrence leads a seasoned and dedicated team of
+investment professionals with expertise across every asset class and type of investment. Prior
+to founding Bivium in 2002, Lawrence was an initial member of Goldman Sachs IMD’s external
+manager selection team, where he worked on developing all areas of its manager of managers
+business; and evaluated minority-owned investment companies as part of the firm’s Urban
+Investment Group for capital allocation. Previously the Board Chair for Big Brothers Big Sisters
+of the North Bay, Lawrence currently sits on the governance and finance committees for the Bay
+Area chapter of Big Brothers Big Sisters. He earned his B.S. from Cornell University’s School of
+Industrial and Labor Relations, and his M.P.A. from Cornell University’s School of Public Affairs.
+Lawrence lives in Tiburon with his wife and three kids.
                 </p>
               </div>
             </Col>
@@ -413,21 +392,16 @@ const About = () => {
             <Col md={10}>
               <div>
                 <p>
-                  In addition to over two decades in the music industry as a
-                  recording artist management executive, Roxie has designed and
-                  directed several therapeutic and educational horseback riding
-                  programs, including as Director of Therapeutic Riding for an
-                  east coast boarding school for at-risk kids age 5-17,
-                  traditional riding programs for two conventional boarding
-                  schools, a flagship therapeutic riding program for special
-                  needs kids in Los Angeles, and a comprehensive equine
-                  husbandry and riding program at an educational ranch for K-8
-                  students of all abilities in the East Bay Area. The parent of
-                  an NCAA athlete, Roxie first learned about Play Marin when her
-                  daughter was a volunteer swim instructor for their summer camp
-                  program. Roxie has a B.A. in Psychology from San Francisco
-                  State University and graduate studies in Health Education at
-                  JFK University.
+  A former music industry executive with two decades in recording artist management, Roxie has
+worked with young people since she was a teenager— first as a conventional horseback riding
+instructor and later as a Certified Therapeutic Riding Instructor and program director. In this
+capacity she worked directly with at-risk and special needs students ages 5-17, and served as
+designer, developer, and director of several therapeutic and educational programs on both
+coasts. The parent of an NCAA athlete, Roxie first learned about Play Marin when her daughter
+was a volunteer swim instructor for their summer camp program. Roxie has a B.A. in
+Psychology from SFSU and graduate studies in Health Education JFK University. Roxie lives in
+Sausalito with her husband John, Managing Director of an international environmental nonprofit,
+and daughter Ella, currently a Social Justice major at Occidental College.
                 </p>
               </div>
             </Col>
