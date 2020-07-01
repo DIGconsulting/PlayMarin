@@ -13,6 +13,8 @@ import uploadedFileLink from "../images/playstudy.pdf"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ResponsiveEmbed from "react-responsive-embed"
+import "../components/hero.module.css"
+
 const IndexPage = () => {
   return (
     <>
