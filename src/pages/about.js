@@ -63,8 +63,11 @@ const About = () => {
               style={{
                 margin: "auto",
                 backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
-                width: "550px",
                 height: "10px",
+                margin: "auto",
+                height: "10px",
+                marginBottom: "40px",
+                marginTop: "40px",
               }}
             ></div>
           </center>
@@ -169,79 +172,58 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <Col md={6} lg={6}                 style={{
-                            backgroundImage: `url(${SolutionImg})`,
-                            "-webkit-background-size": "cover",
-                            "-moz-background-size": "cover",
-                            "-o-background-size": "cover",
-                            backgroundRepeat: "no-repeat",
-                            objectFit: "cover",
-                            backgroundSize: "cover",
-                            backgroundPosition: "center center",
-                            color: "white",
-                            backgroundColor: "#992168",
-                            color: "white",
-                            paddingRight: "0px",
-                            paddingLeft:"0px"
+        <Col sm={12} md={6} lg={6}   style={{
+                        backgroundImage: `url(${SolutionImg})`,
+                      backgroundRepeat: "no-repeat",
+                      objectFit: "cover",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center center",
+                      color: "white",
+                      paddingRight: "0px",
+                      paddingLeft:"0px"
+                    }}>
 
-                          }}>
-              <div
-              >
-                <div
-                  style={{
-                    // margin: "auto",
-                    backgroundImage:
-                      "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                      paddingBottom: "240px",
-                      height: "26rem",
+                    <div
+                      style={{
+                        backgroundImage:
+                          "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
+                        paddingBottom: "240px",
+                        height: "26rem",
+                      }}
+                    ></div>
+              </Col>
+        <Col sm={12} md={6} lg={6}                 style={{
+                          backgroundColor: "#992168",
+                          color: "white",
+                          padding: "5rem",
+                          paddingLeft: "3rem",
+                        }}>
 
-                  }}
-                ></div>
-              </div>
+<div>
+<p>
+  By providing opportunities for children of diverse ethnic and
+  socioeconomic backgrounds in Southern Marin to learn, play and
+  grow together we attack the problem in 3 key ways:
+</p>
+<ol>
+  <li>
+    Delivering seasonal sports and activities in Marin City for
+    3rd-8th graders.
+  </li>
+  <li>
+    Implementing monthly Play Days focused around team-building
+    for children and families.
+  </li>
+  <li>
+    Recruiting youth of color to participate in sports and
+    activities in Southern Marin County.
+  </li>
+</ol>
 
-                        </Col>
-                  <Col md={6} lg={6}>
+</div>
+  </Col>
 
-              {/* <div
-                  style={{
-                    // margin: "auto",
-                    padding: "296px",
-                    backgroundImage:
-                      "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                  }}
-                ></div> */}
-              {/* </div> */}
-              <div
-                style={{
-                  backgroundColor: "#992168",
-                  color: "white",
-                  padding: "5rem",
-                  paddingLeft: "3rem",
 
-                }}
-              >
-                <h1>Our Solution</h1>
-                <p>
-                  By providing opportunities for children of diverse ethnic and
-                  socioeconomic backgrounds in Southern Marin to learn, play and
-                  grow together we attack the problem in 3 key ways:
-                </p>
-                <ol>
-                  <li>
-                    Delivering seasonal sports and activities in Marin City for
-                    3rd-8th graders.
-                  </li>
-                  <li>
-                    Implementing monthly Play Days focused around team-building
-                    for children and families.
-                  </li>
-                  <li>
-                    Recruiting youth of color to participate in sports and
-                    activities in Southern Marin County.
-                  </li>
-                </ol>
-              </div>
-          </Col>
         </Row>
         <Container
           style={{
@@ -255,7 +237,6 @@ const About = () => {
             style={{
               margin: "auto",
               backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
-              width: "550px",
               height: "10px",
               marginBottom: "40px",
               marginTop: "40px",
@@ -330,10 +311,11 @@ const About = () => {
           <h1 style={{ textAlign: "center" }}>Board Of Directors</h1>
           <div
             style={{
-              margin: "auto",
               backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
-              width: "550px",
               height: "10px",
+              paddingRight: "100px",
+              paddingLeft: "100px",
+
             }}
           ></div>
           <Row
@@ -525,7 +507,7 @@ const About = () => {
         </Row>
         <Container>
           <center>
-            <Timeline />
+            <Media query="(min-width: 717px)" render={() => <Timeline />} />
             <a href="#" style={{ color: "black" }}>
               Learn More
             </a>

@@ -75,76 +75,12 @@ const Hero = () => {
                 </div>
               </Col>
               <Col xs={6} sm={6} md={6} lg={6}>
-                <div style={{}}>
-                  <div>
-                    <form>
-                      <div style={{ display: "flex" }}>
-                        <center>
-                          <label
-                            className={styles.label}
-                            style={{
-                              paddingRight: "20px",
-                            }}
-                          >
-                            <input
-                              type="input"
-                              name="donation"
-                              placeholder=" $ Enter Amount"
-                              fontFamily="Avenir"
-                            />
-                          </label>
-                        </center>
-                        <div
-                          style={{
-                            width: "5rem",
-                            lineHeight: ".3rem",
-                          }}
-                        >
-                          <input
-                            type="radio"
-                            id="Annually"
-                            name="donation"
-                            value="anually"
-                            backgroundColor="#838E9E"
-                            style={{
-                              marginRight: ".25rem",
-                            }}
-                          ></input>
-                          <label
-                            for="anually"
-                            style={{
-                              fontSize: "15px",
-                              marginBottom: "10px",
-                              fontWeight: "600",
-                              fontFamily: `avenir`,
-                            }}
-                          >
-                            Anually
-                          </label>
-                          <br />
-                          <input
-                            type="radio"
-                            id="just-once"
-                            name="donation"
-                            value="just-once"
-                            style={{
-                              marginRight: ".25rem",
-                            }}
-                          ></input>
-                          <label
-                            for="just-once"
-                            style={{
-                              fontSize: "15px",
-                              marginBottom: "0px",
-                              fontWeight: "600",
-                              fontFamily: `avenir`,
-                            }}
-                          >
-                            Just Once
-                          </label>
-                          <br />
-                        </div>
-                      </div>
+                <div style={{
+                  display: "flex",
+                  flexDirection: "column",
+
+                }}>
+                <h5>Select An Amount:</h5>
                       <button
                         type="submit"
                         value="Support Play Marin"
@@ -162,10 +98,46 @@ const Hero = () => {
                           borderColor: "#007E26",
                         }}
                       >
-                        Support Play Marin
+                        $ 50.00
                       </button>
-                    </form>
-                  </div>
+                      <button
+                        type="submit"
+                        value="Support Play Marin"
+                        style={{
+                          marginTop: "0.50rem",
+                          width: "9.0rem",
+                          display: "relative",
+                          backgroundColor: "#007E26",
+                          color: "white",
+                          fontSize: "16px",
+                          paddingTop: "0.45rem",
+                          paddingBottom: "0.45rem",
+                          fontWeight: "600",
+                          fontFamily: `avenir`,
+                          borderColor: "#007E26",
+                        }}
+                      >
+                        $ 100
+                      </button>
+                      <button
+                        type="submit"
+                        value="Support Play Marin"
+                        style={{
+                          marginTop: "0.50rem",
+                          width: "9.0rem",
+                          display: "relative",
+                          backgroundColor: "#007E26",
+                          color: "white",
+                          fontSize: "16px",
+                          paddingTop: "0.45rem",
+                          paddingBottom: "0.45rem",
+                          fontWeight: "600",
+                          fontFamily: `avenir`,
+                          borderColor: "#007E26",
+                        }}
+                      >
+                        $ 500
+                      </button>
                 </div>
               </Col>
             </Row>
