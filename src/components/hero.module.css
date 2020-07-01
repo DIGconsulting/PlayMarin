@@ -1,8 +1,9 @@
 .Container {
     position: relative;
     min-height: 300px;
-    max-height: 650px;
+    max-height: 500px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -22,4 +23,27 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+  }
+
+
+  .Overlay {
+    background-color: rgba(64, 75, 107, .9);
+    padding: 4rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+
+
+
+  @media screen and (max-width: 700px) {
+
+    .Overlay {
+      background-color: rgba(64, 75, 107, .9);
+        padding-top: 5%;
+      margin-right: 5%;
+      margin-left: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
   }

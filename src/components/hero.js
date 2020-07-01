@@ -50,13 +50,7 @@ const Hero = () => {
                 </p>
               </center>
             </div>
-            <Row
-              style={{
-                backgroundColor: "rgba(64, 75, 107, .9)",
-                padding: "4rem",
-                marginRight: "10rem",
-                marginLeft: "10rem",
-              }}
+            <Row  className={classes.Overlay}
             >
               <Col sm={12} md={6} lg={6}>
                 <div>
