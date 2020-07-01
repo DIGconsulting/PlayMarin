@@ -38,12 +38,14 @@
 
 .Donate {
   background-color: rgba(64, 75, 107, .9);
-  padding: 4rem;
   display: flex;
   flex-Wrap: no-wrap;
   margin-Left: 10rem;
   margin-Right: 10rem;
-  min-height: 400px;
+  min-height: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px
+
 
 }
 
