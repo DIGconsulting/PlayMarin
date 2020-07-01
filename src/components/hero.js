@@ -3,7 +3,7 @@ import classes from "./hero.module.css"
 import PlayMarin from "../images/playMarin.mp4"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import styles from "./form.module.css"
-import { Player } from 'video-react';
+
 const Hero = () => {
   return (
     <div className={classes.Container}>
@@ -14,14 +14,20 @@ const Hero = () => {
 
       <div className={classes.Content}>
         <div className={classes.SubContent}>
-        <Row>
-        <Col md={12}>
           <div>
-            <div className={classes.Hero}>
+            <div
+              style={{
+                fontWeight: "600",
+                paddingBottom: "50px",
+                paddingTop: "100px",
+              }}
+            >
               <center>
                 <p
                   style={{
+                    width: "50%",
                     fontFamily: "avenir",
+                    textAlign: "left",
                     FontSize: "20px",
                   }}
                 >
@@ -32,7 +38,9 @@ const Hero = () => {
                 </p>
                 <p
                   style={{
+                    width: "50%",
                     fontFamily: "avenir",
+                    textAlign: "left",
                   }}
                 >
                   {" "}
@@ -44,7 +52,7 @@ const Hero = () => {
             </div>
             <Row  className={classes.Overlay}
             >
-              <Col sm={12} md={6} lg={6}>
+              <Col  xs={6} sm={6} md={6} lg={6}>
                 <div>
                   <p
                     style={{
@@ -72,7 +80,7 @@ const Hero = () => {
                         value="Support Play Marin"
                         style={{
                           marginTop: ".10rem",
-                          width: "9.0rem",
+                          width: "5.0rem",
                           display: "relative",
                           backgroundColor: "#007E26",
                           color: "white",
@@ -91,7 +99,7 @@ const Hero = () => {
                         value="Support Play Marin"
                         style={{
                           marginTop: "0.50rem",
-                          width: "9.0rem",
+                          width: "5.0rem",
                           display: "relative",
                           backgroundColor: "#007E26",
                           color: "white",
@@ -110,7 +118,7 @@ const Hero = () => {
                         value="Support Play Marin"
                         style={{
                           marginTop: "0.50rem",
-                          width: "9.0rem",
+                          width: "5.0rem",
                           display: "relative",
                           backgroundColor: "#007E26",
                           color: "white",
@@ -127,86 +135,7 @@ const Hero = () => {
                 </div>
               </Col>
             </Row>
-
-                        <Row className={classes.Donate}
-                        >
-                            <Col className={classes.DonateCopy}  sm={12} md={9} style={{
-                              }}>
-                              <div
-                                style={{
-                                  fontSize: "18px",
-                                  fontWeight: "600",
-                                  fontFamily: "avenir",
-
-
-                                }}
-                              >
-                              <center>
-                              <p>
-                                Your support helps Play Marin close the actiivty gap in
-                                Marin City and provides a more diverse peer group for over
-                                300 kids annually throughout Sourthern Marin
-                                </p>
-                                </center>
-                              </div>
-                            </Col>
-                            <Col className={classes.DonateButton}  sm={12} md={3} style={{
-
-                            }}>
-                            <h5>Select An Amount:</h5>
-                                  <button
-                                    type="submit"
-                                    value="Support Play Marin"
-                                    style={{
-                                      marginTop: ".10rem",
-                                      width: "9.0rem",
-                                      display: "relative",
-                                      backgroundColor: "#007E26",
-                                      color: "white",
-                                      fontSize: "16px",
-                                      fontWeight: "600",
-                                      fontFamily: `avenir`,
-                                      borderColor: "#007E26",
-                                    }}
-                                  >
-                                    $ 50.00
-                                  </button>
-                                  <button
-                                    type="submit"
-                                    value="Support Play Marin"
-                                    style={{
-                                      marginTop: "0.50rem",
-                                      width: "9.0rem",
-                                      display: "relative",
-                                      backgroundColor: "#007E26",
-                                      color: "white",
-                                      fontSize: "16px",
-                                      fontWeight: "600",
-                                      fontFamily: `avenir`,
-                                      borderColor: "#007E26",
-                                    }}
-                                  >
-                                    $ 100
-                                  </button>
-                                  <button
-                                    type="submit"
-                                    value="Support Play Marin"
-                                    style={{
-                                      marginTop: "0.50rem",
-                                      width: "9.0rem",
-                                      display: "relative",
-                                      backgroundColor: "#007E26",
-                                      color: "white",
-                                      fontSize: "16px",
-                                      fontWeight: "600",
-                                      fontFamily: `avenir`,
-                                      borderColor: "#007E26",
-                                    }}
-                                  >
-                                    $ 500
-                                  </button>
-                            </Col>
-                        </Row>
+          </div>
         </div>
       </div>
     </div>

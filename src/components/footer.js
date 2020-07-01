@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import Logo from "../images/playMarinLogo.png"
+import Logo from "../images/play_logo_WHT.svg"
 import { Container, Row, Col } from "react-bootstrap"
 import Newsletter from "./newsletter.js"
 import Layout from "./layout"

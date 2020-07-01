@@ -1,11 +1,7 @@
 .Container {
     position: relative;
-<<<<<<< HEAD
     min-height: 300px;
-    max-height: 500px;
-=======
-    max-height: 650px;
->>>>>>> bfe478dbb20d6ce3b5900ddb340c2eb69a960e34
+    max-height: 900px;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -13,7 +9,7 @@
 /* Style the video: 100% width and height to cover the entire window */
 .Video {
     width: 100%;
-      height: 100%;
+    height: 100%;
   }
 
   /* Add some content at the bottom of the video/page */
@@ -31,7 +27,6 @@
   }
 
 
-<<<<<<< HEAD
   .Overlay {
     background-color: rgba(64, 75, 107, .9);
     padding: 4rem;
@@ -53,54 +48,3 @@
     }
 
   }
-=======
-
-  .Hero {
-    padding-right: 20%;
-    padding-left: 20%;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    margin: auto;
-  }
-
-
-.Donate {
-  background-color: rgba(64, 75, 107, .9);
-  display: flex;
-  flex-Wrap: no-wrap;
-  margin-Left: 10rem;
-  margin-Right: 10rem;
-  min-height: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px
-
-
-}
-
-@media screen and (max-width: 700px) {
-  .Hero {
-
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-  .Donate {
-    padding: 10px;
-    padding-bottom: 100px;
-    margin-Left: 0px;
-    margin-Right: 0px;
-    min-height: 200px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .DonateCopy {
-    display: none;
-  }
-  .DonateButton {
-    padding-bottom: 100px;
-
-  }
-}
->>>>>>> bfe478dbb20d6ce3b5900ddb340c2eb69a960e34
