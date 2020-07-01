@@ -72,7 +72,7 @@ const About = () => {
       </Jumbotron>
       <Jumbotron fluid style={{ backgroundColor: "white" }}>
         <Row>
-          <Col sm={12} md={12} sm={12} style={{ marginRight: "0px" }}>
+          <Col  md={12} sm={12} lg={12} style={{ marginRight: "0px" }}>
             <div
               style={{
                 backgroundImage: `url(${MissionImg})`,
@@ -127,16 +127,14 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={6} lg={12}>
-            <div style={{ display: "flex" }}>
+          <Col sm={12} md={6} lg={6}                 style={{
+                            backgroundColor: "#992168",
+                            color: "white",
+                            padding: "5rem",
+                            paddingLeft: "3rem",
+                          }}>
               <div
-                style={{
-                  backgroundColor: "#992168",
-                  width: "50%",
-                  color: "white",
-                  padding: "5rem",
-                  paddingLeft: "3rem",
-                }}
+
               >
                 <h1>The Problem</h1>
                 <p>
@@ -148,61 +146,61 @@ const About = () => {
                   Marin.
                 </p>
               </div>
-
-              <div
-                style={{
+</Col>
+<Col sm={12} md={6} lg={6}   style={{
                   backgroundImage: `url(${ProblemImg})`,
                   backgroundRepeat: "no-repeat",
                   objectFit: "cover",
                   backgroundSize: "cover",
-                  width: "50%",
                   backgroundPosition: "center center",
                   color: "white",
-                  // paddingTop: "150px",
-                  // paddingBottom: "150px",
-                  // paddingRight: "150px",
-                  // paddingLeft: "150px",
-                }}
-              >
+                  paddingRight: "0px",
+                  paddingLeft:"0px"
+                }}>
+
                 <div
                   style={{
                     backgroundImage:
                       "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                    paddingBottom: "235px",
+                    paddingBottom: "240px",
                     height: "26rem",
                   }}
                 ></div>
-              </div>
-            </div>
           </Col>
         </Row>
         <Row>
-          <Col md={6} lg={12}>
-            <div style={{ display: "flex" }}>
+          <Col md={6} lg={6}                 style={{
+                            backgroundImage: `url(${SolutionImg})`,
+                            "-webkit-background-size": "cover",
+                            "-moz-background-size": "cover",
+                            "-o-background-size": "cover",
+                            backgroundRepeat: "no-repeat",
+                            objectFit: "cover",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center center",
+                            color: "white",
+                            backgroundColor: "#992168",
+                            color: "white",
+                            paddingRight: "0px",
+                            paddingLeft:"0px"
+
+                          }}>
               <div
-                style={{
-                  backgroundImage: `url(${SolutionImg})`,
-                  "-webkit-background-size": "cover",
-                  "-moz-background-size": "cover",
-                  "-o-background-size": "cover",
-                  backgroundRepeat: "no-repeat",
-                  objectFit: "cover",
-                  backgroundSize: "cover",
-                  width: "50%",
-                  backgroundPosition: "center center",
-                  color: "white",
-                }}
               >
                 <div
                   style={{
                     // margin: "auto",
                     backgroundImage:
                       "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
-                    paddingBottom: "235px",
-                    height: "31rem",
+                      paddingBottom: "240px",
+                      height: "26rem",
+
                   }}
                 ></div>
               </div>
+
+                        </Col>
+                  <Col md={6} lg={6}>
 
               {/* <div
                   style={{
@@ -217,8 +215,9 @@ const About = () => {
                 style={{
                   backgroundColor: "#992168",
                   color: "white",
-                  width: "50%",
                   padding: "5rem",
+                  paddingLeft: "3rem",
+
                 }}
               >
                 <h1>Our Solution</h1>
@@ -242,7 +241,6 @@ const About = () => {
                   </li>
                 </ol>
               </div>
-            </div>
           </Col>
         </Row>
         <Container
