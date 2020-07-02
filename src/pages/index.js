@@ -1,6 +1,6 @@
 import React from "react"
 import Footer from "../components/footer.js"
-import Header from "../components/header.js"
+import Navbar from "../components/header.js"
 import Hero from "../components/hero.js"
 import Timeline from "../components/timeline"
 import Mobilenav from "../components/mobilenav"
@@ -8,19 +8,19 @@ import Homepagethreeup from "../components/homepagethreeup"
 import Media from "react-media"
 import PlayImg from "../images/hero_image.jpg"
 import PaulProfileImg from "../images/paul.jpeg"
-import "bootstrap/dist/css/bootstrap.min.css"
 import uploadedFileLink from "../images/playstudy.pdf"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ResponsiveEmbed from "react-responsive-embed"
 import classes from "../components/hero.module.css"
+
 const IndexPage = () => {
   return (
     <>
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <Media query="(min-width: 599px)" render={() => <Header />} />
+      <Media query="(min-width: 599px)" render={() => <Navbar />} />
       <Hero />
 
       <Container
