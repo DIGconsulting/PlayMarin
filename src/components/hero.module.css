@@ -39,6 +39,12 @@
     width: 50%;
 }
 
+
+.Qoute{
+  font-Size: 22px;
+  width: 50%;
+}
+
   @media screen and (max-width: 700px) {
 
     .Overlay {
@@ -67,6 +73,11 @@
 
  .Video {
    height: 800px;
+   }
+
+   .Qoute{
+     font-Size: 22px;
+     width: 100%;
    }
 
   }

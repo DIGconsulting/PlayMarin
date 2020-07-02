@@ -42,6 +42,7 @@ const Hero = () => {
             >
               <Col  xs={6} sm={6} md={6} lg={6}>
                 <div>
+                <h2>Support Play Marin Today!</h2>
                   <p className={classes.Overlaytext}
                   >
                     Your support helps Play Marin close the actiivty gap in

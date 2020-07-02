@@ -13,8 +13,7 @@ import uploadedFileLink from "../images/playstudy.pdf"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ResponsiveEmbed from "react-responsive-embed"
-import "../components/hero.module.css"
-
+import classes from "../components/hero.module.css"
 const IndexPage = () => {
   return (
     <>
@@ -91,23 +90,22 @@ const IndexPage = () => {
             backgroundImage: "linear-gradient(#89D4CF, #734AE8)",
             paddingTop: `50px`,
             paddingBottom: `50px`,
+            display: "flex",
+            justifyContent: "center"
           }}
         >
-          <Col md={{ span: 6, offset: 2 }}>
-            <p
-              style={{
-                paddingLeft: "10rem",
-                fontSize: "22px",
-              }}
+        <center>
+          <Col md={12}>
+            <p className={classes.Qoute}
+
             >
-              "It's important that children spread amounst the <br />
-              many small towns in Marin have the opportunity to <br />
-              learn about others, not by competing with them, but <br />
+              "It's important that children spread amounst the
+              many small towns in Marin have the opportunity to
+              learn about others, not by competing with them, but
               instead through the lens of playing with them."
             </p>
             <p
               style={{
-                paddingLeft: "10rem",
                 fontSize: "10px",
                 marginBottom: "0",
                 fontSize: "12px",
@@ -115,17 +113,11 @@ const IndexPage = () => {
             >
               Paul Austin
             </p>
-            <p style={{ paddingLeft: "10rem", fontSize: "10px" }}>
+            <p style={{ fontSize: "10px" }}>
               Founder, Play Marin
             </p>
           </Col>
-          <Col lg={3} md={3}>
-            <img
-              src={PaulProfileImg}
-              alt="paul's profile pic"
-              style={{ borderRadius: "100%", height: "10rem", width: "10rem" }}
-            />
-          </Col>
+      </center>
         </Row>
       </Container>
       <Container fluid>
