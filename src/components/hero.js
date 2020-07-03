@@ -78,7 +78,7 @@ const Hero = () => {
                           borderColor: "#007E26",
                         }}
                       >
-                        $ 50.00
+                        $ 50
                       </button>
                   </ExternalLink>
                   <ExternalLink href="https://www.paypal.me/playmarin/100">
