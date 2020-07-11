@@ -40,6 +40,7 @@
     "gatsby-source-stripe": "^3.0.7",
     "gatsby-transformer-ffmpeg": "^0.3.8",
     "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-video": "^0.1.18",
     "gatsby-video": "^0.2.0",
     "install": "^0.13.0",
     "mailgun-js": "^0.22.0",

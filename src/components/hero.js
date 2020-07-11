@@ -1,20 +1,16 @@
 import React from "react"
 import classes from "./hero.module.css"
-import PlayMarin from "../images/playMarin.mp4"
-import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
-import styles from "./form.module.css"
-import { Player } from 'video-react';
+import {  Row, Col } from "react-bootstrap"
+import playMarin from "../video/playMarin.mp4"
+import { graphql, useStaticQuery } from "gatsby"
 import { ExternalLink } from "react-external-link"
-import { Link } from "gatsby"
-
-
 
 const Hero = () => {
   return (
     <div className={classes.Container}>
       <video autoPlay="autoplay" loop="loop" muted className={classes.Video} fluid={false} playsInline
 >
-        <source src={PlayMarin} type="video/mp4" />
+        <source src={playMarin} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

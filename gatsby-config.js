@@ -1,14 +1,27 @@
+
+const { resolve } = require(`path`)
+const { platform } = require(`os`)
+
+
 module.exports = {
   siteMetadata: {
     title: `Play Marin`,
-    description: `Find Eeerything you need to know about PlayMarin here at PlayMarin.org`,
+    description: `Find Everything you need to know about PlayMarin here at PlayMarin.org`,
     author: `@OFFTHELANDSOFTWARE`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
+
+    `gatsby-plugin-react-helmet`, {
       resolve: "gatsby-plugin-jss",
     },
+    { 
+      resolve: `gatsby-source-filesystem`,
+      options: {
+      name: 'video',
+      path: `${__dirname}/src/video/`,
+      
+    }
+  },
     {
      resolve: `gatsby-plugin-styled-components`,
 
@@ -78,6 +91,38 @@ module.exports = {
         objects: ["Sku", "Product"],
         secretKey: `sk_test_1nbmLkBnfJg4TPyPSNqpEF1x00kwXWftcw`,
         downloadFiles: false,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-video`,
+      options: {
+        profiles: {
+          sepia: {
+            extension: `mp4`,
+            converter: function({ ffmpegSession, videoStreamMetadata }) {
+              const { currentFps } = videoStreamMetadata
+
+              const outputOptions = [
+                `-crf 31`,
+                `-preset slow`,
+                `-movflags +faststart`,
+                `-profile:v high`,
+                `-bf 2	`,
+                `-g ${Math.floor(currentFps / 2)}`,
+                `-coder 1`,
+                `-pix_fmt yuv420p`,
+              ].filter(Boolean)
+
+              return ffmpegSession
+                .videoCodec(`libx264`)
+                .videoFilters(
+                  `colorchannelmixer=.393:.769:.189:0:.349:.686:.168:0:.272:.534:.131`
+                )
+                .outputOptions(outputOptions)
+                .noAudio()
+            },
+          },
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
