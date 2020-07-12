@@ -1,7 +1,5 @@
-
 const { resolve } = require(`path`)
 const { platform } = require(`os`)
-
 
 module.exports = {
   siteMetadata: {
@@ -10,23 +8,21 @@ module.exports = {
     author: `@OFFTHELANDSOFTWARE`,
   },
   plugins: [
-
-    `gatsby-plugin-react-helmet`,     
-    `gatsby-plugin-theme-ui`,{
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-theme-ui`,
+    {
       resolve: "gatsby-plugin-jss",
     },
-    { 
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
-      name: 'video',
-      path: `${__dirname}/src/video/`,
-      
-    }
-  },
+        name: "video",
+        path: `${__dirname}/src/video/`,
+      },
+    },
     {
-     resolve: `gatsby-plugin-styled-components`,
-
-},
+      resolve: `gatsby-plugin-styled-components`,
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -101,7 +97,7 @@ module.exports = {
         profiles: {
           sepia: {
             extension: `mp4`,
-            converter: function({ ffmpegSession, videoStreamMetadata }) {
+            converter: function ({ ffmpegSession, videoStreamMetadata }) {
               const { currentFps } = videoStreamMetadata
 
               const outputOptions = [
@@ -127,14 +123,14 @@ module.exports = {
         },
       },
     },
-		{
-			resolve: 'gatsby-source-youtube-v2',
-			options: {
-				channelId: ['UC7qvkXPsvrqW8pemGpmRL2A'], 
-				apiKey: ["AIzaSyBEYM9TXJ1XUgMjOXWRSxzOEAdppzVbnPg"],
-				maxVideos: 1,
-			}
-		}
+    {
+      resolve: "gatsby-source-youtube-v2",
+      options: {
+        channelId: ["UC7qvkXPsvrqW8pemGpmRL2A"],
+        apiKey: ["AIzaSyBEYM9TXJ1XUgMjOXWRSxzOEAdppzVbnPg"],
+        maxVideos: 1,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

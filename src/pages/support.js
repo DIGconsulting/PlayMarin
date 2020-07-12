@@ -14,20 +14,26 @@ const Support = () => {
   return (
     <>
       <Header />
-      <Jumbotron fluid style={{ backgroundColor: "white" }}>
+
+      <Jumbotron
+        className="text-center"
+        fluid
+        style={{
+          backgroundColor: "white",
+          marginTop: `50px`,
+          marginBottom: `50x`,
+        }}
+      >
         <Container>
-          <center>
-            <p>Support</p>
-            <h1>PLAY Marin</h1>
-            <div
-              style={{
-                margin: "auto",
-                backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
-                width: "550px",
-                height: "10px",
-              }}
-            ></div>
-          </center>
+          <p>Support</p>
+          <h1>PLAY Marin</h1>
+          <div
+            style={{
+              margin: "auto",
+              backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
+              height: "10px",
+            }}
+          ></div>
         </Container>
       </Jumbotron>
       <Container
@@ -45,17 +51,16 @@ const Support = () => {
             style={{
               paddingRight: "0px",
               paddingLeft: "0px",
-                              backgroundImage: `url(${SolutionImgTwo})`,
-                            backgroundRepeat: "no-repeat",
-                            objectFit: "cover",
-                            backgroundSize: "cover",
-                            backgroundPosition: "center center",
-                            color: "white",
-                            paddingRight: "0px",
-                            paddingLeft:"0px"
+              backgroundImage: `url(${SolutionImgTwo})`,
+              backgroundRepeat: "no-repeat",
+              objectFit: "cover",
+              backgroundSize: "cover",
+              backgroundPosition: "center center",
+              color: "white",
+              paddingRight: "0px",
+              paddingLeft: "0px",
             }}
-          >
-          </Col>
+          ></Col>
 
           <Col
             xs={12}
@@ -71,7 +76,11 @@ const Support = () => {
           >
             <h1>Everyone wins with Play Marin</h1>
             <p>
-Give a gift that promotes a more inclusive and equitable Marin community by making a donation that provides athletic and extracurricular activities for Marin City Youth while creating a more diverse peer group for participating young people across Marin County.
+              Give a gift that promotes a more inclusive and equitable Marin
+              community by making a donation that provides athletic and
+              extracurricular activities for Marin City Youth while creating a
+              more diverse peer group for participating young people across
+              Marin County.
             </p>
             <button
               style={{
@@ -103,8 +112,6 @@ Give a gift that promotes a more inclusive and equitable Marin community by maki
         }}
       >
         <Row>
-
-
           <Col
             xs={12}
             sm={12}
@@ -118,17 +125,26 @@ Give a gift that promotes a more inclusive and equitable Marin community by maki
             }}
           >
             <p>
-In just 8 years, Play Marin has grown from one basketball team of 9 players to reaching over 300 kids annually through a variety of team sports and other educational and enriching activities, all while promoting diversity and solidarity among the young people of Marin County.            </p>
-<p>
-All donations are tax-deductible to the extent allowed by law. Our US Tax identification number is 83-1737141
-</p>
-<p>
-Please consider supporting Play Marin’s work by making an donation online today. Our secure donation payment portal is coming soon! In the meantime, you may use these secure payment options:  
-</p>
-<p>
-For other donation inquiries please contact: By email: donate@playmarin.org or By Phone: (415) 686-5045. By mail to address: Play Marin, PO Box 530, Sausalito, California 94965
-</p>
-
+              In just 8 years, Play Marin has grown from one basketball team of
+              9 players to reaching over 300 kids annually through a variety of
+              team sports and other educational and enriching activities, all
+              while promoting diversity and solidarity among the young people of
+              Marin County.{" "}
+            </p>
+            <p>
+              All donations are tax-deductible to the extent allowed by law. Our
+              US Tax identification number is 83-1737141
+            </p>
+            <p>
+              Please consider supporting Play Marin’s work by making an donation
+              online today. Our secure donation payment portal is coming soon!
+              In the meantime, you may use these secure payment options:
+            </p>
+            <p>
+              For other donation inquiries please contact: By email:
+              donate@playmarin.org orBy Phone: (415) 686-5045. By mail to
+              address: Play Marin, PO Box 530, Sausalito, California 94965
+            </p>
           </Col>
           <Col
             xs={12}
@@ -138,17 +154,16 @@ For other donation inquiries please contact: By email: donate@playmarin.org or�
             style={{
               paddingRight: "0px",
               paddingLeft: "0px",
-                              backgroundImage: `url(${SolutionImg})`,
-                            backgroundRepeat: "no-repeat",
-                            objectFit: "cover",
-                            backgroundSize: "cover",
-                            backgroundPosition: "center center",
-                            color: "white",
-                            paddingRight: "0px",
-                            paddingLeft:"0px"
+              backgroundImage: `url(${SolutionImg})`,
+              backgroundRepeat: "no-repeat",
+              objectFit: "cover",
+              backgroundSize: "cover",
+              backgroundPosition: "center center",
+              color: "white",
+              paddingRight: "0px",
+              paddingLeft: "0px",
             }}
-          >
-          </Col>
+          ></Col>
         </Row>
       </Container>
       <Footer />

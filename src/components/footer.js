@@ -149,7 +149,7 @@ const Footer = () => {
                 paddingBottom: "50px",
                 fontFamily: "avenir",
                 display: "flex",
-                flexDirection: "column"
+                flexDirection: "column",
               }}
             >
               <p>
@@ -161,70 +161,68 @@ const Footer = () => {
               </p>
               <h5>Select An Amount:</h5>
               <ExternalLink href="https://www.paypal.me/playmarin/50">
-                    <button
-                      type="button"
-                      value="Support Play Marin"
-                      style={{
-                        marginTop: ".10rem",
-                        width: "5.0rem",
-                        display: "relative",
-                        backgroundColor: "#007E26",
-                        color: "white",
-                        fontSize: "16px",
-                        paddingTop: "0.45rem",
-                        paddingBottom: "0.45rem",
-                        fontWeight: "600",
-                        fontFamily: `avenir`,
-                        borderColor: "#007E26",
-                      }}
-                    >
-                      $ 50.00
-                    </button>
-                </ExternalLink>
-                <ExternalLink href="https://www.paypal.me/playmarin/100">
-
-                    <button
-                      type="button"
-                      value="Support Play Marin"
-                      style={{
-                        marginTop: "0.50rem",
-                        width: "5.0rem",
-                        display: "relative",
-                        backgroundColor: "#007E26",
-                        color: "white",
-                        fontSize: "16px",
-                        paddingTop: "0.45rem",
-                        paddingBottom: "0.45rem",
-                        fontWeight: "600",
-                        fontFamily: `avenir`,
-                        borderColor: "#007E26",
-                      }}
-                    >
-                      $ 100
-                    </button>
-                  </ExternalLink>
-                  <ExternalLink href="https://www.paypal.me/playmarin/500">
-                    <button
-                      type="button"
-                      value="Support Play Marin"
-                      style={{
-                        marginTop: "0.50rem",
-                        width: "5.0rem",
-                        display: "relative",
-                        backgroundColor: "#007E26",
-                        color: "white",
-                        fontSize: "16px",
-                        paddingTop: "0.45rem",
-                        paddingBottom: "0.45rem",
-                        fontWeight: "600",
-                        fontFamily: `avenir`,
-                        borderColor: "#007E26",
-                      }}
-                    >
-                      $ 500
-                    </button>
+                <button
+                  type="button"
+                  value="Support Play Marin"
+                  style={{
+                    marginTop: ".10rem",
+                    width: "5.0rem",
+                    display: "relative",
+                    backgroundColor: "#007E26",
+                    color: "white",
+                    fontSize: "16px",
+                    paddingTop: "0.45rem",
+                    paddingBottom: "0.45rem",
+                    fontWeight: "600",
+                    fontFamily: `avenir`,
+                    borderColor: "#007E26",
+                  }}
+                >
+                  $ 50.00
+                </button>
               </ExternalLink>
-
+              <ExternalLink href="https://www.paypal.me/playmarin/100">
+                <button
+                  type="button"
+                  value="Support Play Marin"
+                  style={{
+                    marginTop: "0.50rem",
+                    width: "5.0rem",
+                    display: "relative",
+                    backgroundColor: "#007E26",
+                    color: "white",
+                    fontSize: "16px",
+                    paddingTop: "0.45rem",
+                    paddingBottom: "0.45rem",
+                    fontWeight: "600",
+                    fontFamily: `avenir`,
+                    borderColor: "#007E26",
+                  }}
+                >
+                  $ 100
+                </button>
+              </ExternalLink>
+              <ExternalLink href="https://www.paypal.me/playmarin/500">
+                <button
+                  type="button"
+                  value="Support Play Marin"
+                  style={{
+                    marginTop: "0.50rem",
+                    width: "5.0rem",
+                    display: "relative",
+                    backgroundColor: "#007E26",
+                    color: "white",
+                    fontSize: "16px",
+                    paddingTop: "0.45rem",
+                    paddingBottom: "0.45rem",
+                    fontWeight: "600",
+                    fontFamily: `avenir`,
+                    borderColor: "#007E26",
+                  }}
+                >
+                  $ 500
+                </button>
+              </ExternalLink>
             </Col>
           </Row>
         </Container>

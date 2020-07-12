@@ -9,32 +9,29 @@ import { Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import classes from "../components/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
-import YouTube from 'react-youtube';
-
+import YouTube from "react-youtube"
 
 function IndexPage() {
   const opts = {
-    height: '450',
-    width: '900',
-    display:"flex",
+    height: "450",
+    width: "800",
+    display: "flex",
     alignitem: "center",
     justifyContent: "center",
-    
-  };
-  const {video}= 
-  useStaticQuery(graphql`
-    query  { 
+  }
+  const { video } = useStaticQuery(graphql`
+    query {
       video: youtubeVideo {
         videoId
       }
     }
-`)
+  `)
 
   return (
     <>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-<Navbar />
+      <Navbar />
       <Hero />
 
       <Container
@@ -55,9 +52,7 @@ function IndexPage() {
               width: "100%",
             }}
           >
-<Container fluid>
-<YouTube videoId={video.videoId} opts={opts}/>
-</Container>
+            <YouTube videoId={video.videoId} opts={opts} />
           </Col>
 
           <Col
@@ -100,18 +95,15 @@ function IndexPage() {
             paddingTop: `50px`,
             paddingBottom: `50px`,
             display: "flex",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
-        <center>
-          <Col md={12}>
-            <p className={classes.Qoute}
-
-            >
-              "It's important that children spread amounst the
-              many small towns in Marin have the opportunity to
-              learn about others, not by competing with them, but
-              instead through the lens of playing with them."
+          <Col md={12} className="text-center">
+            <p className={classes.Qoute}>
+              "It's important that children spread amounst the many small towns
+              in Marin have the opportunity to learn about others, not by
+              competing with them, but instead through the lens of playing with
+              them."
             </p>
             <p
               style={{
@@ -122,11 +114,8 @@ function IndexPage() {
             >
               Paul Austin
             </p>
-            <p style={{ fontSize: "10px" }}>
-              Founder, Play Marin
-            </p>
+            <p style={{ fontSize: "10px" }}>Founder, Play Marin</p>
           </Col>
-      </center>
         </Row>
       </Container>
       <Container fluid>

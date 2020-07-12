@@ -10,14 +10,13 @@ var styles = {
     width: "36px",
     height: "30px",
     top: "5px",
-    left: "5px"
+    left: "5px",
   },
   bmBurgerBars: {
     backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
   },
   bmBurgerBarsHover: {
-
-  backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
+    backgroundImage: "linear-gradient(to right, #558EDE, #6514AF)",
   },
   bmCrossButton: {
     height: "30px",
