@@ -6,15 +6,31 @@ import Timeline from "../components/timeline"
 import Mobilenav from "../components/mobilenav"
 import Homepagethreeup from "../components/homepagethreeup"
 import Media from "react-media"
-import PlayImg from "../images/hero_image.jpg"
-import PaulProfileImg from "../images/paul.jpeg"
-import uploadedFileLink from "../images/playstudy.pdf"
-import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Jumbotron } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import ResponsiveEmbed from "react-responsive-embed"
 import classes from "../components/hero.module.css"
+import { graphql, useStaticQuery } from "gatsby"
+import YouTube from 'react-youtube';
 
-const IndexPage = () => {
+
+function IndexPage() {
+  const opts = {
+    height: '450',
+    width: '900',
+    display:"flex",
+    alignitem: "center",
+    justifyContent: "center",
+    
+  };
+  const {video}= 
+  useStaticQuery(graphql`
+    query  { 
+      video: youtubeVideo {
+        videoId
+      }
+    }
+`)
+
   return (
     <>
       <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
@@ -38,17 +54,12 @@ const IndexPage = () => {
             style={{
               paddingRight: "0px",
               paddingLeft: "0px",
+              width: "100%",
             }}
           >
-            <ResponsiveEmbed
-              src="https://www.youtube-nocookie.com/embed/p0LfbN2J4c8"
-              start="10"
-              ratio="7:4"
-              frameborder="0"
-              controls="no"
-              allow="accelerometer"
-              height="50px"
-            />
+<Container fluid>
+<YouTube videoId={video.videoId} opts={opts}/>
+</Container>
           </Col>
 
           <Col

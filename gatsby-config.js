@@ -11,7 +11,8 @@ module.exports = {
   },
   plugins: [
 
-    `gatsby-plugin-react-helmet`, {
+    `gatsby-plugin-react-helmet`,     
+    `gatsby-plugin-theme-ui`,{
       resolve: "gatsby-plugin-jss",
     },
     { 
@@ -93,6 +94,7 @@ module.exports = {
         downloadFiles: false,
       },
     },
+
     {
       resolve: `gatsby-transformer-video`,
       options: {
@@ -125,6 +127,14 @@ module.exports = {
         },
       },
     },
+		{
+			resolve: 'gatsby-source-youtube-v2',
+			options: {
+				channelId: ['UC7qvkXPsvrqW8pemGpmRL2A'], 
+				apiKey: ["AIzaSyBEYM9TXJ1XUgMjOXWRSxzOEAdppzVbnPg"],
+				maxVideos: 1,
+			}
+		}
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

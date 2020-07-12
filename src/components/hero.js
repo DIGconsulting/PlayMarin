@@ -1,16 +1,28 @@
 import React from "react"
 import classes from "./hero.module.css"
 import {  Row, Col } from "react-bootstrap"
-import playMarin from "../video/playMarin.mp4"
 import { graphql, useStaticQuery } from "gatsby"
 import { ExternalLink } from "react-external-link"
 
-const Hero = () => {
+function Hero() {
+  const {
+    video
+  } =
+  useStaticQuery(graphql`
+    query { 
+       video: file(relativePath: {eq: "playMarin.mp4"}) {
+        videoH264 {
+          path
+        }
+      }
+    }
+    `)
+
   return (
     <div className={classes.Container}>
       <video autoPlay="autoplay" loop="loop" muted className={classes.Video} fluid={false} playsInline
 >
-        <source src={playMarin} type="video/mp4" />
+        <source src={video.videoH264.path} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

@@ -38,6 +38,7 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-source-instagram": "^0.8.0",
     "gatsby-source-stripe": "^3.0.7",
+    "gatsby-theme-youtube": "^1.0.0",
     "gatsby-transformer-ffmpeg": "^0.3.8",
     "gatsby-transformer-sharp": "^2.4.3",
     "gatsby-transformer-video": "^0.1.18",
@@ -67,6 +68,7 @@
     "react-stripe-elements": "^6.1.2",
     "react-table": "^7.0.5",
     "react-vis": "^1.11.7",
+    "react-youtube": "^7.11.2",
     "styled-components": "^5.1.1",
     "transformer": "^1.2.7",
     "video-react": "^0.14.1"
