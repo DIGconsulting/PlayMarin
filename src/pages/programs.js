@@ -3,88 +3,13 @@ import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Container } from "react-grid-system"
 import { graphql, useStaticQuery } from "gatsby"
-import { Jumbotron,Container } from "react-bootstrap"
+import { Jumbotron } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import CardDeck from 'react-bootstrap/CardDeck'
 import Card from 'react-bootstrap/Card'
 
 function Programs() {
-  const {
-    basketball,
-  } = useStaticQuery(graphql`
-    query {
-      basketball: file(relativePath: { eq: "basketball.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            src
-          }
-        }
-      }
-      volleygirl: file(relativePath: { eq: "volley_girls.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      lacrosse: file(relativePath: { eq: "lacrosse.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      playdates: file(relativePath: { eq: "playdates_2.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      track: file(relativePath: { eq: " track.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      bikes: file(relativePath: { eq: "bikes.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      skate: file(relativePath: { eq: "skate.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      trips: file(relativePath: { eq: "trips.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      clinics: file(relativePath: { eq: "clinics.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      summercamp: file(relativePath: { eq: "swimming.jpg" }) {
-        sharp: childImageSharp {
-          fluid(maxHeight: 300) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+  
   return (
     <>
       <meta charSet="utf-8" />
@@ -119,7 +44,7 @@ function Programs() {
       >
         <CardDeck>
   <Card>
-    <img variant="top" src={basketball.sharp.fluid} />
+    <img variant="top"/>
     <Card.Body>
       <Card.Title>Card title</Card.Title>
       <Card.Text>

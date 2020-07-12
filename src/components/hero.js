@@ -7,6 +7,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Tab from 'react-bootstrap/Tab'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Nav from 'react-bootstrap/Nav'
 
 function Hero() {
   const {
@@ -42,23 +43,37 @@ function Hero() {
         paddingTop: "3rem"
       }}>
   <Card.Body bg="success" style={{
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around",
-    textAlign: "left",
-    paddingRight: "4rem"
   }}>
   
-    <Card.Text text="dark">
-    <Card.Title text="dark">Support Play Marin Today!</Card.Title>
-    Your support helps Play Marin close the actiivty gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Sourthern Marin
-    </Card.Text>
-    <div style={{
-       paddingLeft: "7rem",
-    }}></div>
-    <Button variant="success">50.00</Button>
-    <Button variant="success">100.00</Button>
-     <Button variant="success">100.00</Button>
+  <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+  <Row>
+  <Col sm={8}>
+      <Tab.Content style={{
+        textAlign: "left"
+      }}>
+        Support Play Marin Today!
+          Your support helps Play Marin close the actiivty gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Sourthern Marin
+      </Tab.Content>
+    </Col>
+    <Col sm={4}>
+      <Nav variant="pills" className="flex-column" style={{
+        marginTop: "0px",
+      }}> 
+        <Button  style={{
+        paddingBottom: "10px"
+      }}> 
+          <Nav.Link eventKey="first">50.00</Nav.Link>
+        </Button>
+        <Button>
+          <Nav.Link eventKey="first">100.00</Nav.Link>
+        </Button>
+        <Button>
+          <Nav.Link eventKey="first">500.00</Nav.Link>
+        </Button>
+      </Nav>
+    </Col>
+  </Row>
+</Tab.Container>
   </Card.Body>
 
 </Card>
