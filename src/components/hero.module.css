@@ -6,7 +6,7 @@ body {
 .Container {
     position: relative;
     min-height: 300px;
-    max-height: 900px;
+    max-height: 750px;
     overflow: hidden;
     margin-bottom: -6px;
 

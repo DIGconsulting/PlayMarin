@@ -1,12 +1,9 @@
 import React from "react"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
-import { Container, Row, Col } from "react-grid-system"
-import Image from "gatsby-image"
-import Mobilenav from "../components/mobilenav"
-import Media from "react-media"
+import { Container } from "react-grid-system"
 import { graphql, useStaticQuery } from "gatsby"
-import { Jumbotron, Button } from "react-bootstrap"
+import { Jumbotron,Container } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import CardDeck from 'react-bootstrap/CardDeck'
 import Card from 'react-bootstrap/Card'
@@ -14,15 +11,6 @@ import Card from 'react-bootstrap/Card'
 function Programs() {
   const {
     basketball,
-    volleygirl,
-    lacrosse,
-    playdates,
-    track,
-    bikes,
-    skate,
-    trips,
-    clinics,
-    summercamp,
   } = useStaticQuery(graphql`
     query {
       basketball: file(relativePath: { eq: "basketball.jpg" }) {
