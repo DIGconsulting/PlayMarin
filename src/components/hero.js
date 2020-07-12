@@ -40,35 +40,48 @@ function Hero() {
         marginBottom: "-17em",
         height: "300px",
         paddingBottom: "0px",
-        paddingTop: "3rem"
+        paddingTop: "3rem",
+        justifyContent: "space-around"
+       
       }}>
   <Card.Body bg="success" style={{
   }}>
   
-  <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+  <Tab.Container defaultActiveKey="first">
   <Row>
   <Col sm={8}>
       <Tab.Content style={{
         textAlign: "left"
       }}>
-        Support Play Marin Today!
+        <h4>Support Play Marin Today!</h4>
           Your support helps Play Marin close the actiivty gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Sourthern Marin
       </Tab.Content>
     </Col>
     <Col sm={4}>
       <Nav variant="pills" className="flex-column" style={{
         marginTop: "0px",
+        justifyContent: "space-around",
+        padding: "1px"
       }}> 
-        <Button  style={{
-        paddingBottom: "10px"
-      }}> 
-          <Nav.Link eventKey="first">50.00</Nav.Link>
+        <Button       style={{
+                width: "15rem",
+                height: "2.5rem",
+              }}> 
+          <Nav.Link eventKey="first">50</Nav.Link>
         </Button>
-        <Button>
-          <Nav.Link eventKey="first">100.00</Nav.Link>
+        <Button   style={{
+                width: "15rem",
+                height: "2.5rem",
+                marginTop: "10px"
+              }}>
+          <Nav.Link eventKey="first">100</Nav.Link>
         </Button>
-        <Button>
-          <Nav.Link eventKey="first">500.00</Nav.Link>
+        <Button   style={{
+                width: "15rem",
+                height: "2.5rem",
+                marginTop: "10px"
+              }}>
+          <Nav.Link eventKey="first">500</Nav.Link>
         </Button>
       </Nav>
     </Col>

@@ -2,13 +2,12 @@ import React from "react"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Container } from "react-grid-system"
-import { graphql, useStaticQuery } from "gatsby"
 import { Jumbotron } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import CardDeck from 'react-bootstrap/CardDeck'
 import Card from 'react-bootstrap/Card'
 
-function Programs() {
+const Programs = () => {
   
   return (
     <>
