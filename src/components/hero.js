@@ -44,7 +44,6 @@ function Hero() {
             marginBottom: "-17em",
             height: "300px",
             paddingBottom: "0px",
-            paddingTop: "3rem",
             justifyContent: "space-around",
           }}
         >
