@@ -8,6 +8,8 @@ import Media from "react-media"
 import { graphql, useStaticQuery } from "gatsby"
 import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
+import CardDeck from 'react-bootstrap/CardDeck'
+import Card from 'react-bootstrap/Card'
 
 function Programs() {
   const {
@@ -26,7 +28,7 @@ function Programs() {
       basketball: file(relativePath: { eq: "basketball.jpg" }) {
         sharp: childImageSharp {
           fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
+            src
           }
         }
       }
@@ -97,14 +99,16 @@ function Programs() {
   `)
   return (
     <>
-      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <Media query="(min-width: 599px)" render={() => <Header />} />
-      <Jumbotron fluid style={{ backgroundColor: "white" }}>
+       <Header />
+       
+      <Jumbotron  className="text-center" fluid style={{ backgroundColor: "white",
+          marginTop: `100px`,
+          marginBottom: `100px`,
+        }}>
         <Container>
-          <center>
-            <h1>Programs</h1>
+            <h1 >Programs</h1>
             <p>
               We provide year-long programming to ensure kids are engaged
               throughout the school year and summer
@@ -118,113 +122,108 @@ function Programs() {
               }}
             ></div>
 
-            <center></center>
-          </center>
         </Container>
       </Jumbotron>
       <Container
         style={{
-          marginTop: `100px`,
+          marginTop: `50px`,
         }}
       >
-        <Row>
-          <Col md={4}>
-            <Image
-              fluid={basketball.sharp.fluid}
-              title="Basketball"
-              description="cancelled until further notice"
-            />
-            <h4>Basketball</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-          <Col md={4}>
-            <Image
-              fluid={track.sharp.fluid}
-              title="Track & Field"
-              description="cancelled until further notice"
-            />
-            <h4>Track</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-          <Col md={4}>
-            <Image
-              fluid={volleygirl.sharp.fluid}
-              title="Girl’s Volleyball"
-              description="cancelled until further notice"
-            />
-            <h4>Girl volleyball</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4}>
-            <Image
-              fluid={lacrosse.sharp.fluid}
-              title="Lacrosse"
-              description="cancelled until further notice"
-            />
-            <h4>Lacrosse</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-          <Col md={4}>
-            <Image
-              fluid={bikes.sharp.fluid}
-              title="Mountain Bike Club"
-              description="cancelled until further notice"
-            />
-            <h4>Bike</h4>
-          </Col>
-          <Col md={4}>
-            <Image
-              fluid={skate.sharp.fluid}
-              title="Skate Park"
-              description="cancelled until further notice"
-            />
-            <h4>Skate Park</h4>
-            <p>closed until further notice</p>
-          </Col>
-        </Row>{" "}
-        <Row>
-          <Col md={4}>
-            <Image
-              fluid={playdates.sharp.fluid}
-              title="Play dates"
-              description="cancelled until further notice"
-            />
-            <h4>Playdates</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-          <Col md={4}>
-            <Image
-              fluid={trips.sharp.fluid}
-              title="Field trips"
-              description="cancelled until further notice"
-            />
-            <h4>Trips</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-          <Col md={4}>
-            <Image
-              fluid={summercamp.sharp.fluid}
-              title="Summer camp"
-              description="cancelled until further notice"
-            />
-            <h4>Summer Camp</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4}>
-            <Image
-              fluid={clinics.sharp.fluid}
-              title="Sports Clinics"
-              description="cancelled until further notice"
-            />
-            <h4>Clinics</h4>
-            <p>cancelled until further notice</p>
-          </Col>
-        </Row>
+        <CardDeck>
+  <Card>
+    <img variant="top" src={basketball.sharp.fluid} />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+
       </Container>
+      <Container
+        style={{
+          marginTop: `50px`,
+          marginBottom: `100px`,
+        }}
+      >
+        <CardDeck>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+
+      </Container>
+
 
       <Footer />
     </>

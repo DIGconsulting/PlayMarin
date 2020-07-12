@@ -3,10 +3,9 @@ import Footer from "../components/footer.js"
 import Navbar from "../components/header.js"
 import Hero from "../components/hero.js"
 import Timeline from "../components/timeline"
-import Mobilenav from "../components/mobilenav"
 import Homepagethreeup from "../components/homepagethreeup"
 import Media from "react-media"
-import { Container, Row, Col, Jumbotron } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import classes from "../components/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
@@ -33,10 +32,9 @@ function IndexPage() {
 
   return (
     <>
-      <Media query="(max-width: 599px)" render={() => <Mobilenav />} />
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <Media query="(min-width: 599px)" render={() => <Navbar />} />
+<Navbar />
       <Hero />
 
       <Container

@@ -1,96 +1,53 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from "@emotion/styled"
-import { css } from "@emotion/core"
-import Layout from "../components/layout.css"
-import Logo from "../images/playMarinLogo.png"
-import { Container, Row, Col, Button } from "react-grid-system"
-import Sticky from "react-sticky-el"
-import { ExternalLink } from "react-external-link"
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import FormControl from 'react-bootstrap/FormControl'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+import Nav from  'react-bootstrap/Nav'
+import Container from 'react-bootstrap/container'
+import Logo from '../images/playMarinLogo.png'
 
 const Header = () => {
-  const StyledLink = styled(Link)`
-    padding-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #6512ae;
-    margin-right: 20px;
-    border-bottom-width: 5px;
-    font-family: avenir;
-  `
-  const ExternalLink = styled(Link)`
-    padding-left: 20px;
-    display: flex;
-    cursor: pointer;
-    text-decoration: none;
-    margin-right: 20px;
-    border-bottom-width: 5px;
-    position: relatve;
-    font-family: avenir;
-    color: #000000;
-  `
 
-  const activeStyle = {
-    color: `#598BDD`,
-    // color: `#0B7BFF`,
-  }
+
 
   return (
-    <div>
-      <Sticky>
-        <nav className="navbar">
-          <ul className="left-ui">
-            <li>
-              <StyledLink to="/">
-                <img
+<Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
+<Container>
+  <Navbar.Brand href="#home">
+
+  <img
                   to="/"
                   width={100}
                   height={42}
                   src={Logo}
                   className="work"
+                  style={{
+                    marginBottom: "0px"
+                  }}
                 />
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/" activeStyle={activeStyle}>
-                Home
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/about/" activeStyle={activeStyle}>
-                About
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/programs/" activeStyle={activeStyle}>
-                Programs
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/support/" activeStyle={activeStyle}>
-                Support
-              </StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/contact/" activeStyle={activeStyle}>
-                Contact Us
-              </StyledLink>
-            </li>
-          </ul>
-          <ul className="donation-btn">
-            <StyledLink>
-              {" "}
-              <a
-                href="https://www.playmarin.org/#contact"
-                style={{ color: "#fff" }}
-              >
-                Donate
-              </a>
-            </StyledLink>
-          </ul>
-        </nav>
-      </Sticky>
-    </div>
+  </Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="#features">Home</Nav.Link>
+      <Nav.Link href="#pricing">About</Nav.Link>
+      <Nav.Link href="#features">Programs</Nav.Link>
+      <Nav.Link href="#features">Support</Nav.Link>
+      <Nav.Link href="#features">Contact Us</Nav.Link>
+      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+      <Button variant="outline-success">Donate</Button>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
   )
 }
 
