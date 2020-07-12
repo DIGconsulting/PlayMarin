@@ -86,3 +86,8 @@ body {
    }
 
   }
+
+
+  div #responsive-navbar-nav {
+    background-color: white!important;
+  }
