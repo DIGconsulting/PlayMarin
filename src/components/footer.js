@@ -48,8 +48,103 @@ const Footer = () => {
           backgroundImage: "linear-gradient(#558EDE, #6514AF)",
         }}
       >
-        <Container fluid>
+        <Container>
           <Row>
+          <Col
+              md={4}
+              sm={12}
+              style={{
+                color: "white",
+                fontFamily: "avenir",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <h5>Select An Amount:</h5>
+              <ExternalLink href="https://www.paypal.me/playmarin/50">
+                <Button
+                  variant="outline-success"
+                  style={{
+                    width: "8rem",
+                    height: "2.5rem",
+                    marginTop: "10px",
+                  }}
+                >
+                  $ 50
+                </Button>
+              </ExternalLink>
+              <ExternalLink href="https://www.paypal.me/playmarin/100">
+                <Button
+                  variant="outline-success"
+                  style={{
+                    width: "8rem",
+                    height: "2.5rem",
+                    marginTop: "10px",
+                  }}
+                >
+                  $ 100
+                </Button>
+              </ExternalLink>
+              <ExternalLink href="https://www.paypal.me/playmarin/500">
+                <Button
+                  variant="outline-success"
+                  style={{
+                    width: "8rem",
+                    height: "2.5rem",
+                    marginTop: "10px",
+                  }}
+                >
+                  $ 500
+                </Button>
+              </ExternalLink>
+              <p style={{
+                paddingTop: "50px"
+              }}>
+                Your support helps Play Marin close
+                 the actiivty gap in Marin City and
+                 provides a more diverse peer group for
+                over 300 kids annually throughout
+              Sourthern Marin
+              </p>
+            </Col>
+            <Col md={4} sm={12} style={{ color: "white" }}>
+              <h3>Follow PLAY Marin</h3>
+              <div style={{ display: "flex", paddingTop: "10px" }}>
+                <p
+                  style={{
+                    backgroundColor: "rgba(167, 169, 227, .5)",
+                    width: "2rem",
+                    textAlign: "center",
+                    marginRight: ".5rem",
+                    color: "white",
+                    fontFamily: "avenir",
+                  }}
+                >
+                  FB
+                </p>
+                <p
+                  style={{
+                    backgroundColor: "rgba(167, 169, 227, .5)",
+                    width: "2rem",
+                    textAlign: "center",
+                    color: "white",
+                    fontFamily: "avenir",
+                  }}
+                >
+                  IG
+                </p>
+              </div>
+              <div
+                style={{
+                  fontSize: "12px",
+                  fontFamily: "avenir",
+                }}
+              ></div>
+              <div>
+                <Newsletter />
+              </div>
+            </Col>
+
             <Col md={4} sm={12} style={{ color: "white" }}>
               <div>
                 <img
@@ -58,7 +153,6 @@ const Footer = () => {
                   style={{
                     color: "white",
                     fontSize: "12px",
-                    paddingTop: "20px",
                     paddingLeft: "20px",
                     fontFamily: "avenir",
                   }}
@@ -103,127 +197,7 @@ const Footer = () => {
                 </div>
               </div>
             </Col>
-            <Col md={4} sm={12} style={{ color: "white", paddingTop: "50px" }}>
-              <h3 style={{}}>Follow PLAY Marin</h3>
-              <div style={{ display: "flex", paddingTop: "10px" }}>
-                <p
-                  style={{
-                    backgroundColor: "rgba(167, 169, 227, .5)",
-                    width: "2rem",
-                    textAlign: "center",
-                    marginRight: ".5rem",
-                    color: "white",
-                    fontFamily: "avenir",
-                  }}
-                >
-                  FB
-                </p>
-                <p
-                  style={{
-                    backgroundColor: "rgba(167, 169, 227, .5)",
-                    width: "2rem",
-                    textAlign: "center",
-                    color: "white",
-                    fontFamily: "avenir",
-                  }}
-                >
-                  IG
-                </p>
-              </div>
-              <div
-                style={{
-                  fontSize: "12px",
-                  fontFamily: "avenir",
-                }}
-              ></div>
-              <div>
-                <Newsletter />
-              </div>
-            </Col>
-            <Col
-              md={4}
-              sm={12}
-              style={{
-                color: "white",
-                paddingTop: "50px",
-                paddingBottom: "50px",
-                fontFamily: "avenir",
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <p>
-                Your support helps Play Marin close
-                <br /> the actiivty gap in Marin City and
-                <br /> provides a more diverse peer group for
-                <br /> over 300 kids annually throughout
-                <br /> Sourthern Marin
-              </p>
-              <h5>Select An Amount:</h5>
-              <ExternalLink href="https://www.paypal.me/playmarin/50">
-                <button
-                  type="button"
-                  value="Support Play Marin"
-                  style={{
-                    marginTop: ".10rem",
-                    width: "5.0rem",
-                    display: "relative",
-                    backgroundColor: "#007E26",
-                    color: "white",
-                    fontSize: "16px",
-                    paddingTop: "0.45rem",
-                    paddingBottom: "0.45rem",
-                    fontWeight: "600",
-                    fontFamily: `avenir`,
-                    borderColor: "#007E26",
-                  }}
-                >
-                  $ 50.00
-                </button>
-              </ExternalLink>
-              <ExternalLink href="https://www.paypal.me/playmarin/100">
-                <button
-                  type="button"
-                  value="Support Play Marin"
-                  style={{
-                    marginTop: "0.50rem",
-                    width: "5.0rem",
-                    display: "relative",
-                    backgroundColor: "#007E26",
-                    color: "white",
-                    fontSize: "16px",
-                    paddingTop: "0.45rem",
-                    paddingBottom: "0.45rem",
-                    fontWeight: "600",
-                    fontFamily: `avenir`,
-                    borderColor: "#007E26",
-                  }}
-                >
-                  $ 100
-                </button>
-              </ExternalLink>
-              <ExternalLink href="https://www.paypal.me/playmarin/500">
-                <button
-                  type="button"
-                  value="Support Play Marin"
-                  style={{
-                    marginTop: "0.50rem",
-                    width: "5.0rem",
-                    display: "relative",
-                    backgroundColor: "#007E26",
-                    color: "white",
-                    fontSize: "16px",
-                    paddingTop: "0.45rem",
-                    paddingBottom: "0.45rem",
-                    fontWeight: "600",
-                    fontFamily: `avenir`,
-                    borderColor: "#007E26",
-                  }}
-                >
-                  $ 500
-                </button>
-              </ExternalLink>
-            </Col>
+            
           </Row>
         </Container>
       </Jumbotron>

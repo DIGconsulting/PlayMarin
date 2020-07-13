@@ -77,7 +77,7 @@ body {
 
 
  .Video {
-   height: 800px;
+   height: 700x;
    }
 
    .Qoute{
@@ -90,4 +90,9 @@ body {
 
   div #responsive-navbar-nav {
     background-color: white!important;
+  }
+
+
+  iframe {
+    margin-bottom: 0px!important;
   }

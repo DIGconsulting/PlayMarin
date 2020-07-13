@@ -444,8 +444,7 @@ const About = () => {
 
       <Row>
         <Col sm={12} md={12} lg={12}>
-
-        <div
+          <div
             style={{
               backgroundImage: `url(${PartnersImg})`,
               "-webkit-background-size": "cover",
@@ -459,7 +458,7 @@ const About = () => {
               color: "white",
             }}
           >
-                    <div
+            <div
               style={{
                 paddingTop: "10rem ",
                 paddingBottom: "15rem",
@@ -467,46 +466,49 @@ const About = () => {
                   "linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7))",
               }}
             >
-          <Container>
-          <h2 className="text-center">Our Partners</h2>
-            <Table style={{
-              color: "#fff",
-              fontSize: "25px",
-              Align: "center"
-            }}> 
-            
-              <tbody>
-                <tr>
-                  <td>County Bears AAU Basketball</td>
-                  <td>ProofLab</td>
-                </tr>
-                <tr>
-                  <td>Dave Fromer Soccer</td>
-                  <td>St Mary Star Of the Sea</td>
-                </tr>
-                <tr>
-                  <td>Good Tidings Foundation</td>
-                  <td>Southern Marin Lacrosse</td>
-                </tr>
-                <tr>
-                  <td>Jennifer Azzi, Azzi Acedemy Camps</td>
-                  <td>Trips4Kids</td>
-                </tr>
-                <tr>
-                  <td>Marin City Community District</td>
-                  <td>Warriors Community Foundation</td>
-                </tr>
-                <tr>
-                  <td>Next Level Flag Football</td>
-                  <td>
-                    {" "}
-                    <Button variant="outline-success">Become a Partner</Button>
-                  </td>
-                </tr>
-              </tbody>
-            </Table>
-          </Container>
-          </div>
+              <Container>
+                <h2 className="text-center">Our Partners</h2>
+                <Table
+                  style={{
+                    color: "#fff",
+                    fontSize: "25px",
+                    Align: "center",
+                  }}
+                >
+                  <tbody>
+                    <tr>
+                      <td>County Bears AAU Basketball</td>
+                      <td>ProofLab</td>
+                    </tr>
+                    <tr>
+                      <td>Dave Fromer Soccer</td>
+                      <td>St Mary Star Of the Sea</td>
+                    </tr>
+                    <tr>
+                      <td>Good Tidings Foundation</td>
+                      <td>Southern Marin Lacrosse</td>
+                    </tr>
+                    <tr>
+                      <td>Jennifer Azzi, Azzi Acedemy Camps</td>
+                      <td>Trips4Kids</td>
+                    </tr>
+                    <tr>
+                      <td>Marin City Community District</td>
+                      <td>Warriors Community Foundation</td>
+                    </tr>
+                    <tr>
+                      <td>Next Level Flag Football</td>
+                      <td>
+                        {" "}
+                        <Button variant="outline-success">
+                          Become a Partner
+                        </Button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </Table>
+              </Container>
+            </div>
           </div>
         </Col>
       </Row>
