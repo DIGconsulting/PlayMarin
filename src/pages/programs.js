@@ -6,7 +6,7 @@ import { Jumbotron } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import CardDeck from "react-bootstrap/CardDeck"
 import Card from "react-bootstrap/Card"
-import {  Row, Col } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 import SolutionImgTwo from "../images/desktop.jpg"
 
 const Programs = () => {
@@ -107,9 +107,6 @@ const Programs = () => {
           </Col>
         </Row>
       </Container>
-
-
-
 
       <Container
         style={{

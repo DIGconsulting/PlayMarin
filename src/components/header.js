@@ -8,8 +8,37 @@ import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Logo from "../images/playMarinLogo.png"
 import "./hero.module.css"
+import { Link } from "gatsby"
+import styled from "@emotion/styled"
 
 const Header = () => {
+  const StyledLink = styled(Link)`
+  padding-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #6512ae;
+  margin-right: 20px;
+  border-bottom-width: 5px;
+  position: relatve;
+  font-family: avenir;
+`
+const ExternalLink = styled(Link)`
+  padding-left: 20px;
+  display: flex;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 20px;
+  border-bottom-width: 5px;
+  position: relatve;
+  font-family: avenir;
+  color: #000;
+`
+
+const activeStyle = {
+  color: `#598BDD`,
+  // color: `#0B7BFF`,
+}
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
       <Container
@@ -37,23 +66,13 @@ const Header = () => {
             paddingBottom: "10px!important",
           }}
         >
-          <Nav className="mr-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">About</Nav.Link>
-            <Nav.Link href="#features">Programs</Nav.Link>
-            <Nav.Link href="#features">Support</Nav.Link>
-            <Nav.Link href="#features">Contact Us</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav className="mr-auto" style={{
+          }}>
+            <StyledLink to="/">Home</StyledLink>
+            <StyledLink  to="/about">About</StyledLink>
+            <StyledLink  to="programs">Programs</StyledLink>
+            <StyledLink  to="support">Support</StyledLink>
+            <StyledLink  to="contact">Contact Us</StyledLink>
           </Nav>
           <Button variant="outline-success">Donate</Button>
         </Navbar.Collapse>

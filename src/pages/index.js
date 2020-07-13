@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../components/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 function IndexPage() {
   const opts = {}
