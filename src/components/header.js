@@ -34,7 +34,7 @@ const Header = () => {
           id="responsive-navbar-nav"
           style={{
             paddingLeft: "20px",
-            paddingBottom: "20px",
+            paddingBottom: "10px!important",
           }}
         >
           <Nav className="mr-auto">

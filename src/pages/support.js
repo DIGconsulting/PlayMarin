@@ -74,13 +74,13 @@ const Support = () => {
               padding: "4rem",
             }}
           >
-            <h1>Everyone wins with Play Marin</h1>
             <p>
-              Give a gift that promotes a more inclusive and equitable Marin
-              community by making a donation that provides athletic and
-              extracurricular activities for Marin City Youth while creating a
-              more diverse peer group for participating young people across
-              Marin County.
+              We need you. You can help solve the play and diversity challenge
+              in Marin County. Give a gift that promotes a more inclusive and
+              equitable Marin community by making a donation that provides
+              athletic and extracurricular activities for Marin City Youth while
+              creating a more diverse peer group for participating young people
+              across Marin County.
             </p>
             <button
               style={{
@@ -129,22 +129,22 @@ const Support = () => {
               9 players to reaching over 300 kids annually through a variety of
               team sports and other educational and enriching activities, all
               while promoting diversity and solidarity among the young people of
-              Marin County.{" "}
+              Marin County.
             </p>
             <p>
               All donations are tax-deductible to the extent allowed by law. Our
               US Tax identification number is 83-1737141
             </p>
             <p>
-              Please consider supporting Play Marin’s work by making an donation
-              online today. Our secure donation payment portal is coming soon!
+              Please consider supporting Play Marin’s work by making an online
+              donation today. Our secure donation payment portal is coming soon!
               In the meantime, you may use these secure payment options:
             </p>
             <p>
-              For other donation inquiries please contact: By email:
-              donate@playmarin.org orBy Phone: (415) 686-5045. By mail to
-              address: Play Marin, PO Box 530, Sausalito, California 94965
+            For other donation inquiries please send us a note to <a>donate@playmarin.org</a> or call (415) 686-5045.
             </p>
+            <p>If you would like to send a gift via check, please mail to our address:  Play Marin, PO Box 530, Sausalito, California  94965</p>
+            <p>Thank you for supporting the Play Marin Movement! </p>
           </Col>
           <Col
             xs={12}

@@ -27,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
+    background-image: linear-gradient(to right, rgba(85,142,222,0.2), rgb(101, 20, 175, 0.7));
   }
 
 
@@ -98,4 +99,9 @@ body {
 
   .card-body {
     min-height: 0px!important;
+  }
+
+
+  #responsive-navbar-nav {
+    padding-bottom: 0px;
   }

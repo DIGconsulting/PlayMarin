@@ -7,15 +7,12 @@ import Homepagethreeup from "../components/homepagethreeup"
 import Media from "react-media"
 import { Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import  "../components/hero.module.css"
+import "../components/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
 
-
-
 function IndexPage() {
-  const opts = {
-  }
+  const opts = {}
   const { video } = useStaticQuery(graphql`
     query {
       video: youtubeVideo {
@@ -48,9 +45,7 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-          
             <YouTube videoId={video.videoId} opts={opts} />
-
           </Col>
 
           <Col
@@ -68,7 +63,7 @@ function IndexPage() {
             <h1>Everyone wins with Play Marin</h1>
             <p>
               PLAY Marin provides sports and other extracurricular activities to
-              intentionally give diverse ethinic and socioeconomic backgrounds
+              intentionally give diverse ethnic and socioeconomic backgrounds
               the opportunity to learn and grow together through play.
             </p>
             <button
@@ -95,14 +90,17 @@ function IndexPage() {
           }}
         >
           <Col md={12} className="text-center">
-            <p className="text-center" style={{
-              fontSize: "30px"
-            }}>
+            <p
+              className="text-center"
+              style={{
+                fontSize: "30px",
+              }}
+            >
               <Container>
-                "It's important that children spread amounst the many small
+                "It's important that children spread amongst the many small
                 towns in Marin have the opportunity to learn about others, not
-                by competing with them, but instead through the lens of playing
-                with them."
+                by competing against them, but instead through the lens of
+                playing with them."
               </Container>
             </p>
             <p
@@ -134,7 +132,7 @@ function IndexPage() {
                   color: `#fff`,
                 }}
               >
-                Play and diversigy are essential for a 21st century education
+                Play and diversity are essential for a 21st-century education
               </h2>
               <div
                 style={{
@@ -144,11 +142,11 @@ function IndexPage() {
                 <p>
                   Play Marin envisions Marin as an integrated and unified
                   community. The lessons learned through the play and
-                  experiences we provide instills valuable skills, creates
-                  friendships, and enhances well being and solidarity among the
+                  experiences we provide instill valuable skills, create
+                  friendships and enhances well being and solidarity among the
                   young people of Marin, improving their prospects for a
                   successful future and benefiting the health of our broader
-                  Marin community.{" "}
+                  Marin community.
                 </p>
               </div>
             </Col>

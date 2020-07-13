@@ -105,18 +105,21 @@ const About = () => {
                   of diverse ethnic and socioeconomic backgrounds in Southern
                   Marin to learn and grow together through play. We recognize
                   the need for stronger diversity and inclusion in Marin County,
-                  and we believe that bringing together the unique expereinces
-                  of different cultures and socioeconomic backgrounds amoung us
+                  and we believe that bringing together the unique experiences
+                  of different cultures and socioeconomic backgrounds among us
                   serves to enhance our larger community. Being able to
                   understand and appreciate people from all walks of life is
                   vital to the advancement of our society, and we see play as
-                  the vehicle to achieve this goal. In over 300 kids annually
-                  through several team sports and many other uplifting and
-                  enriching activities. Our work teaches valuable skills,
-                  creates friendships, develops people of Marin from all
-                  backgrounds, improving their propects for a successful future
-                  and benefiting the overall health of our Marin community. Come
-                  play with us.
+                  the vehicle to achieve this goal. In just eight years, we have
+                  grown from one basketball team of nine players to reaching
+                  over 300 kids annually through several team sports and many
+                  other uplifting and enriching activities. Our work teaches
+                  valuable skills, creates friendships, develops grit, brings
+                  families together, and enhances well being and solidarity
+                  among young people of Marin from all backgrounds, improving
+                  their prospects for a successful future and benefiting the
+                  overall health of our broader Marin community. Come play with
+                  us.
                 </p>
               </Container>
               <div></div>
@@ -139,7 +142,7 @@ const About = () => {
             <p>
               Marin City youth lack access to recreational opportunities, but
               kids-at-large in Southern Marin lack exposure to diverse peers.
-              Racial tension in Southern Marin is prevalent and we suspect it's
+              Racial tension in Southern Marin is prevalent and we suspect it’s
               due to kids first coming together when they attend Tamalpais High
               School, the one high school in Southern Marin.
             </p>
@@ -207,25 +210,17 @@ const About = () => {
           }}
         >
           <div>
+            <h1>Our solution</h1>
             <p>
-              By providing opportunities for children of diverse ethnic and
-              socioeconomic backgrounds in Southern Marin to learn, play and
-              grow together we attack the problem in 3 key ways:
+              Everyone wins with Play Marin! Marin City youth have increased
+              opportunities to participate in organized sports and other
+              extracurricular activities. grow together we attack the problem in
+              3 key ways:
             </p>
-            <ol>
-              <li>
-                Delivering seasonal sports and activities in Marin City for
-                3rd-8th graders.
-              </li>
-              <li>
-                Implementing monthly Play Days focused around team-building for
-                children and families.
-              </li>
-              <li>
-                Recruiting youth of color to participate in sports and
-                activities in Southern Marin County.
-              </li>
-            </ol>
+            <p>
+              All participants benefit from learning and growing together
+              through play with more diverse peers.
+            </p>
           </div>
         </Col>
       </Row>
@@ -285,28 +280,29 @@ const About = () => {
                 together. Starting in 2012 with just one basketball team of nine
                 players, Mr. Austin’s dedicated stewardship of Play Marin
                 brought steady and expansive growth. The organization currently
-                touches approximately 300 kids annually through multiple age
-                group teams and activities. Working full time in other
+                serves approximately 300 kids annually through multiple
+                age-group teams and activities. Working full time in other
                 professional roles while driving and managing this swift and
-                substantial growth in Play Marin, in 2018 Paul accepted the
-                position of College Completion and Career Advisor for Bridge the
-                Gap College Prep. Here he creates college persistence and
+                substantial growth in Play Marin, from 2018-2020 Paul accepted
+                the position of College Completion and Career Advisor for Bridge
+                the Gap College Prep. Here he created college persistence and
                 graduation plans for low-income students, working with them from
-                high school through college graduation and beyond. He guides
+                high school through college graduation and beyond. He guided
                 every aspect of the high school to college to graduation
                 experience for first-generation college students; including
                 identification and application, transitioning from high school,
                 providing motivation and support for student personal health and
                 academic performance, and coaching on the transition from
-                college to career. Additionally, Paul is the Community Liaison
-                for Luminate Capital Partners, a Lulu Lemon Ambassador, and
-                board member of Extra Food. Married to Miller Creek Middle
-                School Principal, Tenisha Tate, and the father of two, Paul
-                Austin’s world is dedicated to the well-being of young people.
-                He is a long-standing advocate for Marin youth, serving as their
-                coach, counselor, and cheerleader, while constantly promoting
-                the invaluable mission of bringing kids of diverse backgrounds
-                together through play.
+                college to career. In the summer of 2020, Paul began working
+                full time as Chief Executive Officer of Play Marin.
+                Additionally, Paul is the Community Liaison for Luminate Capital
+                Partners, a LuluLemon Ambassador, and a board member of Extra
+                Food. Married to Miller Creek Middle School Principal, Tenisha
+                Tate, and the father of two, Paul Austin’s world is dedicated to
+                the well-being of young people. He is a long-standing advocate
+                for Marin youth, serving as their coach, counselor, and
+                cheerleader, while constantly promoting the invaluable mission
+                of bringing kids of diverse backgrounds together through play.
               </p>
             </div>
           </Col>
@@ -343,7 +339,7 @@ const About = () => {
                 Board Chair Bruce Edwards lives in Mill Valley with his wife
                 Kirsten, and sons Dillon, JP, and Reed. With over 20 years of
                 financial services experience, Bruce is a Family CFO for
-                approximately 25 families. In these endeavors Bruce assists his
+                approximately 25 families. In these endeavors, Bruce assists his
                 clients with tax-efficient charitable giving through a
                 combination of donor-advised funds and foundations. A devoted
                 family man, some of Bruce’s other passions include fly fishing
@@ -425,8 +421,8 @@ const About = () => {
                 artist management, Roxie has worked with young people since she
                 was a teenager— first as a conventional horseback riding
                 instructor and later as a Certified Therapeutic Riding
-                Instructor and program director. In this capacity she worked
-                directly with at-risk and special needs students ages 5-17, and
+                Instructor and program director. In this capacity, she worked
+                directly with at-risk and special needs students ages 5-17 and
                 served as designer, developer, and director of several
                 therapeutic and educational programs on both coasts. The parent
                 of an NCAA athlete, Roxie first learned about Play Marin when
@@ -478,26 +474,30 @@ const About = () => {
                   <tbody>
                     <tr>
                       <td>County Bears AAU Basketball</td>
-                      <td>ProofLab</td>
-                    </tr>
-                    <tr>
-                      <td>Dave Fromer Soccer</td>
-                      <td>St Mary Star Of the Sea</td>
+                      <td>Dave Frommers Soccer</td>
                     </tr>
                     <tr>
                       <td>Good Tidings Foundation</td>
-                      <td>Southern Marin Lacrosse</td>
-                    </tr>
-                    <tr>
-                      <td>Jennifer Azzi, Azzi Acedemy Camps</td>
-                      <td>Trips4Kids</td>
+                      <td>Jennifer Azzi, Azzi Academy Camps</td>
                     </tr>
                     <tr>
                       <td>Marin City Community District</td>
-                      <td>Warriors Community Foundation</td>
+                      <td>Next Level Flag Football</td>
                     </tr>
                     <tr>
-                      <td>Next Level Flag Football</td>
+                      <td>ProofLab</td>
+                      <td>St Mary Star of the Sea </td>
+                    </tr>
+                    <tr>
+                      <td>Southern Marin Aquatics</td>
+                      <td>Southern Marin Lacrosses</td>
+                    </tr>
+                    <tr>
+                      <td>Sports Basement</td>
+                      <td>Trips4Kids </td>
+                    </tr>
+                    <tr>
+                      <td>Warriors Community Foundation</td>
                       <td>
                         {" "}
                         <Button variant="outline-success">

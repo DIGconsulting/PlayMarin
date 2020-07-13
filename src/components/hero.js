@@ -23,92 +23,99 @@ function Hero() {
   `)
 
   return (
-<>
-    <div className={classes.Container}>
-      <video
-        autoPlay="autoplay"
-        loop="loop"
-        muted
-        className={classes.Video}
-        fluid={false}
-        playsInline
-      >
-        <source src={video.videoH264.path} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <div className={classes.Content}>
-        <Card
-          className="text-center"
-          style={{
-            color: "black",
-            width: "1000px",
-            display: "flex",
-            marginBottom: "-17em",
-            paddingBottom: "0px",
-            justifyContent: "space-around",
-          }}
+    <>
+      <div className={classes.Container}>
+        <video
+          autoPlay="autoplay"
+          loop="loop"
+          muted
+          className={classes.Video}
+          fluid={false}
+          playsInline
         >
-          <Card.Body style={{
-          Height: "0px"
-          }}>
-            <Tab.Container defaultActiveKey="first">
-              <Row>
-                <Col sm={8}>
-                  <Tab.Content
-                    style={{
-                      textAlign: "left",
-                    }}
-                  >
-                    <h4>Support Play Marin Today!</h4>
-                    Your support helps Play Marin close the activity gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Southern MarinYour support helps Play Marin close the activity gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Southern Marin
-                  </Tab.Content>
-                </Col>
-                <Col sm={4}>
-                  <Nav
-                    variant="pills"
-                    className="flex-column"
-                    style={{
-                      marginTop: "0px",
-                      justifyContent: "space-around",
-                      padding: "10px",
-                    }}
-                  >
-                    <Button
-                      style={{
-                        width: "15rem",
-                        height: "2.5rem",
-                      }}
-                    >
-                      <Nav.Link eventKey="first">50</Nav.Link>
-                    </Button>
-                    <Button
-                      style={{
-                        width: "15rem",
-                        height: "2.5rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      <Nav.Link eventKey="first">100</Nav.Link>
-                    </Button>
-                    <Button
-                      style={{
-                        width: "15rem",
-                        height: "2.5rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      <Nav.Link eventKey="first">500</Nav.Link>
-                    </Button>
-                  </Nav>
-                </Col>
-              </Row>
-            </Tab.Container>
-          </Card.Body>
-        </Card>
+          <source src={video.videoH264.path} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
+        <div className={classes.Content}>
+          <Card
+            className="text-center"
+            style={{
+              color: "black",
+              width: "1000px",
+              display: "flex",
+              marginBottom: "-17em",
+              height: "300px",
+              paddingBottom: "0px",
+              justifyContent: "space-around",
+            }}
+          >
+            <Card.Body
+              style={{
+                Height: "0px!important",
+              }}
+            >
+              <Tab.Container defaultActiveKey="first">
+                <Row>
+                  <Col sm={8}>
+                    <Tab.Content
+                      style={{
+                        textAlign: "left",
+                      }}
+                    >
+                      <h4>Support Play Marin Today!</h4>
+                      Your support helps Play Marin close the activity gap in
+                      Marin City and provides a more diverse peer group for over
+                      300 kids annually throughout Southern MarinYour support
+                      helps Play Marin close the activity gap in Marin City and
+                      provides a more diverse peer group for over 300 kids
+                      annually throughout Southern Marin
+                    </Tab.Content>
+                  </Col>
+                  <Col sm={4}>
+                    <Nav
+                      variant="pills"
+                      className="flex-column"
+                      style={{
+                        marginTop: "0px",
+                        justifyContent: "space-around",
+                        padding: "1px",
+                      }}
+                    >
+                      <Button
+                        style={{
+                          width: "15rem",
+                          height: "2.5rem",
+                        }}
+                      >
+                        <Nav.Link eventKey="first">50</Nav.Link>
+                      </Button>
+                      <Button
+                        style={{
+                          width: "15rem",
+                          height: "2.5rem",
+                          marginTop: "10px",
+                        }}
+                      >
+                        <Nav.Link eventKey="first">100</Nav.Link>
+                      </Button>
+                      <Button
+                        style={{
+                          width: "15rem",
+                          height: "2.5rem",
+                          marginTop: "10px",
+                        }}
+                      >
+                        <Nav.Link eventKey="first">500</Nav.Link>
+                      </Button>
+                    </Nav>
+                  </Col>
+                </Row>
+              </Tab.Container>
+            </Card.Body>
+          </Card>
+        </div>
       </div>
-    </div>
     </>
   )
 }

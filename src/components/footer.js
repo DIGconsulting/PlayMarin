@@ -3,12 +3,13 @@ import styled from "@emotion/styled"
 import Logo from "../images/play_logo_WHT.svg"
 import { Container, Row, Col } from "react-bootstrap"
 import Newsletter from "./newsletter.js"
-import Layout from "./layout"
 import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styles from "./form.module.css"
 import { ExternalLink } from "react-external-link"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebookF } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
   const StyledLink = styled(Link)`
@@ -50,7 +51,7 @@ const Footer = () => {
       >
         <Container>
           <Row>
-          <Col
+            <Col
               md={4}
               sm={12}
               style={{
@@ -97,14 +98,14 @@ const Footer = () => {
                   $ 500
                 </Button>
               </ExternalLink>
-              <p style={{
-                paddingTop: "50px"
-              }}>
-                Your support helps Play Marin close
-                 the actiivty gap in Marin City and
-                 provides a more diverse peer group for
-                over 300 kids annually throughout
-              Sourthern Marin
+              <p
+                style={{
+                  paddingTop: "50px",
+                }}
+              >
+                Your support helps Play Marin close the actiivty gap in Marin
+                City and provides a more diverse peer group for over 300 kids
+                annually throughout Sourthern Marin
               </p>
             </Col>
             <Col md={4} sm={12} style={{ color: "white" }}>
@@ -115,7 +116,6 @@ const Footer = () => {
                     backgroundColor: "rgba(167, 169, 227, .5)",
                     width: "2rem",
                     textAlign: "center",
-                    marginRight: ".5rem",
                     color: "white",
                     fontFamily: "avenir",
                   }}
@@ -197,7 +197,6 @@ const Footer = () => {
                 </div>
               </div>
             </Col>
-            
           </Row>
         </Container>
       </Jumbotron>
