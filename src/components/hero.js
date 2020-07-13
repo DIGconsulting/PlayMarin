@@ -72,43 +72,55 @@ function Hero() {
                       annually throughout Southern Marin
                     </Tab.Content>
                   </Col>
-                  <Col sm={4}>
-                    <Nav
-                      variant="pills"
-                      className="flex-column"
-                      style={{
-                        marginTop: "0px",
-                        justifyContent: "space-around",
-                        padding: "1px",
-                      }}
-                    >
-                      <Button
-                        style={{
-                          width: "15rem",
-                          height: "2.5rem",
-                        }}
-                      >
-                        <Nav.Link eventKey="first">50</Nav.Link>
-                      </Button>
-                      <Button
-                        style={{
-                          width: "15rem",
-                          height: "2.5rem",
-                          marginTop: "10px",
-                        }}
-                      >
-                        <Nav.Link eventKey="first">100</Nav.Link>
-                      </Button>
-                      <Button
-                        style={{
-                          width: "15rem",
-                          height: "2.5rem",
-                          marginTop: "10px",
-                        }}
-                      >
-                        <Nav.Link eventKey="first">500</Nav.Link>
-                      </Button>
-                    </Nav>
+                  <Col
+              md={4}
+              sm={12}
+              style={{
+                color: "white",
+                fontFamily: "avenir",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+                  <h5 style={{
+                    color: "black"
+                  }}>Select An Amount:</h5>
+              <ExternalLink href="https://www.paypal.me/playmarin/50">
+                <Button
+                  variant="success"
+                  style={{
+                    width: "8rem",
+                    height: "2.5rem",
+                    marginTop: "10px",
+                  }}
+                >
+                  $ 50
+                </Button>
+              </ExternalLink>
+              <ExternalLink href="https://www.paypal.me/playmarin/100">
+                <Button
+                  variant="success"
+                  style={{
+                    width: "8rem",
+                    height: "2.5rem",
+                    marginTop: "10px",
+                  }}
+                >
+                  $ 100
+                </Button>
+              </ExternalLink>
+              <ExternalLink href="https://www.paypal.me/playmarin/500">
+                <Button
+                  variant="success"
+                  style={{
+                    width: "8rem",
+                    height: "2.5rem",
+                    marginTop: "10px",
+                  }}
+                >
+                  $ 500
+                </Button>
+              </ExternalLink>
                   </Col>
                 </Row>
               </Tab.Container>
