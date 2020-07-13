@@ -40,7 +40,7 @@ const activeStyle = {
 }
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" fixed="top">
+    <Navbar collapseOnSelect expand="lg" fixed="top">
       <Container
         style={{
           backgroundColor: "white",

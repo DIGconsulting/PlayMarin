@@ -161,16 +161,16 @@ const Footer = () => {
                   <StyledLink to="/" activeStyle={activeStyle}>
                     Home
                   </StyledLink>
-                  <StyledLink to="/programs/" activeStyle={activeStyle}>
+                  <StyledLink to="/programs" activeStyle={activeStyle}>
                     Programs
                   </StyledLink>
-                  <StyledLink to="/support/" activeStyle={activeStyle}>
+                  <StyledLink to="/support" activeStyle={activeStyle}>
                     Support
                   </StyledLink>
-                  <StyledLink to="/about/" activeStyle={activeStyle}>
+                  <StyledLink to="/about" activeStyle={activeStyle}>
                     About
                   </StyledLink>
-                  <StyledLink to="/support/" activeStyle={activeStyle}>
+                  <StyledLink to="/support" activeStyle={activeStyle}>
                     Contact-Us
                   </StyledLink>
                 </div>
