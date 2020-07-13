@@ -82,14 +82,14 @@ module.exports = {
         preload: "auto",
       },
     },
-    {
-      resolve: `gatsby-source-stripe`,
-      options: {
-        objects: ["Sku", "Product"],
-        secretKey: `sk_test_1nbmLkBnfJg4TPyPSNqpEF1x00kwXWftcw`,
-        downloadFiles: false,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-stripe`,
+    //   options: {
+    //     objects: ["Sku", "Product"],
+    //     secretKey: `sk_test_1nbmLkBnfJg4TPyPSNqpEF1x00kwXWftcw`,
+    //     downloadFiles: false,
+    //   },
+    // },
 
     {
       resolve: `gatsby-transformer-video`,

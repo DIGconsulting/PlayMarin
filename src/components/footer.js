@@ -63,7 +63,7 @@ const Footer = () => {
               <h5>Select An Amount:</h5>
               <ExternalLink href="https://www.paypal.me/playmarin/50">
                 <Button
-                  variant="outline-success"
+                  variant="success"
                   style={{
                     width: "8rem",
                     height: "2.5rem",
@@ -75,7 +75,7 @@ const Footer = () => {
               </ExternalLink>
               <ExternalLink href="https://www.paypal.me/playmarin/100">
                 <Button
-                  variant="outline-success"
+                  variant="success"
                   style={{
                     width: "8rem",
                     height: "2.5rem",
@@ -87,7 +87,7 @@ const Footer = () => {
               </ExternalLink>
               <ExternalLink href="https://www.paypal.me/playmarin/500">
                 <Button
-                  variant="outline-success"
+                  variant="success"
                   style={{
                     width: "8rem",
                     height: "2.5rem",

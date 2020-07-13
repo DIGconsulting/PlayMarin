@@ -8,6 +8,8 @@ import Tab from "react-bootstrap/Tab"
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
+import Container from "react-bootstrap/Container"
+import "./hero.module.css"
 
 function Hero() {
   const { video } = useStaticQuery(graphql`
@@ -21,6 +23,7 @@ function Hero() {
   `)
 
   return (
+<>
     <div className={classes.Container}>
       <video
         autoPlay="autoplay"
@@ -42,12 +45,13 @@ function Hero() {
             width: "1000px",
             display: "flex",
             marginBottom: "-17em",
-            height: "300px",
             paddingBottom: "0px",
             justifyContent: "space-around",
           }}
         >
-          <Card.Body bg="success" style={{}}>
+          <Card.Body style={{
+          Height: "0px"
+          }}>
             <Tab.Container defaultActiveKey="first">
               <Row>
                 <Col sm={8}>
@@ -57,9 +61,7 @@ function Hero() {
                     }}
                   >
                     <h4>Support Play Marin Today!</h4>
-                    Your support helps Play Marin close the actiivty gap in
-                    Marin City and provides a more diverse peer group for over
-                    300 kids annually throughout Sourthern Marin
+                    Your support helps Play Marin close the activity gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Southern MarinYour support helps Play Marin close the activity gap in Marin City and provides a more diverse peer group for over 300 kids annually throughout Southern Marin
                   </Tab.Content>
                 </Col>
                 <Col sm={4}>
@@ -69,7 +71,7 @@ function Hero() {
                     style={{
                       marginTop: "0px",
                       justifyContent: "space-around",
-                      padding: "1px",
+                      padding: "10px",
                     }}
                   >
                     <Button
@@ -104,8 +106,10 @@ function Hero() {
             </Tab.Container>
           </Card.Body>
         </Card>
+
       </div>
     </div>
+    </>
   )
 }
 

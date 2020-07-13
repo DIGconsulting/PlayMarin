@@ -7,14 +7,14 @@ import Homepagethreeup from "../components/homepagethreeup"
 import Media from "react-media"
 import { Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import classes from "../components/hero.module.css"
+import  "../components/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
 
+
+
 function IndexPage() {
   const opts = {
-    height: "550",
-    width: "780",
   }
   const { video } = useStaticQuery(graphql`
     query {
@@ -48,9 +48,8 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-            <div class="videoWrapper">
-            <YouTube  videoId={video.videoId} opts={opts} frameborder="0" allowfullscreen />
-            </div>
+          
+            <YouTube videoId={video.videoId} opts={opts} />
 
           </Col>
 
