@@ -13,7 +13,7 @@ import YouTube from "react-youtube"
 
 function IndexPage() {
   const opts = {
-    height: "500",
+    height: "550",
     width: "780",
   }
   const { video } = useStaticQuery(graphql`
@@ -48,7 +48,9 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-            <YouTube videoId={video.videoId} opts={opts} />
+            <div class="videoWrapper">
+            <YouTube  videoId={video.videoId} opts={opts} frameborder="0" allowfullscreen />
+            </div>
 
           </Col>
 
