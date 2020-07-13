@@ -141,9 +141,13 @@ const Support = () => {
               In the meantime, you may use these secure payment options:
             </p>
             <p>
-            For other donation inquiries please send us a note to <a>donate@playmarin.org</a> or call (415) 686-5045.
+              For other donation inquiries please send us a note to{" "}
+              <a>donate@playmarin.org</a> or call (415) 686-5045.
             </p>
-            <p>If you would like to send a gift via check, please mail to our address:  Play Marin, PO Box 530, Sausalito, California  94965</p>
+            <p>
+              If you would like to send a gift via check, please mail to our
+              address: Play Marin, PO Box 530, Sausalito, California 94965
+            </p>
             <p>Thank you for supporting the Play Marin Movement! </p>
           </Col>
           <Col
