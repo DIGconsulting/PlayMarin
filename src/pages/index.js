@@ -47,7 +47,9 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-            <YouTube videoId={video.videoId} opts={opts} />
+            <YouTube videoId={video.videoId} opts={opts} style={{
+              marginBottom: "0.5rem",
+            }} />
           </Col>
 
           <Col
