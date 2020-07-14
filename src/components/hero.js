@@ -50,7 +50,7 @@ function Hero() {
               className="justify-content-md-center"
             >
               <div className="text-center">
-                <p style={{ fontSize: "25px" }}>
+                <p style={{ fontSize: "22px" }}>
                 Play Marin provides sports and other extracurricular activities to intentionally give kids of diverse ethnic and socioeconomic backgrounds the opportunity to learn and grow together through play. 
 
                 </p>
@@ -60,7 +60,7 @@ function Hero() {
               className="justify-content-md-center"
             >
               <div className="text-center">
-                <p style={{ fontSize: "25px" }}>
+                <p style={{ fontSize: "22px" }}>
                   With the goal of closing the activity gap in Marin City while
                   promoting diversity and inclusion throughout Marin County,
                   Play Marin started 8 years ago with one Marin City basketball
@@ -70,7 +70,7 @@ function Hero() {
             </Row>
             <Row className="justify-content-md-center">
               <div className="text-center">
-                <p style={{ fontSize: "25px" }}>
+                <p style={{ fontSize: "22px" }}>
                   Today, Play Marin reaches more than 300 kids annually
                   throughout Marin with our mission of diversity and inclusion
                   through Play.
