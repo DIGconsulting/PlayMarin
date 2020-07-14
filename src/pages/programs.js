@@ -15,7 +15,6 @@ import Volleyball from "../images/volley_girls.jpg"
 import Lacrosse from "../images/lacrosse.jpg"
 import Track from "../images/ track.jpg"
 
-
 const Programs = () => {
   return (
     <>
@@ -132,7 +131,7 @@ const Programs = () => {
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src={Volleyball}/>
+            <Card.Img variant="top" src={Volleyball} />
             <Card.Body>
               <Card.Title>Girl’s Volleyball</Card.Title>
             </Card.Body>
@@ -144,7 +143,7 @@ const Programs = () => {
             </Card.Body>
           </Card>
           <Card>
-            <Card.Img variant="top" src={Track}/>
+            <Card.Img variant="top" src={Track} />
             <Card.Body>
               <Card.Title>Track & Field</Card.Title>
             </Card.Body>
@@ -168,9 +167,6 @@ const Programs = () => {
           </p>
           <p className="text-center">Summer Camps</p>
           <p className="text-center">Swim Lessons </p>
-          <ExternalLink to="/https://marinmagazine.com/health/keep-the-olympic-spirit-going-in-marin-join-the-marin-magazine-decathlon/">
-          <p className="text-center">Magazine Decathlon</p>
-          </ExternalLink>
           <p className="text-center">And many more!</p>
         </Container>
       </Container>

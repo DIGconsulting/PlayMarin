@@ -123,13 +123,12 @@ const Footer = () => {
                   bgColor="#fff"
                   style={{ height: 40, width: 40 }}
                 />
-                                <SocialIcon
+                <SocialIcon
                   url="https://twitter.com/playmarin"
                   network="twitter"
                   bgColor="#fff"
                   style={{ height: 40, width: 40 }}
                 />
-
               </div>
               <div
                 style={{
