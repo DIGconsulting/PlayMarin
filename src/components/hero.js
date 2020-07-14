@@ -12,6 +12,7 @@ import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import "./hero.module.css"
 
+
 function Hero() {
   const { video } = useStaticQuery(graphql`
     query {
@@ -40,9 +41,23 @@ function Hero() {
 
         <div className={classes.Content}>
           <Container>
-            <Row
+            <Jumbotron
+              style={{
+                background: "rgba(7, 58, 99, 0.5)",
+              }}
+            >
+                   <Row
               className="justify-content-md-center"
-              style={{ marginTop: "11rem" }}
+            >
+              <div className="text-center">
+                <p style={{ fontSize: "25px" }}>
+                Play Marin provides sports and other extracurricular activities to intentionally give kids of diverse ethnic and socioeconomic backgrounds the opportunity to learn and grow together through play. 
+
+                </p>
+              </div>
+            </Row>
+          <Row
+              className="justify-content-md-center"
             >
               <div className="text-center">
                 <p style={{ fontSize: "25px" }}>
@@ -62,88 +77,6 @@ function Hero() {
                 </p>
               </div>
             </Row>
-            <Jumbotron
-              style={{
-                background: "rgba(7, 58, 99, 0.5)",
-              }}
-            >
-              <Row>
-                <Col md={8}>
-                  <h4
-                    style={{
-                      color: "white",
-                    }}
-                  >
-                    Support PLAY MARIN Today!
-                  </h4>
-                  <p
-                    style={{
-                      color: "white",
-                    }}
-                  >
-                    Your support helps PLAY MARIN close the activity gap in
-                    Marin City and provides a more diverse peer group for over
-                    300 kids annually throughout Southern Marin Your support
-                    helps Play Marin close the activity gap in Marin City and
-                    provides a more diverse peer group for over 300 kids
-                    annually throughout Southern Marin
-                  </p>
-                </Col>
-                <Col
-                  md={4}
-                  sm={12}
-                  style={{
-                    color: "white",
-                    fontFamily: "avenir",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <h5
-                    style={{
-                      color: "white",
-                    }}
-                  >
-                    Select An Amount:
-                  </h5>
-                  <ExternalLink href="https://www.paypal.me/playmarin/50">
-                    <Button
-                      variant="success"
-                      style={{
-                        width: "8rem",
-                        height: "2.5rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      $ 50
-                    </Button>
-                  </ExternalLink>
-                  <ExternalLink href="https://www.paypal.me/playmarin/100">
-                    <Button
-                      variant="success"
-                      style={{
-                        width: "8rem",
-                        height: "2.5rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      $ 100
-                    </Button>
-                  </ExternalLink>
-                  <ExternalLink href="https://www.paypal.me/playmarin/500">
-                    <Button
-                      variant="success"
-                      style={{
-                        width: "8rem",
-                        height: "2.5rem",
-                        marginTop: "10px",
-                      }}
-                    >
-                      $ 500
-                    </Button>
-                  </ExternalLink>
-                </Col>
-              </Row>
             </Jumbotron>
           </Container>
         </div>

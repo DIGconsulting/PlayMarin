@@ -71,7 +71,9 @@ const Header = () => {
             <StyledLink to="support">Support</StyledLink>
             <StyledLink to="contact">Contact Us</StyledLink>
           </Navbar>
+          <Link to="/support">
           <Button variant="outline-success">Donate</Button>
+          </Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
