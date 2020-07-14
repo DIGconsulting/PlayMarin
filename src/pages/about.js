@@ -147,7 +147,7 @@ const About = () => {
               addresses two fundamental challenges Marin youth face: Adequate
               access to extracurricular and athletic opportunity in Marin City
               Lack of racial, ethnic, and socioeconomic diversity in the broader
-              Marin community
+              Marin community in Marin City.
             </p>
           </Container>
         </Col>
@@ -218,7 +218,7 @@ const About = () => {
               Everyone wins with Play Marin! Marin City youth have increased
               opportunities to participate in organized sports and other
               extracurricular activities. All participants benefit from learning
-              and growing together through play with a more diverse peer group
+              and growing together through play with a more diverse peer group.
             </p>
           </div>
         </Col>
