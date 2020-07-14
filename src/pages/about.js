@@ -145,7 +145,7 @@ const About = () => {
               We operate in one of the wealthiest counties in the country, which
               is also the most racially disparate county in California. Our work
               addresses two fundamental challenges Marin youth face: Adequate
-              access to extracurricular and athletic opportunity in Marin City
+              access to extracurricular and athletic opportunity in Marin City.
               Lack of racial, ethnic, and socioeconomic diversity in the broader
               Marin community in Marin City.
             </p>
@@ -213,7 +213,7 @@ const About = () => {
           }}
         >
           <div>
-            <h1>Our solution</h1>
+            <h1>Our Solution</h1>
             <p>
               Everyone wins with Play Marin! Marin City youth have increased
               opportunities to participate in organized sports and other
