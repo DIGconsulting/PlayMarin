@@ -62,7 +62,6 @@ const Header = () => {
           id="responsive-navbar-nav"
           style={{
             paddingLeft: "20px",
-            paddingBottom: "10px!important",
           }}
         >
           <Navbar className="mr-auto">
