@@ -135,6 +135,8 @@ const About = () => {
           style={{
             backgroundColor: "#992168",
             color: "white",
+            padding: "5rem",
+            paddingLeft: "3rem",
           }}
         >
           <Container>

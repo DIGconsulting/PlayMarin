@@ -24,7 +24,6 @@ const Header = () => {
 `
 const ExternalLink = styled(Link)`
   padding-left: 20px;
-  display: flex;
   cursor: pointer;
   text-decoration: none;
   margin-right: 20px;
@@ -66,14 +65,13 @@ const activeStyle = {
             paddingBottom: "10px!important",
           }}
         >
-          <Nav className="mr-auto" style={{
-          }}>
+          <Navbar className="mr-auto">
             <StyledLink to="/">Home</StyledLink>
             <StyledLink  to="/about">About</StyledLink>
             <StyledLink  to="programs">Programs</StyledLink>
             <StyledLink  to="support">Support</StyledLink>
             <StyledLink  to="contact">Contact Us</StyledLink>
-          </Nav>
+          </Navbar>
           <Button variant="outline-success">Donate</Button>
         </Navbar.Collapse>
       </Container>
