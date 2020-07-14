@@ -25,7 +25,7 @@ const Contact = () => {
       >
         <Container>
           <p>Contact Us</p>
-          <h1>PLAY Marin</h1>
+          <h1>PLAY MARIN</h1>
           <div
             style={{
               margin: "auto",
@@ -36,6 +36,7 @@ const Contact = () => {
         </Container>
       </Jumbotron>
       <p className="text-center">+1 (415) 686-5045</p>
+      <p className="text-center">PO Box 530, Sausalito, California 94965</p>
       <p className="text-center">We look forward to hearing from you.</p>
       <Container>
         <ContactForm />

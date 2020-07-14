@@ -48,10 +48,7 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-            <YouTube
-              videoId={video.videoId}
-              opts={opts}
-            />
+            <YouTube videoId={video.videoId} opts={opts} />
           </Col>
 
           <Col
@@ -64,8 +61,7 @@ function IndexPage() {
               color: "white",
               paddingTop: "50px",
               paddingLeft: "50px",
-              marginBottom: "5px"
-
+              marginBottom: "5px",
             }}
           >
             <h1>Everyone wins with PLAY MARIN</h1>
@@ -78,16 +74,16 @@ function IndexPage() {
               of our broader Marin community.
             </p>
             <Link to="/about">
-            <button
-              style={{
-                width: "15rem",
-                height: "2.5rem",
-                color: "#992168",
-                borderColor: "#992168",
-              }}
-            >
-              Learn More
-            </button>
+              <button
+                style={{
+                  width: "15rem",
+                  height: "2.5rem",
+                  color: "#992168",
+                  borderColor: "#992168",
+                }}
+              >
+                Learn More
+              </button>
             </Link>
           </Col>
         </Row>
@@ -97,7 +93,7 @@ function IndexPage() {
         <Row
           style={{
             color: "black",
-           
+
             paddingTop: `50px`,
             paddingBottom: `50px`,
           }}

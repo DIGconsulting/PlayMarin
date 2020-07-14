@@ -8,6 +8,13 @@ import CardDeck from "react-bootstrap/CardDeck"
 import Card from "react-bootstrap/Card"
 import { Row, Col } from "react-bootstrap"
 import SolutionImgTwo from "../images/desktop.jpg"
+import { Link } from "gatsby"
+import { ExternalLink } from "react-external-link"
+import Basketball from "../images/Basketball.jpg"
+import Volleyball from "../images/volley_girls.jpg"
+import Lacrosse from "../images/lacrosse.jpg"
+import Track from "../images/ track.jpg"
+
 
 const Programs = () => {
   return (
@@ -27,7 +34,7 @@ const Programs = () => {
       >
         <Container>
           <p>Programs</p>
-          <h1>PLAY Marin</h1>
+          <h1>PLAY MARIN</h1>
           <div
             style={{
               margin: "auto",
@@ -114,62 +121,33 @@ const Programs = () => {
         }}
       >
         <Container>
-          <h2 className="text-center">SEASONAL</h2>
-          <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco{" "}
-          </p>
+          <h2 className="text-center">Seasonal Sports</h2>
         </Container>
 
         <CardDeck>
           <Card>
-            <img variant="top" />
+            <Card.Img variant="top" src={Basketball} />
             <Card.Body>
               <Card.Title>Basketball</Card.Title>
-              <Card.Text>
-                15 teams, 1st through 8th grade boys and girls, 10 players per
-                team
-              </Card.Text>
             </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
           </Card>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src={Volleyball}/>
             <Card.Body>
               <Card.Title>Girl’s Volleyball</Card.Title>
-              <Card.Text>
-                45 girls playing in 3 teams, after starting with 12 girls in
-                2018
-              </Card.Text>
             </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
           </Card>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src={Lacrosse} />
             <Card.Body>
               <Card.Title>Lacrosse</Card.Title>
-              <Card.Text></Card.Text>
             </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
           </Card>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src={Track}/>
             <Card.Body>
               <Card.Title>Track & Field</Card.Title>
-              <Card.Text>
-                44 athletes in 2019, after starting with 12-15 kids in 2015
-              </Card.Text>
             </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
           </Card>
         </CardDeck>
       </Container>
@@ -180,89 +158,21 @@ const Programs = () => {
         }}
       >
         <Container>
-          <h2 className="text-center">CLUBS</h2>
+          <h2 className="text-center">Extracurricular Activities</h2>
+          <p className="text-center">Field Trips</p>
+          <p className="text-center">Mountain Biking</p>
+          <p className="text-center">Skateboarding</p>
+          <p className="text-center">Social Justice</p>
           <p className="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco{" "}
+            Sports Clinics, often with national athletes
           </p>
+          <p className="text-center">Summer Camps</p>
+          <p className="text-center">Swim Lessons </p>
+          <ExternalLink to="/https://marinmagazine.com/health/keep-the-olympic-spirit-going-in-marin-join-the-marin-magazine-decathlon/">
+          <p className="text-center">Magazine Decathlon</p>
+          </ExternalLink>
+          <p className="text-center">And many more!</p>
         </Container>
-        <CardDeck>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Summer Camps</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Swim Lessons</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Mountain Biking Club</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Skateboarding</Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
-          </Card>
-        </CardDeck>
-        <CardDeck>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Field Trips </Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>
-                Sports Clinics, often with national athletes
-              </Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
-            <Card.Body>
-              <Card.Title>Social Justice </Card.Title>
-              <Card.Text></Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Sign-up now</small>
-            </Card.Footer>
-          </Card>
-        </CardDeck>
       </Container>
 
       <Footer />

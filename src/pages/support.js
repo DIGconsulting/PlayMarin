@@ -26,7 +26,7 @@ const Support = () => {
       >
         <Container>
           <p>Support</p>
-          <h1>PLAY Marin</h1>
+          <h1>PLAY MARIN</h1>
           <div
             style={{
               margin: "auto",
@@ -102,6 +102,11 @@ const Support = () => {
             >
               PayPal
             </button>
+            <p style={{
+              paddingTop: "10px",
+              width: "85%",
+            }} >please contact us for wire transfer information and other electronic payment options.  </p>
+
           </Col>
         </Row>
       </Container>

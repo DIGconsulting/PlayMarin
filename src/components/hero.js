@@ -40,23 +40,33 @@ function Hero() {
 
         <div className={classes.Content}>
           <Container>
-            <Row className="justify-content-md-center" style={{marginTop: "11rem"}}>
-              <div className="text-center" >
-               <p style={{fontSize: "25px"}}>With the goal of closing the activity gap in Marin City while
-                promoting diversity and inclusion throughout Marin County, Play
-                Marin started 8 years ago with one Marin City basketball team of
-                9 players.</p>
+            <Row
+              className="justify-content-md-center"
+              style={{ marginTop: "11rem" }}
+            >
+              <div className="text-center">
+                <p style={{ fontSize: "25px" }}>
+                  With the goal of closing the activity gap in Marin City while
+                  promoting diversity and inclusion throughout Marin County,
+                  Play Marin started 8 years ago with one Marin City basketball
+                  team of 9 players.
+                </p>
               </div>
             </Row>
             <Row className="justify-content-md-center">
               <div className="text-center">
-                <p style={{fontSize: "25px"}}>Today, Play Marin reaches more than 300 kids annually throughout
-                Marin with our mission of diversity and inclusion through Play.</p>
+                <p style={{ fontSize: "25px" }}>
+                  Today, Play Marin reaches more than 300 kids annually
+                  throughout Marin with our mission of diversity and inclusion
+                  through Play.
+                </p>
               </div>
             </Row>
-            <Jumbotron style={{
-              background: 'rgba(7, 58, 99, 0.5)'
-            }}>
+            <Jumbotron
+              style={{
+                background: "rgba(7, 58, 99, 0.5)",
+              }}
+            >
               <Row>
                 <Col md={8}>
                   <h4

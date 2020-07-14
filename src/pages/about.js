@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import Timeline from "../components/timeline"
-import MissionImg from "../gallery-images/ZKMJm6IJQB2kTjsOnHmYAw_thumb_36ce.jpg"
+import MissionImg from "../images/IMG_0004.jpeg"
 import ProblemImg from "../gallery-images/yUn2Cz+nSdGF5OkcREeMQA_thumb_36ff.jpg"
 import SolutionImg from "../gallery-images/vSHWBX8iTjOVGTiaPAHy4Q_thumb_36a4.jpg"
 import PartnersImg from "../gallery-images/4l5r2VD3SRS9AkQK55owWA_thumb_36fb.jpg"
@@ -64,7 +64,7 @@ const About = () => {
       >
         <Container>
           <p>ABOUT</p>
-          <h1>PLAY Marin</h1>
+          <h1>PLAY MARIN</h1>
           <div
             style={{
               margin: "auto",
@@ -140,13 +140,14 @@ const About = () => {
           }}
         >
           <Container>
-            <h1>The Problem</h1>
+            <h1>The Challenge</h1>
             <p>
-              Marin City youth lack access to recreational opportunities, but
-              kids-at-large in Southern Marin lack exposure to diverse peers.
-              Racial tension in Southern Marin is prevalent and we suspect it’s
-              due to kids first coming together when they attend Tamalpais High
-              School, the one high school in Southern Marin.
+              We operate in one of the wealthiest counties in the country, which
+              is also the most racially disparate county in California. Our work
+              addresses two fundamental challenges Marin youth face: Adequate
+              access to extracurricular and athletic opportunity in Marin City
+              Lack of racial, ethnic, and socioeconomic diversity in the broader
+              Marin community
             </p>
           </Container>
         </Col>
@@ -216,12 +217,8 @@ const About = () => {
             <p>
               Everyone wins with Play Marin! Marin City youth have increased
               opportunities to participate in organized sports and other
-              extracurricular activities. grow together we attack the problem in
-              3 key ways:
-            </p>
-            <p>
-              All participants benefit from learning and growing together
-              through play with more diverse peers.
+              extracurricular activities. All participants benefit from learning
+              and growing together through play with a more diverse peer group
             </p>
           </div>
         </Col>
@@ -332,7 +329,7 @@ const About = () => {
                 alt="board chair"
                 style={{ borderRadius: "50%", height: "7rem", width: "7rem" }}
               />
-              <b>Board Chair Bruce & Kirsten Edwards</b>
+              <b>Bruce Edwards, Board Chair (pictured with wife Kirsten)</b>
             </div>
           </Col>
           <Col md={10}>

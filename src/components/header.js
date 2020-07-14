@@ -13,30 +13,30 @@ import styled from "@emotion/styled"
 
 const Header = () => {
   const StyledLink = styled(Link)`
-  padding-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  color: #6512ae;
-  margin-right: 20px;
-  border-bottom-width: 5px;
-  position: relatve;
-  font-family: avenir;
-`
-const ExternalLink = styled(Link)`
-  padding-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  margin-right: 20px;
-  border-bottom-width: 5px;
-  position: relatve;
-  font-family: avenir;
-  color: #000;
-`
+    padding-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #6512ae;
+    margin-right: 20px;
+    border-bottom-width: 5px;
+    position: relatve;
+    font-family: avenir;
+  `
+  const ExternalLink = styled(Link)`
+    padding-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom-width: 5px;
+    position: relatve;
+    font-family: avenir;
+    color: #000;
+  `
 
-const activeStyle = {
-  color: `#598BDD`,
-  // color: `#0B7BFF`,
-}
+  const activeStyle = {
+    color: `#598BDD`,
+    // color: `#0B7BFF`,
+  }
 
   return (
     <Navbar collapseOnSelect expand="lg" fixed="top">
@@ -67,10 +67,10 @@ const activeStyle = {
         >
           <Navbar className="mr-auto">
             <StyledLink to="/">Home</StyledLink>
-            <StyledLink  to="/about">About</StyledLink>
-            <StyledLink  to="programs">Programs</StyledLink>
-            <StyledLink  to="support">Support</StyledLink>
-            <StyledLink  to="contact">Contact Us</StyledLink>
+            <StyledLink to="/about">About</StyledLink>
+            <StyledLink to="programs">Programs</StyledLink>
+            <StyledLink to="support">Support</StyledLink>
+            <StyledLink to="contact">Contact Us</StyledLink>
           </Navbar>
           <Button variant="outline-success">Donate</Button>
         </Navbar.Collapse>

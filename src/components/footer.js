@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import styles from "./form.module.css"
 import { ExternalLink } from "react-external-link"
 import { Link } from "gatsby"
-import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from "react-social-icons"
 
 const Footer = () => {
   const StyledLink = styled(Link)`
@@ -109,9 +109,20 @@ const Footer = () => {
             </Col>
             <Col md={4} sm={12} style={{ color: "white" }}>
               <h3>Follow PLAY MARIN</h3>
-              <div style={{ display: "flex", paddingTop: "10px",}}>
-              <SocialIcon url="https://www.instagram.com/play.marin/"  network="instagram" bgColor="#fff"  style={{ height: 40, width: 40,}}/>
-              <SocialIcon  url="https://www.facebook.com/playmarin.org/" network="facebook" bgColor="#fff"  style={{ height: 40, width: 40 }}/>
+              <div style={{ display: "flex", paddingTop: "10px" }}>
+                <SocialIcon
+                  url="https://www.instagram.com/play.marin/"
+                  network="instagram"
+                  bgColor="#fff"
+                  style={{ height: 40, width: 40 }}
+                />
+                <br />
+                <SocialIcon
+                  url="https://www.facebook.com/playmarin.org/"
+                  network="facebook"
+                  bgColor="#fff"
+                  style={{ height: 40, width: 40 }}
+                />
               </div>
               <div
                 style={{
