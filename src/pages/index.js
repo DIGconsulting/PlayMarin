@@ -10,8 +10,9 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../components/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from "react-dom"
+import { BrowserRouter } from "react-router-dom"
+import { Link } from "gatsby"
 
 function IndexPage() {
   const opts = {}
@@ -47,9 +48,10 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-            <YouTube videoId={video.videoId} opts={opts} style={{
-              marginBottom: "0.5rem",
-            }} />
+            <YouTube
+              videoId={video.videoId}
+              opts={opts}
+            />
           </Col>
 
           <Col
@@ -60,16 +62,22 @@ function IndexPage() {
             style={{
               backgroundColor: "#992168",
               color: "white",
-              width: "50%",
-              padding: "4rem",
+              paddingTop: "50px",
+              paddingLeft: "50px",
+              marginBottom: "5px"
+
             }}
           >
-            <h1>Everyone wins with Play Marin</h1>
+            <h1>Everyone wins with PLAY MARIN</h1>
             <p>
-              PLAY Marin provides sports and other extracurricular activities to
-              intentionally give diverse ethnic and socioeconomic backgrounds
-              the opportunity to learn and grow together through play.
+              PLAY MARIN envisions Marin as an integrated and unified community.
+              The lessons learned through the play and experiences we provide
+              instill valuable skills, create friendships, and enhance well
+              being and solidarity among the young people of Marin, improving
+              their prospects for a successful future and benefiting the health
+              of our broader Marin community.
             </p>
+            <Link to="/about">
             <button
               style={{
                 width: "15rem",
@@ -80,6 +88,7 @@ function IndexPage() {
             >
               Learn More
             </button>
+            </Link>
           </Col>
         </Row>
       </Container>
@@ -87,8 +96,8 @@ function IndexPage() {
       <Container fluid>
         <Row
           style={{
-            color: "white",
-            backgroundImage: "linear-gradient(#89D4CF, #734AE8)",
+            color: "black",
+           
             paddingTop: `50px`,
             paddingBottom: `50px`,
           }}
@@ -116,14 +125,14 @@ function IndexPage() {
             >
               Paul Austin
             </p>
-            <p style={{ fontSize: "10px" }}>Founder, Play Marin</p>
+            <p style={{ fontSize: "10px" }}>Founder, PLAY MARIN</p>
           </Col>
         </Row>
       </Container>
       <Container fluid>
         <Row
           style={{
-            backgroundImage: "linear-gradient(#0BAB64, #3BB78F)",
+            backgroundImage: "linear-gradient(#89D4CF, #734AE8)",
 
             paddingTop: `60px`,
             paddingBottom: `60px`,
@@ -138,21 +147,6 @@ function IndexPage() {
               >
                 Play and diversity are essential for a 21st-century education
               </h2>
-              <div
-                style={{
-                  color: `#fff`,
-                }}
-              >
-                <p>
-                  Play Marin envisions Marin as an integrated and unified
-                  community. The lessons learned through the play and
-                  experiences we provide instill valuable skills, create
-                  friendships and enhances well being and solidarity among the
-                  young people of Marin, improving their prospects for a
-                  successful future and benefiting the health of our broader
-                  Marin community.
-                </p>
-              </div>
             </Col>
           </Container>
           <Col lg={12} md={12}>

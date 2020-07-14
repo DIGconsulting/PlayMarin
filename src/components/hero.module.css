@@ -95,7 +95,7 @@ body {
 
 
   iframe {
-    margin-bottom: -0.5rem!important;
+    margin-bottom: -1px!important;
     width: 100%    !important;
   }
 
@@ -108,4 +108,14 @@ body {
 
   #responsive-navbar-nav {
     padding-bottom: 0px;
+  }
+
+
+ iframe.ytp-title-channel {
+    display: none!important;
+  }
+
+
+  .ytp-chrome-top.ytp-show-cards-title {
+    display: none;
   }

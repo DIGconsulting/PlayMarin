@@ -8,8 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import styles from "./form.module.css"
 import { ExternalLink } from "react-external-link"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFacebookF } from "@fortawesome/free-solid-svg-icons"
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
   const StyledLink = styled(Link)`
@@ -103,36 +102,16 @@ const Footer = () => {
                   paddingTop: "50px",
                 }}
               >
-                Your support helps Play Marin close the actiivty gap in Marin
+                Your support helps PLAY MARIN close the actiivty gap in Marin
                 City and provides a more diverse peer group for over 300 kids
                 annually throughout Sourthern Marin
               </p>
             </Col>
             <Col md={4} sm={12} style={{ color: "white" }}>
-              <h3>Follow PLAY Marin</h3>
-              <div style={{ display: "flex", paddingTop: "10px" }}>
-                <p
-                  style={{
-                    backgroundColor: "rgba(167, 169, 227, .5)",
-                    width: "2rem",
-                    textAlign: "center",
-                    color: "white",
-                    fontFamily: "avenir",
-                  }}
-                >
-                  FB
-                </p>
-                <p
-                  style={{
-                    backgroundColor: "rgba(167, 169, 227, .5)",
-                    width: "2rem",
-                    textAlign: "center",
-                    color: "white",
-                    fontFamily: "avenir",
-                  }}
-                >
-                  IG
-                </p>
+              <h3>Follow PLAY MARIN</h3>
+              <div style={{ display: "flex", paddingTop: "10px",}}>
+              <SocialIcon url="https://www.instagram.com/play.marin/"  network="instagram" bgColor="#fff"  style={{ height: 40, width: 40,}}/>
+              <SocialIcon  url="https://www.facebook.com/playmarin.org/" network="facebook" bgColor="#fff"  style={{ height: 40, width: 40 }}/>
               </div>
               <div
                 style={{
@@ -171,7 +150,7 @@ const Footer = () => {
                     About
                   </StyledLink>
                   <StyledLink to="/support" activeStyle={activeStyle}>
-                    Contact-Us
+                    Contact us
                   </StyledLink>
                 </div>
                 <div
@@ -191,7 +170,7 @@ const Footer = () => {
                       fontFamily: "avenir",
                     }}
                   >
-                    Copyright &#169; {new Date().getFullYear()} Play Marin, a
+                    Copyright &#169; {new Date().getFullYear()} PLAY MARIN, a
                     California public benefit coporation. All rights reserved
                   </a>
                 </div>
