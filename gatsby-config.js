@@ -126,8 +126,8 @@ module.exports = {
     {
       resolve: "gatsby-source-youtube-v2",
       options: {
-        channelId: ["UC7qvkXPsvrqW8pemGpmRL2A"],
-        apiKey: ["AIzaSyBEYM9TXJ1XUgMjOXWRSxzOEAdppzVbnPg"],
+        channelId: ["UCbZU0txF6qwXH5U6hp8LNPA"],
+        apiKey: ["AIzaSyA_TvUw9s84lLAvdozO9FX88A5gnr6m0xQ"],
         maxVideos: 1,
       },
     },
