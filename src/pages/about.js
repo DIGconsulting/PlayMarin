@@ -147,7 +147,7 @@ const About = () => {
               addresses two fundamental challenges Marin youth face: Adequate
               access to extracurricular and athletic opportunity in Marin City.
               Lack of racial, ethnic, and socioeconomic diversity in the broader
-              Marin community in Marin City.
+              Marin community.
             </p>
           </Container>
         </Col>
