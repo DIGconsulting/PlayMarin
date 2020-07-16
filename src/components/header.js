@@ -58,7 +58,11 @@ const Header = () => {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse>
+        <Navbar.Collapse
+        style={{
+          backgroundColor: "white",
+        }}
+        >
           <Nav className="mr-auto">
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/about">About</StyledLink> 
