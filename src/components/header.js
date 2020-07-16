@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "react-bootstrap/Navbar"
-import {Col,} from "react-bootstrap/Navbar"
+import { Col } from "react-bootstrap/Navbar"
 import FormControl from "react-bootstrap/FormControl"
 import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
@@ -37,11 +37,14 @@ const Header = () => {
 
   return (
     <>
-    <Navbar collapseOnSelect expand="md" fixed="top" 
-    style={{
-      padding: "0px 0px!important"
-    }}
-    >
+      <Navbar
+        collapseOnSelect
+        expand="md"
+        fixed="top"
+        style={{
+          padding: "0px 0px!important",
+        }}
+      >
         <Navbar.Brand>
           <img
             to="/"
@@ -56,26 +59,23 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
-        style={{
-          backgroundColor: "white",
-        }}
+          style={{
+            backgroundColor: "white",
+          }}
         >
           <Nav className="mr-auto">
             <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/about">About</StyledLink> 
+            <StyledLink to="/about">About</StyledLink>
             <StyledLink to="programs">Programs</StyledLink>
             <StyledLink to="support">Support</StyledLink>
             <StyledLink to="contact">Contact Us</StyledLink>
           </Nav>
           <Link to="/support">
-          <Button variant="outline-success">Donate</Button>
+            <Button variant="outline-success">Donate</Button>
           </Link>
         </Navbar.Collapse>
-    </Navbar>
-
+      </Navbar>
     </>
-    
-   
   )
 }
 

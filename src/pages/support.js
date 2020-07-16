@@ -3,12 +3,10 @@ import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import ResponsiveEmbed from "react-responsive-embed"
 import SolutionImg from "../images/BLNBQ+5bQbyTCJwY5hrYxA_thumb_2d16.jpg"
 import SolutionImgTwo from "../images/9B1A4863.jpeg"
-import Mobilenav from "../components/mobilenav"
-import Media from "react-media"
 import "bootstrap/dist/css/bootstrap.min.css"
+import { ExternalLink } from "react-external-link"
 
 const Support = () => {
   return (
@@ -117,38 +115,45 @@ const Support = () => {
               In the meantime, please use our links below, or contact us for
               other payment options.
             </p>
-            <button
-              style={{
-                width: "15rem",
-                height: "2.5rem",
-                color: "#992168",
-                borderColor: "#992168",
-              }}
-            >
-              Venmo
-            </button>
-            <button
-              style={{
-                width: "15rem",
-                height: "2.5rem",
-                color: "#992168",
-                borderColor: "#992168",
-              }}
-            >
-              PayPal
-            </button>
-            <p style={{paddingTop: "50px"}}>
+            <ExternalLink>
+              <button
+                style={{
+                  width: "15rem",
+                  height: "2.5rem",
+                  color: "#992168",
+                  borderColor: "#992168",
+                }}
+              >
+                Venmo
+              </button>
+            </ExternalLink>
+
+            <ExternalLink href="https://www.paypal.me/playmarin">
+              <button
+                style={{
+                  width: "15rem",
+                  height: "2.5rem",
+                  color: "#992168",
+                  borderColor: "#992168",
+                }}
+              >
+                PayPal
+              </button>
+            </ExternalLink>
+
+            <p style={{ paddingTop: "50px" }}>
               All donations are tax-deductible to the extent allowed by law. Our
               US Tax identification number is 83-1737141
             </p>
             <p>
-              For other donation inquiries please send us a note
-              to donate@playmarin.org or call (415) 686-5045.
+              For other donation inquiries please send us a note to
+              donate@playmarin.org or call (415) 686-5045.
             </p>
             <p>
               If you would like to send a gift via check, please mail to our
-              address: <br/>Play Marin, PO Box 530, Sausalito, California 94965 <br/>Thank
-              you for supporting the Play Marin Movement!
+              address: <br />
+              Play Marin, PO Box 530, Sausalito, California 94965 <br />
+              Thank you for supporting the Play Marin Movement!
             </p>
           </Col>
           <Col
