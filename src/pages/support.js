@@ -7,7 +7,7 @@ import SolutionImg from "../images/BLNBQ+5bQbyTCJwY5hrYxA_thumb_2d16.jpg"
 import SolutionImgTwo from "../images/9B1A4863.jpeg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { ExternalLink } from "react-external-link"
-
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
 const Support = () => {
   return (
     <>
@@ -115,6 +115,11 @@ const Support = () => {
               In the meantime, please use our links below, or contact us for
               other payment options.
             </p>
+            <ButtonGroup style={{
+              display: "flex",
+              flexWrap: "wrap"
+            }}>
+
             <ExternalLink>
               <button
                 style={{
@@ -140,6 +145,8 @@ const Support = () => {
                 PayPal
               </button>
             </ExternalLink>
+
+            </ButtonGroup>
 
             <p style={{ paddingTop: "50px" }}>
               All donations are tax-deductible to the extent allowed by law. Our
