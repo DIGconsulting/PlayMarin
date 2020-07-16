@@ -2,10 +2,7 @@ import React from "react"
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import ContactForm from "../components/form"
-import Mobilenav from "../components/mobilenav"
-import Media from "react-media"
-import { Jumbotron, Button, Container } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
+import { Jumbotron, Container } from "react-bootstrap"
 
 const Contact = () => {
   return (

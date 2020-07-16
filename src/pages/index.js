@@ -6,12 +6,8 @@ import Timeline from "../components/timeline"
 import Homepagethreeup from "../components/homepagethreeup"
 import Media from "react-media"
 import { Container, Row, Col } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "../components/hero.module.css"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
-import ReactDOM from "react-dom"
-import { BrowserRouter } from "react-router-dom"
 import { Link } from "gatsby"
 
 function IndexPage() {

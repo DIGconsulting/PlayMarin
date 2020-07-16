@@ -9,8 +9,6 @@ import ProblemImg from "../gallery-images/yUn2Cz+nSdGF5OkcREeMQA_thumb_36ff.jpg"
 import SolutionImg from "../gallery-images/vSHWBX8iTjOVGTiaPAHy4Q_thumb_36a4.jpg"
 import PartnersImg from "../gallery-images/4l5r2VD3SRS9AkQK55owWA_thumb_36fb.jpg"
 import { Jumbotron, Button, Col, Container } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
-import Media from "react-bootstrap/Media"
 import Table from "react-bootstrap/Table"
 
 import Row from "react-bootstrap/Row"

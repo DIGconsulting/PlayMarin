@@ -2,10 +2,8 @@ import React from "react"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
 import SolutionImg from "../images/BLNBQ+5bQbyTCJwY5hrYxA_thumb_2d16.jpg"
 import SolutionImgTwo from "../images/9B1A4863.jpeg"
-import "bootstrap/dist/css/bootstrap.min.css"
 import { ExternalLink } from "react-external-link"
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 
