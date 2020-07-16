@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-        <Container
+        <Container fluid
  
       >
     <Navbar collapseOnSelect expand="lg" fixed="top" style={{
