@@ -37,12 +37,12 @@ const Header = () => {
 
   return (
     <>
-        <Container fluid
- 
-      >
     <Navbar collapseOnSelect expand="lg" fixed="top" style={{
       paddingBottom: "0px!important",
-      backgroundColor: "white",
+      backgroundColor: "white"
+      
+      
+      ,
     }}
   >
         <Navbar.Brand>
@@ -75,7 +75,6 @@ const Header = () => {
           </Link>
         </Navbar.Collapse>
     </Navbar>
-    </Container>
     </>
     
    
