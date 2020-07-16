@@ -37,14 +37,7 @@ const Header = () => {
 
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" fixed="top" style={{
-      paddingBottom: "0px!important",
-      backgroundColor: "white"
-      
-      
-      ,
-    }}
-  >
+    <Navbar collapseOnSelect expand="lg" fixed="top">
         <Navbar.Brand>
           <img
             to="/"
@@ -75,6 +68,7 @@ const Header = () => {
           </Link>
         </Navbar.Collapse>
     </Navbar>
+
     </>
     
    
