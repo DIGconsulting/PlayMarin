@@ -8,6 +8,7 @@ import SolutionImgTwo from "../images/9B1A4863.jpeg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { ExternalLink } from "react-external-link"
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
+
 const Support = () => {
   return (
     <>
@@ -120,7 +121,7 @@ const Support = () => {
               flexWrap: "wrap"
             }}>
 
-            <ExternalLink>
+            <ExternalLink href="https://venmo.com/Play-Marin">
               <button
                 style={{
                   width: "15rem",
