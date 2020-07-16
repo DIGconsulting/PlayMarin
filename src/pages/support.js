@@ -125,8 +125,6 @@ const Support = () => {
                 style={{
                   width: "15rem",
                   height: "2.5rem",
-                  color: "#992168",
-                  borderColor: "#992168",
                 }}
               >
                 Venmo
@@ -138,8 +136,6 @@ const Support = () => {
                 style={{
                   width: "15rem",
                   height: "2.5rem",
-                  color: "#992168",
-                  borderColor: "#992168",
                 }}
               >
                 PayPal

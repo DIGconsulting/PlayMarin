@@ -9,6 +9,7 @@ import styles from "./form.module.css"
 import { Link } from "gatsby"
 import { ExternalLink } from "react-external-link"
 import { SocialIcon } from "react-social-icons"
+import ButtonGroup from "react-bootstrap/ButtonGroup"
 
 const Footer = () => {
   const StyledLink = styled(Link)`
@@ -49,6 +50,11 @@ const Footer = () => {
               }}
             >
               <h5>Select An Amount:</h5>
+              <ButtonGroup style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-evenly"
+            }}>
               <ExternalLink href="https://www.paypal.me/playmarin/50">
                 <Button
                   variant="success"
@@ -85,6 +91,7 @@ const Footer = () => {
                   $ 500
                 </Button>
               </ExternalLink>
+              </ButtonGroup>
               <p
                 style={{
                   paddingTop: "50px",
