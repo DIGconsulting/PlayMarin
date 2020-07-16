@@ -119,3 +119,9 @@ body {
   .ytp-chrome-top.ytp-show-cards-title {
     display: none;
   }
+
+  @media screen and (max-width: 600px) {
+ .foo {
+      display: none;
+    }
+  }
