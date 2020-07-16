@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
     <Navbar collapseOnSelect expand="lg" fixed="top">
-      <Container
+      <Container fluid
         style={{
           backgroundColor: "white",
         }}
