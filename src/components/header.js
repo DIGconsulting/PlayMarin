@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" fixed="top" 
+    <Navbar collapseOnSelect expand="md" fixed="top" 
     style={{
       padding: "0px 0px!important"
     }}

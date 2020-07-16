@@ -6,8 +6,8 @@ import Newsletter from "./newsletter.js"
 import { Jumbotron, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import styles from "./form.module.css"
-import { ExternalLink } from "react-external-link"
 import { Link } from "gatsby"
+import { ExternalLink } from "react-external-link"
 import { SocialIcon } from "react-social-icons"
 
 const Footer = () => {
@@ -22,18 +22,6 @@ const Footer = () => {
     font-family: avenir;
     color: #fff;
   `
-  const ExternalLink = styled(Link)`
-    padding-left: 20px;
-    display: flex;
-    cursor: pointer;
-    text-decoration: none;
-    margin-right: 20px;
-    border-bottom-width: 5px;
-    position: relatve;
-    font-family: avenir;
-    color: #000;
-  `
-
   const activeStyle = {
     color: `#0B7BFF`,
   }
