@@ -41,6 +41,7 @@
     "gatsby-source-stripe": "^3.0.7",
     "gatsby-theme-youtube": "^1.0.0",
     "gatsby-transformer-ffmpeg": "^0.3.8",
+    "gatsby-transformer-remark": "^2.8.25",
     "gatsby-transformer-sharp": "^2.4.3",
     "gatsby-transformer-video": "^0.1.18",
     "gatsby-video": "^0.2.0",
@@ -77,6 +78,7 @@
     "video-react": "^0.14.1"
   },
   "devDependencies": {
+    "gatsby-plugin-material-ui": "^2.1.9",
     "prettier": "2.0.4"
   },
   "keywords": [

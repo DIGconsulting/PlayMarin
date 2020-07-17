@@ -11,7 +11,10 @@ import YouTube from "react-youtube"
 import { Link } from "gatsby"
 
 function IndexPage() {
-  const opts = {}
+  const opts = {
+    height: "450px",
+    width: "auto"
+  }
   const { video } = useStaticQuery(graphql`
     query {
       video: youtubeVideo {
@@ -44,7 +47,7 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-            <YouTube videoId={video.videoId} opts={opts} />
+            <YouTube videoId={video.videoId} opts={opts}  />
           </Col>
 
           <Col

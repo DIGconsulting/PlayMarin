@@ -24,6 +24,12 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      }
+    },
+    {
       resolve: `gatsby-plugin-sharp`,
       options: {
         useMozJpeg: false,
