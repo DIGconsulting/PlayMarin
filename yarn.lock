@@ -3776,11 +3776,6 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@smarterlabs/gatsby-plugin-browser-dependencies@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@smarterlabs/gatsby-plugin-browser-dependencies/-/gatsby-plugin-browser-dependencies-1.0.2.tgz#479b2d081cfa0ec57166fb4f59c67e148a13ed28"
-  integrity sha512-5gslACmWx0wznjsIAAVH8wIA+U8xflsbh89DsKT9Jw2FPUyJYN68ODIstak8bRwGHl5YVHcPigHa1sqB6OXKBw==
-
 "@stripe/react-stripe-js@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-1.1.2.tgz#a7f5ef5b4d7dc7fa723501b706644414cfe6dcba"
@@ -7533,13 +7528,6 @@ create-react-context@0.3.0, create-react-context@^0.3.0:
     gud "^1.0.0"
     warning "^4.0.3"
 
-cross-env@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.2.tgz#bd5ed31339a93a3418ac4f3ca9ca3403082ae5f9"
-  integrity sha512-KZP/bMEOJEDCkDQAyRhu3RL2ZO/SUVrxQVI0G3YEQ+OLbRA3c6zgixe8Mq8a/z7+HKlNEjo8oiLUs8iRijY2Rw==
-  dependencies:
-    cross-spawn "^7.0.1"
-
 cross-fetch@2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-2.2.2.tgz#a47ff4f7fc712daba8f6a695a11c948440d45723"
@@ -7580,15 +7568,6 @@ cross-spawn@^7.0.0:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.2.tgz#d0d7dcfa74e89115c7619f4f721a94e1fdb716d6"
   integrity sha512-PD6G8QG3S4FK/XCGFbEQrDqO2AnMMsy0meR7lerlIOHAAbkuavGU/pOqprrlvfTNjvowivTeBsjebAL0NSoMxw==
-  dependencies:
-    path-key "^3.1.0"
-    shebang-command "^2.0.0"
-    which "^2.0.1"
-
-cross-spawn@^7.0.1:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
-  integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
   dependencies:
     path-key "^3.1.0"
     shebang-command "^2.0.0"
@@ -20042,6 +20021,11 @@ react-youtube@^7.11.2:
     fast-deep-equal "3.1.1"
     prop-types "15.7.2"
     youtube-player "5.5.2"
+
+react.dom@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react.dom/-/react.dom-1.0.1.tgz#f0083fd8d7b91a58475cfe4901f7e7f2ec42b3c4"
+  integrity sha1-8Ag/2Ne5GlhHXP5JAffn8uxCs8Q=
 
 react@>=16.0.0, react@^16.13.1:
   version "16.13.1"

@@ -5,11 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-
-exports.replaceHydrateFunction = () => {
-    return (element, container, callback) => {
-      console.log("rendering!");
-      ReactDOM.render(element, container, callback);
-    };
-  };
-  
