@@ -8,7 +8,7 @@
 
 
 
-import './public/styles-c41920853eed0685ae46.js';
+import '/public/styles.bf866c62883894779612.css'
 
 
 
