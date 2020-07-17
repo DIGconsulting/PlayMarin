@@ -10,6 +10,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
 import { Link } from "gatsby"
 
+
 function IndexPage() {
   const opts = {
     height: "450px",

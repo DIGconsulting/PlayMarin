@@ -80,6 +80,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-browser-dependencies`,
+      options: {
+        dependencies: [
+          `auth-js`,
+          `browser-only-module`,
+        ]
+      }
+    },
+    {
       resolve: "gatsby-transformer-remark",
       resolve: "gatsby-remark-embed-youtube",
       options: {
