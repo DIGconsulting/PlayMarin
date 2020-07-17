@@ -6,9 +6,10 @@
 
 // You can delete this file if you're not using it
 
-
-
-import '/public/styles.bf866c62883894779612.css'
-
-
-
+exports.replaceHydrateFunction = () => {
+    return (element, container, callback) => {
+      console.log("rendering!");
+      ReactDOM.render(element, container, callback);
+    };
+  };
+  
