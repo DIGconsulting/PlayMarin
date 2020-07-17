@@ -9,6 +9,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
 import { Link } from "gatsby"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function IndexPage() {

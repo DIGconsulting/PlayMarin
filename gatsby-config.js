@@ -1,5 +1,4 @@
-const { resolve } = require(`path`)
-const { platform } = require(`os`)
+
 
 module.exports = {
   siteMetadata: {

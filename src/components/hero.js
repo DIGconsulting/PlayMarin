@@ -42,6 +42,8 @@ function Hero() {
             <Jumbotron
               style={{
                 background: "rgba(7, 58, 99, 0.5)",
+                padding: "1rem 1rem",
+                marginBottom: "0px"
               }}
             >
               <Row className="justify-content-md-center">
