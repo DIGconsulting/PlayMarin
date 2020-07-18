@@ -1,4 +1,5 @@
 import React from "react"
+import ReactDOM from "react-dom"
 import Footer from "../components/footer.js"
 import Navbar from "../components/header.js"
 import Hero from "../components/hero.js"
@@ -9,7 +10,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
 import { Link } from "gatsby"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import ReactDOMServer from 'react-dom/server'
 
 
 function IndexPage() {
