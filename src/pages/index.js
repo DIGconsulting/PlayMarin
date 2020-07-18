@@ -11,7 +11,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
 import { Link } from "gatsby"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import ReactDOMServer from 'react-dom/server'
 
 
 function IndexPage() {
