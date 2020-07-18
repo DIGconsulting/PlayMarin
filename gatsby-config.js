@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-theme-ui`,
+    `babel-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-jss",
     },
@@ -21,6 +22,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
