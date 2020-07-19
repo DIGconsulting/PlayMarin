@@ -116,11 +116,3 @@ body {
     display: none;
   }
 
-
-
-  @media screen and (min-width: 600px) {
-    .Navbar {
-      padding: 0px 0px!important,
-    }
-  
-  }

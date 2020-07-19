@@ -33,6 +33,7 @@ const Header = () => {
         expand="md"
         fixed="top"
         style={{
+          padding: "0 0!important"
         }}
       >
         <Navbar.Brand>
