@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 import Navbar from "react-bootstrap/Navbar"
 import { Col } from "react-bootstrap/Navbar"
 import FormControl from "react-bootstrap/FormControl"
@@ -6,7 +7,7 @@ import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Logo from "../images/playMarinLogo.png"
-import styled from "styled-components"
+
 import { Link } from "gatsby"
 
 
