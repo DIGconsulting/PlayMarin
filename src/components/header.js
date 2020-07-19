@@ -1,38 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import Navbar from "react-bootstrap/Navbar"
-import { Col } from "react-bootstrap/Navbar"
-import FormControl from "react-bootstrap/FormControl"
 import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
-import Container from "react-bootstrap/Container"
 import Logo from "../images/playMarinLogo.png"
-
 import { Link } from "gatsby"
-
-
 import "./hero.module.css"
 
 
 const Header = () => {
-  const StyledLink = styled(Link)`
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color: #6512ae;
-    margin-right: 20px;
-    border-bottom-width: 5px;
-    font-family: avenir;
-  `
-  const ExternalLink = styled(Link)`
-    cursor: pointer;
-    text-decoration: none;
-    border-bottom-width: 5px;
-    position: relatve;
-    font-family: avenir;
-    color: #000;
-  `
 
   const activeStyle = {
     color: `#598BDD`,
@@ -68,11 +44,11 @@ const Header = () => {
           }}
         >
           <Nav className="mr-auto">
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/about">About</StyledLink>
-            <StyledLink to="/programs">Programs</StyledLink>
-            <StyledLink to="/support">Support</StyledLink>
-            <StyledLink to="/contact">Contact Us</StyledLink>
+            <Link className="link" to="/">Home</Link>
+            <Link className="link"  to="/about">About</Link>
+            <Link className="link"  to="/programs">Programs</Link>
+            <Link className="link"  to="/support">Support</Link>
+            <Link className="link"  to="/contact">Contact Us</Link>
           </Nav>
           <Link to="/support">
             <Button variant="outline-success">Donate</Button>
