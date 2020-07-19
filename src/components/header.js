@@ -9,6 +9,17 @@ import "./hero.module.css"
 
 
 const Header = () => {
+  const StyledLink = styled(Link)`
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #6512ae;
+    margin-right: 20px;
+    border-bottom-width: 5px;
+    font-family: avenir;
+  `
+
 
   const activeStyle = {
     color: `#598BDD`,
@@ -22,7 +33,6 @@ const Header = () => {
         expand="md"
         fixed="top"
         style={{
-          padding: "0px 0px!important",
         }}
       >
         <Navbar.Brand>
@@ -44,11 +54,11 @@ const Header = () => {
           }}
         >
           <Nav className="mr-auto">
-            <Link  to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/programs">Programs</Link>
-            <Link to="/support">Support</Link>
-            <Link to="/contact">Contact Us</Link>
+            <StyledLink to="/">Home</StyledLink>
+            <StyledLink to="/about">About</StyledLink>
+            <StyledLink to="/programs">Programs</StyledLink>
+            <StyledLink to="/support">Support</StyledLink>
+            <StyledLink to="/contact">Contact Us</StyledLink>
           </Nav>
           <Link to="/support">
             <Button variant="outline-success">Donate</Button>
