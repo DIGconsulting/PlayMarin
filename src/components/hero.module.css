@@ -116,3 +116,6 @@ body {
     display: none;
   }
 
+  .navbar {
+    padding: 0px 0px!important;
+  }

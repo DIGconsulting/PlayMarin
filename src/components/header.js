@@ -1,6 +1,6 @@
 import React from "react"
-import styled from "styled-components"
 import Navbar from "react-bootstrap/Navbar"
+import styled from "styled-components"
 import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
 import Logo from "../images/playMarinLogo.png"
@@ -32,9 +32,6 @@ const Header = () => {
         collapseOnSelect
         expand="md"
         fixed="top"
-        style={{
-          padding: "0 0!important"
-        }}
       >
         <Navbar.Brand>
           <img
