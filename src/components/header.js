@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Logo from "../images/playMarinLogo.png"
 import { Link } from "gatsby"
+import "./hero.module.css"
 
 const Header = () => {
   const StyledLink = styled(Link)`
@@ -31,6 +32,9 @@ const Header = () => {
         collapseOnSelect
         expand="md"
         fixed="top"
+        style={{
+          padding: "0 0!important"
+        }}
       >
    
         <Navbar.Brand>
