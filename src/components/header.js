@@ -3,21 +3,14 @@ import styled from "styled-components"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
+import Form from "react-bootstrap/Form"
 import Logo from "../images/playMarinLogo.png"
+import FormControl from "react-bootstrap/FormControl"
 import { Link } from "gatsby"
 import "./hero.module.css"
 import Navbar from "react-bootstrap/Navbar"
 const Header = () => {
-  const StyledLink = styled(Link)`
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color: #6512ae;
-    margin-right: 20px;
-    border-bottom-width: 5px;
-    font-family: avenir;
-  `
+
 
 
   const activeStyle = {
@@ -27,46 +20,20 @@ const Header = () => {
 
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand="md"
-        fixed="top"
-        style={{
-          padding: "0 0!important"
-        }}
-      >
-   
-        <Navbar.Brand>
-          <img
-            to="/"
-            width={100}
-            height={42}
-            src={Logo}
-            className="work"
-            style={{
-              marginBottom: "0px",
-            }}
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse
-          style={{
-            backgroundColor: "white",
-          }}
-        >
-          <Nav className="mr-auto">
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/about">About</StyledLink>
-            <StyledLink to="/programs">Programs</StyledLink>
-            <StyledLink to="/support">Support</StyledLink>
-            <StyledLink to="/contact">Contact Us</StyledLink>
-          </Nav>
-          <Link to="/support">
-            <Button variant="outline-success">Donate</Button>
-          </Link>
-        </Navbar.Collapse>
-       
-      </Navbar>
+      <Navbar bg="light" expand="lg">
+  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#link">Link</Nav.Link>
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <Button variant="outline-success">Search</Button>
+    </Form>
+  </Navbar.Collapse>
+</Navbar>
     </>
   )
 }
