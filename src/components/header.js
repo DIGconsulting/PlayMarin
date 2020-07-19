@@ -67,12 +67,12 @@ const Header = () => {
         >
           <Nav className="mr-auto">
             <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/about/">About</StyledLink>
-            <StyledLink to="/programs/">Programs</StyledLink>
-            <StyledLink to="/support/">Support</StyledLink>
-            <StyledLink to="/contact/">Contact Us</StyledLink>
+            <StyledLink to="/about">About</StyledLink>
+            <StyledLink to="/programs">Programs</StyledLink>
+            <StyledLink to="/support">Support</StyledLink>
+            <StyledLink to="/contact">Contact Us</StyledLink>
           </Nav>
-          <Link to="/support/">
+          <Link to="/support">
             <Button variant="outline-success">Donate</Button>
           </Link>
         </Navbar.Collapse>
