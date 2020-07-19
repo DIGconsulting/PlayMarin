@@ -1,5 +1,4 @@
 import React from "react"
-import Navbar from "react-bootstrap/Navbar"
 import styled from "styled-components"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
@@ -7,7 +6,7 @@ import Nav from "react-bootstrap/Nav"
 import Logo from "../images/playMarinLogo.png"
 import { Link } from "gatsby"
 import "./hero.module.css"
-
+import Navbar from "react-bootstrap/Navbar"
 const Header = () => {
   const StyledLink = styled(Link)`
     cursor: pointer;
