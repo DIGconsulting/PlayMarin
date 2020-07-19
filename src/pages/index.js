@@ -1,5 +1,4 @@
 import React from "react"
-import ReactDOM from "react-dom"
 import Footer from "../components/footer.js"
 import Navbar from "../components/header.js"
 import Hero from "../components/hero.js"
