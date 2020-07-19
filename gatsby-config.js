@@ -7,6 +7,7 @@ module.exports = {
     author: `@OFFTHELANDSOFTWARE`,
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-theme-ui`,
     `babel-plugin-styled-components`,
