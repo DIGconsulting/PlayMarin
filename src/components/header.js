@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
 import Logo from "../images/playMarinLogo.png"
 import { Link } from "gatsby"
-import "./hero.module.css"
 
 
 const Header = () => {
@@ -32,6 +31,12 @@ const Header = () => {
         collapseOnSelect
         expand="md"
         fixed="top"
+        style={{
+          paddingRight: "0px!important",
+          paddingLeft: "0px!important",
+          paddingTop: "0px!important",
+          paddingBottom: "0px!important",
+        }}
       >
         <Navbar.Brand>
           <img
