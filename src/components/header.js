@@ -6,10 +6,11 @@ import Button from "react-bootstrap/Button"
 import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Logo from "../images/playMarinLogo.png"
+import styled from "styled-components"
 import { Link } from "gatsby"
-import styled from "@emotion/styled"
+
+
 import "./hero.module.css"
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const Header = () => {
@@ -67,12 +68,12 @@ const Header = () => {
         >
           <Nav className="mr-auto">
             <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="about/">About</StyledLink>
-            <StyledLink to="programs/">Programs</StyledLink>
-            <StyledLink to="support/">Support</StyledLink>
-            <StyledLink to="contact/">Contact Us</StyledLink>
+            <StyledLink to="/about">About</StyledLink>
+            <StyledLink to="/programs">Programs</StyledLink>
+            <StyledLink to="/support">Support</StyledLink>
+            <StyledLink to="/contact">Contact Us</StyledLink>
           </Nav>
-          <Link to="support/">
+          <Link to="/support">
             <Button variant="outline-success">Donate</Button>
           </Link>
         </Navbar.Collapse>
