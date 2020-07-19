@@ -49,7 +49,7 @@ const Header = () => {
             }}
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
           style={{
             backgroundColor: "white",
