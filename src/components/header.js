@@ -44,11 +44,11 @@ const Header = () => {
           }}
         >
           <Nav className="mr-auto">
-            <Link className="link" to="/">Home</Link>
-            <Link className="link"  to="/about">About</Link>
-            <Link className="link"  to="/programs">Programs</Link>
-            <Link className="link"  to="/support">Support</Link>
-            <Link className="link"  to="/contact">Contact Us</Link>
+            <Link  to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/programs">Programs</Link>
+            <Link to="/support">Support</Link>
+            <Link to="/contact">Contact Us</Link>
           </Nav>
           <Link to="/support">
             <Button variant="outline-success">Donate</Button>
