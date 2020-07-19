@@ -9,6 +9,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import YouTube from "react-youtube"
 import { Link } from "gatsby"
+import "../components/hero.module.css"
 
 
 function IndexPage() {
