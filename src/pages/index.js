@@ -1,6 +1,6 @@
 import React from "react"
 import Footer from "../components/footer.js"
-import Navbar from "../components/header.js"
+import Header from "../components/header.js"
 import Hero from "../components/hero.js"
 import Timeline from "../components/timeline"
 import Homepagethreeup from "../components/homepagethreeup"
@@ -29,7 +29,7 @@ function IndexPage() {
     <>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <Navbar />
+      <Header />
       <Hero />
 
       <Container
