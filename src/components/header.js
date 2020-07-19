@@ -9,6 +9,8 @@ import Logo from "../images/playMarinLogo.png"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import "./hero.module.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 const Header = () => {
   const StyledLink = styled(Link)`
