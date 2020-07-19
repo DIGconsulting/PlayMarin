@@ -27,12 +27,13 @@ const Header = () => {
 
   return (
     <>
+         <Container fluid>
       <Navbar
         collapseOnSelect
         expand="md"
         fixed="top"
       >
-        <Container fluid>
+   
         <Navbar.Brand>
           <img
             to="/"
@@ -62,8 +63,9 @@ const Header = () => {
             <Button variant="outline-success">Donate</Button>
           </Link>
         </Navbar.Collapse>
-        </Container>
+       
       </Navbar>
+      </Container>
     </>
   )
 }
