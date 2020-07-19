@@ -2,10 +2,10 @@ import React from "react"
 import Navbar from "react-bootstrap/Navbar"
 import styled from "styled-components"
 import Button from "react-bootstrap/Button"
+import Container from "react-bootstrap/container"
 import Nav from "react-bootstrap/Nav"
 import Logo from "../images/playMarinLogo.png"
 import { Link } from "gatsby"
-
 
 const Header = () => {
   const StyledLink = styled(Link)`
@@ -31,13 +31,8 @@ const Header = () => {
         collapseOnSelect
         expand="md"
         fixed="top"
-        style={{
-          paddingRight: "0px!important",
-          paddingLeft: "0px!important",
-          paddingTop: "0px!important",
-          paddingBottom: "0px!important",
-        }}
       >
+        <Container fluid>
         <Navbar.Brand>
           <img
             to="/"
@@ -67,6 +62,7 @@ const Header = () => {
             <Button variant="outline-success">Donate</Button>
           </Link>
         </Navbar.Collapse>
+        </Container>
       </Navbar>
     </>
   )
