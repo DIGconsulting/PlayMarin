@@ -2,7 +2,7 @@ import React from "react"
 import Footer from "../components/footer.js"
 import Header from "../components/header.js"
 import { Container } from "react-grid-system"
-import { Jumbotron } from "react-bootstrap"
+import { Jumbotron, ButtonGroup } from "react-bootstrap"
 import CardDeck from "react-bootstrap/CardDeck"
 import Card from "react-bootstrap/Card"
 import { Row, Col } from "react-bootstrap"
@@ -11,6 +11,7 @@ import Basketball from "../images/basketball.jpg"
 import Volleyball from "../images/volley_girls.jpg"
 import Lacrosse from "../images/lacrosse.jpg"
 import Track from "../images/ track.jpg"
+import { ExternalLink } from "react-external-link"
 
 const Programs = () => {
   return (
@@ -87,26 +88,34 @@ const Programs = () => {
               creating a more diverse peer group for participating young people
               across Marin County.
             </p>
-            <button
-              style={{
-                width: "15rem",
-                height: "2.5rem",
-                color: "#992168",
-                borderColor: "#992168",
-              }}
-            >
-              Venmo
-            </button>
-            <button
-              style={{
-                width: "15rem",
-                height: "2.5rem",
-                color: "#992168",
-                borderColor: "#992168",
-              }}
-            >
-              PayPal
-            </button>
+            <ButtonGroup style={{
+              display: "flex",
+              flexWrap: "wrap"
+            }}>
+
+            <ExternalLink href="https://venmo.com/Play-Marin">
+              <button
+                style={{
+                  width: "15rem",
+                  height: "2.5rem",
+                }}
+              >
+                Venmo
+              </button>
+            </ExternalLink>
+
+            <ExternalLink href="https://www.paypal.me/playmarin">
+              <button
+                style={{
+                  width: "15rem",
+                  height: "2.5rem",
+                }}
+              >
+                PayPal
+              </button>
+            </ExternalLink>
+            </ButtonGroup>
+
           </Col>
         </Row>
       </Container>
