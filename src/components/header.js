@@ -7,18 +7,12 @@ import Logo from "../images/playMarinLogo.png"
 import { Link } from "gatsby"
 import "./hero.module.css"
 import Navbar from "react-bootstrap/Navbar"
-const Header = () => {
-  const StyledLink = styled(Link)`
-    cursor: pointer;
-    display: flex;
-    flex-wrap: wrap;
-    text-decoration: none;
-    color: #6512ae;
-    margin-right: 20px;
-    border-bottom-width: 5px;
-    font-family: avenir;
-  `
+import "bootstrap/dist/css/bootstrap.min.css"
 
+
+
+const Header = () => {
+ 
 
   const activeStyle = {
     color: `#598BDD`,
@@ -55,13 +49,13 @@ const Header = () => {
           }}
         >
           <Nav className="mr-auto">
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/about">About</StyledLink>
-            <StyledLink to="/programs">Programs</StyledLink>
-            <StyledLink to="/support">Support</StyledLink>
-            <StyledLink to="/contact">Contact Us</StyledLink>
+            <Link className="link" to="/">Home</Link>
+            <Link className="link" to="/about">About</Link>
+            <Link className="link" to="/programs">Programs</Link>
+            <Link className="link" to="/support">Support</Link>
+            <Link className="link" to="/contact">Contact Us</Link>
           </Nav>
-          <Link to="/support">
+          <Link className="link" to="/support">
             <Button variant="outline-success">Donate</Button>
           </Link>
         </Navbar.Collapse>
