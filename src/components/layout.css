@@ -470,8 +470,12 @@ iframe {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: -9px!important;
+  margin-bottom: 1.45rem;
 }
+
+
+
+
 hr {
   margin-left: 0;
   margin-right: 0;
@@ -982,6 +986,12 @@ ul {
   .navbar {
     padding: 0px 0px!important;
   }
+
+  iframe {
+
+    margin-bottom: -9px!important;
+  }
+  
 
 }
 
