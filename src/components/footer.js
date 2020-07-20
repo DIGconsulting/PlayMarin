@@ -52,8 +52,9 @@ const Footer = () => {
               <h5>Select An Amount:</h5>
               <ButtonGroup style={{
               display: "flex",
+              flexDirection: "row",
               flexWrap: "wrap",
-              justifyContent: "space-evenly"
+              justifyContent: "space-between"
             }}>
               <ExternalLink href="https://www.paypal.me/playmarin/50">
                 <Button
