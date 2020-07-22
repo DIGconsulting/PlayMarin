@@ -26,8 +26,7 @@ function Hero() {
     <>
       <div className={classes.Container}>
         <video
-          autoPlay="autoPlay"
-          loop="loop"
+          autoPlay
           muted
           className={classes.Video}
           fluid={false}
