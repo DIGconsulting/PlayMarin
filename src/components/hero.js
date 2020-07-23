@@ -19,7 +19,7 @@ function Hero() {
       <div className={classes.Container}>
     
           <img src={Video} style={{
-            height: "900px"
+            height: "1000px"
           }}/>
 
         <div className={classes.Content}>
