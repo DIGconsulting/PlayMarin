@@ -15,7 +15,7 @@ function Hero() {
   const { video } = useStaticQuery(graphql`
     query {
       video: file(relativePath: { eq: "playMarin.mp4" }) {
-        videoWebP {
+        videoH264 {
           path
         }
       }
@@ -33,7 +33,7 @@ function Hero() {
           className={classes.Video}
           fluid={false}
         >
-          <source src={video.videoWebP.path} type="video/mp4" />
+          <source src={video.videoH264.path} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
