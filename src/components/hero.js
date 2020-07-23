@@ -10,25 +10,17 @@ import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import "./hero.module.css"
-import Video from "../images/playMarin.webm"
+import  Video from "../images/playMarin.gif"
 
 function Hero() {
-
 
   return (
     <>
       <div className={classes.Container}>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className={classes.Video}
-          fluid={false}
-        >
-          <source src={Video} type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
+    
+          <img src={Video} style={{
+            height: "900px"
+          }}/>
 
         <div className={classes.Content}>
           <Container>
