@@ -10,7 +10,7 @@ import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import "./hero.module.css"
-import Video from "../images/playMarin.mp4"
+import Video from "../images/playMarin.webm"
 
 function Hero() {
 
@@ -25,7 +25,7 @@ function Hero() {
           className={classes.Video}
           fluid={false}
         >
-          <source src={Video} type="video/mp4" />
+          <source src={Video} type="video/webm" />
           Your browser does not support the video tag.
         </video>
 
