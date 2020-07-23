@@ -38,6 +38,7 @@
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-grid-tables": "^0.1.0",
     "gatsby-remark-responsive-iframe": "^2.4.11",
+    "gatsby-remark-videos": "^0.3.5",
     "gatsby-source-drive": "^0.0.2",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-source-instagram": "^0.8.0",

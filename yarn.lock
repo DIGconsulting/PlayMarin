@@ -1821,6 +1821,13 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@7.5.5":
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
+  integrity sha512-28QvEGyQyNkB0/m2B4FU7IEZGK2NUrcMtT6BZEFALTguLk+AUT6ofsHtPk5QyjAdUkpMJ+/Em+quwz4HOt30AQ==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/runtime@^7.0.0", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.0", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.3":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
@@ -11257,6 +11264,19 @@ gatsby-remark-responsive-iframe@^2.4.11:
     lodash "^4.17.15"
     unist-util-visit "^1.4.1"
 
+gatsby-remark-videos@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-videos/-/gatsby-remark-videos-0.3.5.tgz#445582b2771fd706b8a649ea5f7dcf381f37ffd4"
+  integrity sha512-RmRrUvVYzRA2NfHwxklsF4lAHNp6arYUJtMcs5bR63PU0f+XjmrV1+t5lHCmxfChis2dJaL4ZcRrfWIAmL4xqg==
+  dependencies:
+    "@babel/runtime" "7.5.5"
+    bluebird "^3.5.5"
+    gatsby-plugin-ffmpeg "^0.3.1"
+    is-relative-url "^3.0.0"
+    lodash "^4.17.15"
+    slash "^3.0.0"
+    unist-util-select "^1.5.0"
+
 gatsby-source-drive@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/gatsby-source-drive/-/gatsby-source-drive-0.0.2.tgz#79fe23271afffbd043021489363778bca83f1c1c"
@@ -20372,6 +20392,11 @@ regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
+
+regenerator-runtime@^0.13.2:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
+  integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
 
 regenerator-runtime@^0.13.3, regenerator-runtime@^0.13.4:
   version "0.13.5"

@@ -153,8 +153,8 @@ module.exports = {
                 .videoCodec('libvpx-vp9')
                 .noAudio()
                 .outputOptions(['-crf 20', '-b:v 0']),
-            maxHeight: 850,
-            maxWidth: 1900,
+            maxHeight: 480,
+            maxWidth: 900,
             fileExtension: 'webm',
           },
           {
@@ -167,12 +167,12 @@ module.exports = {
                 .addOption('-pix_fmt', 'yuv420p')
                 .outputOptions(['-movflags faststart'])
                 .videoBitrate('1000k'),
-            maxHeight: 850,
-            maxWidth: 1900,
+            maxHeight: 480,
+            maxWidth: 900,
             fileExtension: 'mp4',
           },
         ],
       }
-    },
+    } 
   ],
 }
