@@ -10,17 +10,9 @@ import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import "./hero.module.css"
+import Video from "../images/playMarin.mp4"
 
 function Hero() {
-  const { video } = useStaticQuery(graphql`
-    query {
-      video: file(relativePath: { eq: "playMarin.mp4" }) {
-        videoH264 {
-          path
-        }
-      }
-    }
-  `)
 
   return (
     <>
@@ -33,7 +25,7 @@ function Hero() {
           className={classes.Video}
           fluid={false}
         >
-          <source src={video.videoH264.path} type="video/mp4" />
+          <source src={Video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
