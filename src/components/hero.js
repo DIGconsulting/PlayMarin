@@ -10,18 +10,44 @@ import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import "./hero.module.css"
-import  Video from "../images/playMarin.gif"
+import VideoMobile from "../images/playMarin.gif"
+import Media from 'react-media'
 
 function Hero() {
+  const { video } = useStaticQuery(graphql`
+    query {
+      video: file(relativePath: { eq: "playMarin.mp4" }) {
+        videoH264 {
+          path
+        }
+      }
+    }
+  `)
 
   return (
     <>
       <div className={classes.Container}>
-    
-          <img src={Video} style={{
-            height: "1000px"
-          }}/>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className={classes.Video}
+          fluid={false}
+        >
+          <source src={video.videoH264.path} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
+        <Media query="(max-width: 599px)" render={() =>
+          (
+            <img src={VideoMobile} style={{
+              height: "600px"
+            }}/>
+          )}
+        />
+
+    
         <div className={classes.Content}>
           <Container>
             <Jumbotron
