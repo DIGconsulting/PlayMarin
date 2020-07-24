@@ -982,10 +982,11 @@ ul {
 }
 
 
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 600px) {
   .navbar {
-    padding: 0px 0px;
+    padding: 0px 0px!important;
   }
+
 
   iframe {
 
