@@ -50,48 +50,50 @@ const Footer = () => {
               }}
             >
               <h5>Select An Amount:</h5>
-              <ButtonGroup style={{
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "wrap",
-              justifyContent: "space-between"
-            }}>
-              <ExternalLink href="https://www.paypal.me/playmarin/50">
-                <Button
-                  variant="success"
-                  style={{
-                    width: "8rem",
-                    height: "2.5rem",
-                    marginTop: "10px",
-                  }}
-                >
-                  $ 50
-                </Button>
-              </ExternalLink>
-              <ExternalLink href="https://www.paypal.me/playmarin/100">
-                <Button
-                  variant="success"
-                  style={{
-                    width: "8rem",
-                    height: "2.5rem",
-                    marginTop: "10px",
-                  }}
-                >
-                  $ 100
-                </Button>
-              </ExternalLink>
-              <ExternalLink href="https://www.paypal.me/playmarin/500">
-                <Button
-                  variant="success"
-                  style={{
-                    width: "8rem",
-                    height: "2.5rem",
-                    marginTop: "10px",
-                  }}
-                >
-                  $ 500
-                </Button>
-              </ExternalLink>
+              <ButtonGroup
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                  justifyContent: "space-between",
+                }}
+              >
+                <ExternalLink href="https://www.paypal.me/playmarin/50">
+                  <Button
+                    variant="success"
+                    style={{
+                      width: "8rem",
+                      height: "2.5rem",
+                      marginTop: "10px",
+                    }}
+                  >
+                    $ 50
+                  </Button>
+                </ExternalLink>
+                <ExternalLink href="https://www.paypal.me/playmarin/100">
+                  <Button
+                    variant="success"
+                    style={{
+                      width: "8rem",
+                      height: "2.5rem",
+                      marginTop: "10px",
+                    }}
+                  >
+                    $ 100
+                  </Button>
+                </ExternalLink>
+                <ExternalLink href="https://www.paypal.me/playmarin/500">
+                  <Button
+                    variant="success"
+                    style={{
+                      width: "8rem",
+                      height: "2.5rem",
+                      marginTop: "10px",
+                    }}
+                  >
+                    $ 500
+                  </Button>
+                </ExternalLink>
               </ButtonGroup>
               <p
                 style={{

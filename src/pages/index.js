@@ -11,11 +11,10 @@ import YouTube from "react-youtube"
 import { Link } from "gatsby"
 import "../components/hero.module.css"
 
-
 function IndexPage() {
   const opts = {
     height: "450px",
-    width: "auto"
+    width: "auto",
   }
   const { video } = useStaticQuery(graphql`
     query {
@@ -49,7 +48,7 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-            <YouTube videoId={video.videoId} opts={opts}  />
+            <YouTube videoId={video.videoId} opts={opts} />
           </Col>
 
           <Col

@@ -1,5 +1,3 @@
-
-
 module.exports = {
   siteMetadata: {
     title: `Play Marin`,
@@ -24,14 +22,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        displayName: false
+        displayName: false,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [`gatsby-remark-responsive-iframe`],
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-sharp`,
@@ -86,11 +84,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-browser-dependencies`,
       options: {
-        dependencies: [
-          `auth-js`,
-          `browser-only-module`,
-        ]
-      }
+        dependencies: [`auth-js`, `browser-only-module`],
+      },
     },
     {
       resolve: "gatsby-transformer-remark",
@@ -147,32 +142,32 @@ module.exports = {
       options: {
         pipelines: [
           {
-            name: 'vp9',
+            name: "vp9",
             transcode: chain =>
               chain
-                .videoCodec('libvpx-vp9')
+                .videoCodec("libvpx-vp9")
                 .noAudio()
-                .outputOptions(['-crf 20', '-b:v 0']),
+                .outputOptions(["-crf 20", "-b:v 0"]),
             maxHeight: 480,
             maxWidth: 900,
-            fileExtension: 'webm',
+            fileExtension: "webm",
           },
           {
-            name: 'h264',
+            name: "h264",
             transcode: chain =>
               chain
-                .videoCodec('libx264')
+                .videoCodec("libx264")
                 .noAudio()
-                .addOption('-profile:v', 'main')
-                .addOption('-pix_fmt', 'yuv420p')
-                .outputOptions(['-movflags faststart'])
-                .videoBitrate('1000k'),
+                .addOption("-profile:v", "main")
+                .addOption("-pix_fmt", "yuv420p")
+                .outputOptions(["-movflags faststart"])
+                .videoBitrate("1000k"),
             maxHeight: 480,
             maxWidth: 900,
-            fileExtension: 'mp4',
+            fileExtension: "mp4",
           },
         ],
-      }
-    } 
+      },
+    },
   ],
 }

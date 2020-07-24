@@ -11,25 +11,38 @@ import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import "./hero.module.css"
 import VideoMobile from "../images/playMarin.gif"
-
+import Media from "react-media"
 
 function Hero() {
-
   return (
     <>
       <div className={classes.Container}>
-            <img src={VideoMobile} style={{
-              height: "1000px"
-            }}/>
+        <img
+          src={VideoMobile}
+          style={{
+            height: "1000px",
+          }}
+        />
 
-    
+        <Media
+          query="(max-width: 599px)"
+          render={() => (
+            <img
+              src={VideoMobile}
+              style={{
+                height: "600px",
+              }}
+            />
+          )}
+        />
+
         <div className={classes.Content}>
           <Container>
             <Jumbotron
               style={{
                 background: "rgba(7, 58, 99, 0.5)",
                 padding: "1rem 1rem",
-                marginBottom: "0px"
+                marginBottom: "0px",
               }}
             >
               <Row className="justify-content-md-center">

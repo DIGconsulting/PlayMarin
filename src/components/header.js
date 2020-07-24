@@ -9,11 +9,7 @@ import "./hero.module.css"
 import Navbar from "react-bootstrap/Navbar"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-
-
 const Header = () => {
- 
-
   const activeStyle = {
     color: `#598BDD`,
     // color: `#0B7BFF`,
@@ -26,10 +22,9 @@ const Header = () => {
         expand="md"
         fixed="top"
         style={{
-          padding: "0 0!important"
+          padding: "0 0!important",
         }}
       >
-   
         <Navbar.Brand>
           <img
             to="/"
@@ -49,17 +44,26 @@ const Header = () => {
           }}
         >
           <Nav className="mr-auto">
-            <Link className="link" to="/">Home</Link>
-            <Link className="link" to="/about">About</Link>
-            <Link className="link" to="/programs">Programs</Link>
-            <Link className="link" to="/support">Support</Link>
-            <Link className="link" to="/contact">Contact Us</Link>
+            <Link className="link" to="/">
+              Home
+            </Link>
+            <Link className="link" to="/about">
+              About
+            </Link>
+            <Link className="link" to="/programs">
+              Programs
+            </Link>
+            <Link className="link" to="/support">
+              Support
+            </Link>
+            <Link className="link" to="/contact">
+              Contact Us
+            </Link>
           </Nav>
           <Link className="link" to="/support">
             <Button variant="outline-success">Donate</Button>
           </Link>
         </Navbar.Collapse>
-       
       </Navbar>
     </>
   )

@@ -5,7 +5,7 @@ import { Jumbotron, Button, Container, Row, Col } from "react-bootstrap"
 import SolutionImg from "../images/BLNBQ+5bQbyTCJwY5hrYxA_thumb_2d16.jpg"
 import SolutionImgTwo from "../images/9B1A4863.jpeg"
 import { ExternalLink } from "react-external-link"
-import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import ButtonGroup from "react-bootstrap/ButtonGroup"
 
 const Support = () => {
   return (
@@ -114,33 +114,33 @@ const Support = () => {
               In the meantime, please use our links below, or contact us for
               other payment options.
             </p>
-            <ButtonGroup style={{
-              display: "flex",
-              flexWrap: "wrap"
-            }}>
+            <ButtonGroup
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+              }}
+            >
+              <ExternalLink href="https://venmo.com/Play-Marin">
+                <button
+                  style={{
+                    width: "15rem",
+                    height: "2.5rem",
+                  }}
+                >
+                  Venmo
+                </button>
+              </ExternalLink>
 
-            <ExternalLink href="https://venmo.com/Play-Marin">
-              <button
-                style={{
-                  width: "15rem",
-                  height: "2.5rem",
-                }}
-              >
-                Venmo
-              </button>
-            </ExternalLink>
-
-            <ExternalLink href="https://www.paypal.me/playmarin">
-              <button
-                style={{
-                  width: "15rem",
-                  height: "2.5rem",
-                }}
-              >
-                PayPal
-              </button>
-            </ExternalLink>
-
+              <ExternalLink href="https://www.paypal.me/playmarin">
+                <button
+                  style={{
+                    width: "15rem",
+                    height: "2.5rem",
+                  }}
+                >
+                  PayPal
+                </button>
+              </ExternalLink>
             </ButtonGroup>
 
             <p style={{ paddingTop: "50px" }}>

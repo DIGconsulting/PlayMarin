@@ -88,34 +88,34 @@ const Programs = () => {
               creating a more diverse peer group for participating young people
               across Marin County.
             </p>
-            <ButtonGroup style={{
-              display: "flex",
-              flexWrap: "wrap"
-            }}>
+            <ButtonGroup
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+              }}
+            >
+              <ExternalLink href="https://venmo.com/Play-Marin">
+                <button
+                  style={{
+                    width: "15rem",
+                    height: "2.5rem",
+                  }}
+                >
+                  Venmo
+                </button>
+              </ExternalLink>
 
-            <ExternalLink href="https://venmo.com/Play-Marin">
-              <button
-                style={{
-                  width: "15rem",
-                  height: "2.5rem",
-                }}
-              >
-                Venmo
-              </button>
-            </ExternalLink>
-
-            <ExternalLink href="https://www.paypal.me/playmarin">
-              <button
-                style={{
-                  width: "15rem",
-                  height: "2.5rem",
-                }}
-              >
-                PayPal
-              </button>
-            </ExternalLink>
+              <ExternalLink href="https://www.paypal.me/playmarin">
+                <button
+                  style={{
+                    width: "15rem",
+                    height: "2.5rem",
+                  }}
+                >
+                  PayPal
+                </button>
+              </ExternalLink>
             </ButtonGroup>
-
           </Col>
         </Row>
       </Container>
