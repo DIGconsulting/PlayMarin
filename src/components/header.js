@@ -46,7 +46,6 @@ const Header = () => {
         <Navbar.Collapse
           style={{
             backgroundColor: "white",
-            paddingBottom: "10px"
           }}
         >
           <Nav className="mr-auto">
