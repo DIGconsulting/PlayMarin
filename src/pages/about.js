@@ -10,6 +10,7 @@ import SolutionImg from "../gallery-images/vSHWBX8iTjOVGTiaPAHy4Q_thumb_36a4.jpg
 import PartnersImg from "../gallery-images/4l5r2VD3SRS9AkQK55owWA_thumb_36fb.jpg"
 import { Jumbotron, Button, Col, Container } from "react-bootstrap"
 import Table from "react-bootstrap/Table"
+import Link from "gatsby-link"
 
 import Row from "react-bootstrap/Row"
 const About = () => {
@@ -497,9 +498,11 @@ const About = () => {
                       <td>Warriors Community Foundation</td>
                       <td>
                         {" "}
+                        <Link to="/contact">
                         <Button variant="outline-success">
                           Become a Partner
                         </Button>
+                        </Link>
                       </td>
                     </tr>
                   </tbody>
