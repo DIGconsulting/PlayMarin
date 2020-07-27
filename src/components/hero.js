@@ -28,6 +28,14 @@ function Hero() {
     <>
       <div className={classes.Container}>
 
+
+      <Media query="(max-width: 599px)" render={() =>
+          (
+            <img src={VideoMobile} style={{
+              height: "750px"
+            }}/>
+          )}
+        />
         <video
           autoPlay
           loop
