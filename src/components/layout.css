@@ -1530,3 +1530,8 @@ ul {
   width: 500px;
   max-width: 100%;
 }
+
+
+button.btn.btn-success {
+  width: 5rem!important;
+}

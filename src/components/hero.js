@@ -29,10 +29,11 @@ function Hero() {
       <div className={classes.Container}>
 
 
-      <Media query="(max-width: 599px)" render={() =>
+      <Media query="(max-width: 799px)" render={() =>
           (
             <img src={VideoMobile} style={{
-              height: "750px"
+              height: "750px",
+              weight: "200px"
             }}/>
           )}
         />
