@@ -11,23 +11,14 @@ const Timeline = () => {
           maxWidth: 960,
         }}
       >
-        <h3
-          style={{
-            fontFamily: `avenir`,
-            fontWeight: `600`,
-            fontWeight: `600`,
-          }}
-        >
-          Programs
-        </h3>
-        <p
+        <h2
           style={{
             fontFamily: `avenir`,
           }}
         >
           We provide year-long programming to ensure kids are engaged
           throughtout the school year and summer.
-        </p>
+        </h2>
         <h3
           style={{
             fontFamily: `avenir`,
