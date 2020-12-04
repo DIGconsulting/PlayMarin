@@ -43,11 +43,8 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-      <Video
-        videoSrcURL="https://www.youtube.com/embed/-1nxi2Q76MI"
-        videoTitle="Official Music Video on YouTube"
-
-      />
+    <Video
+        videoSrcURL="https://www.youtube.com/embed/-1nxi2Q76MI"      />
           </Col>
 
           <Col

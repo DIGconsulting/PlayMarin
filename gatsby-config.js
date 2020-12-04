@@ -117,7 +117,6 @@ module.exports = {
         },
       },
     },
-
     {
       resolve: `gatsby-remark-videos`,
       options: {
