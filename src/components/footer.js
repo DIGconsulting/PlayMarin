@@ -58,7 +58,8 @@ const Footer = () => {
                   justifyContent: "space-between",
                 }}
               >
-                <ExternalLink href="https://www.paypal.me/playmarin/50">
+
+                <ExternalLink href="https://secure.lglforms.com/form_engine/s/DyJ9AqAOL3OOLxrGV7s-mg">
                   <Button
                     variant="success"
                     style={{
@@ -67,31 +68,7 @@ const Footer = () => {
                       marginTop: "10px",
                     }}
                   >
-                    $ 50
-                  </Button>
-                </ExternalLink>
-                <ExternalLink href="https://www.paypal.me/playmarin/100">
-                  <Button
-                    variant="success"
-                    style={{
-                      width: "8rem",
-                      height: "2.5rem",
-                      marginTop: "10px",
-                    }}
-                  >
-                    $ 100
-                  </Button>
-                </ExternalLink>
-                <ExternalLink href="https://www.paypal.me/playmarin/500">
-                  <Button
-                    variant="success"
-                    style={{
-                      width: "8rem",
-                      height: "2.5rem",
-                      marginTop: "10px",
-                    }}
-                  >
-                    $ 500
+                  Donate Today!
                   </Button>
                 </ExternalLink>
               </ButtonGroup>

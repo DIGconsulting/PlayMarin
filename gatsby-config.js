@@ -68,19 +68,7 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //     options: {
-    //       name: `images`,
-    //       path: `images`
-    //     },
-    //   },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: "play.marin",
-      },
-    },
+    
     {
       resolve: `gatsby-plugin-browser-dependencies`,
       options: {
@@ -129,14 +117,7 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-source-youtube-v2",
-      options: {
-        channelId: ["UCbZU0txF6qwXH5U6hp8LNPA"],
-        apiKey: ["AIzaSyA_TvUw9s84lLAvdozO9FX88A5gnr6m0xQ"],
-        maxVideos: 1,
-      },
-    },
+
     {
       resolve: `gatsby-remark-videos`,
       options: {

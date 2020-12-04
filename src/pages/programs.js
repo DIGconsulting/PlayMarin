@@ -94,27 +94,17 @@ const Programs = () => {
                 flexWrap: "wrap",
               }}
             >
-              <ExternalLink href="https://venmo.com/Play-Marin">
+              <ExternalLink href="https://secure.lglforms.com/form_engine/s/DyJ9AqAOL3OOLxrGV7s-mg">
                 <button
                   style={{
                     width: "15rem",
                     height: "2.5rem",
                   }}
                 >
-                  Venmo
+                  Donate Today!
                 </button>
               </ExternalLink>
 
-              <ExternalLink href="https://www.paypal.me/playmarin">
-                <button
-                  style={{
-                    width: "15rem",
-                    height: "2.5rem",
-                  }}
-                >
-                  PayPal
-                </button>
-              </ExternalLink>
             </ButtonGroup>
           </Col>
         </Row>

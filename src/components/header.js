@@ -8,6 +8,7 @@ import { Link } from "gatsby"
 import "./hero.module.css"
 import Navbar from "react-bootstrap/Navbar"
 import "bootstrap/dist/css/bootstrap.min.css"
+import { ExternalLink } from "react-external-link"
 
 const Header = () => {
   const activeStyle = {
@@ -60,9 +61,9 @@ const Header = () => {
               Contact Us
             </Link>
           </Nav>
-          <Link className="link" to="/support">
-            <Button variant="outline-success">Donate</Button>
-          </Link>
+          <ExternalLink href="https://secure.lglforms.com/form_engine/s/DyJ9AqAOL3OOLxrGV7s-mg">
+          <Button variant="outline-success">Donate Today!</Button>
+          </ExternalLink>
         </Navbar.Collapse>
       </Navbar>
     </>

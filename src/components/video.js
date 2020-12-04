@@ -1,15 +1,15 @@
 import React from "react"
-import ResponsiveEmbed from "react-responsive-embed"
-
-const Video = () => {
-  return (
-    <>
-      <ResponsiveEmbed
-        src="https://www.youtube.com/embed/p0LfbN2J4c8"
-        ratio="4:2"
-      />
-    </>
-  )
-}
-
+const Video = ({ videoSrcURL, videoTitle, ...props }) => (
+  <div className="video">
+    <iframe
+      src={videoSrcURL}
+      title={videoTitle}
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      frameBorder="0"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
+      allowFullScreen
+    />
+  </div>
+)
 export default Video
