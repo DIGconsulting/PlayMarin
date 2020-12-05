@@ -68,7 +68,7 @@ const Footer = () => {
                       marginTop: "10px",
                     }}
                   >
-                  Donate Today!
+                  Donate
                   </Button>
                 </ExternalLink>
               </ButtonGroup>

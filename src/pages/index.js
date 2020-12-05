@@ -6,10 +6,8 @@ import Timeline from "../components/timeline"
 import Homepagethreeup from "../components/homepagethreeup"
 import Media from "react-media"
 import { Container, Row, Col } from "react-bootstrap"
-import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import "../components/hero.module.css"
-import Video from "../components/video"
 
 function IndexPage() {
   const opts = {
@@ -42,8 +40,6 @@ function IndexPage() {
               paddingLeft: "0px",
             }}
           >
-    <Video
-        videoSrcURL="https://www.youtube.com/embed/-1nxi2Q76MI"      />
           </Col>
 
           <Col

@@ -85,8 +85,7 @@
     "transformer": "^1.2.7",
     "video-react": "^0.14.1",
     "webpack": "^4.43.0",
-    "webpack-dev-server": "^3.11.0",
-    "youtube": "^0.1.0"
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
     "gatsby-plugin-material-ui": "1.2.5",
