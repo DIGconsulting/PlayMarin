@@ -62,7 +62,7 @@ function IndexPage() {
               instill valuable skills, create friendships, and enhance well
               being and solidarity among the young people of Marin, improving
               their prospects for a successful future and benefiting the health
-              of our broader Marin community.
+              of our broader Marin community
             </p>
             <Link to="/about">
               <button
