@@ -11,7 +11,7 @@ import Container from "react-bootstrap/Container"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import "./hero.module.css"
 import VideoMobile from "../images/playMarin.gif"
-import Media from 'react-media'
+import Media from "react-media"
 
 function Hero() {
   const { video } = useStaticQuery(graphql`
@@ -27,14 +27,16 @@ function Hero() {
   return (
     <>
       <div className={classes.Container}>
-
-
-      <Media query="(max-width: 799px)" render={() =>
-          (
-            <img src={VideoMobile} style={{
-              height: "750px",
-              weight: "200px"
-            }}/>
+        <Media
+          query="(max-width: 799px)"
+          render={() => (
+            <img
+              src={VideoMobile}
+              style={{
+                height: "750px",
+                weight: "200px",
+              }}
+            />
           )}
         />
         <video
@@ -49,14 +51,13 @@ function Hero() {
           Your browser does not support the video tag.
         </video>
 
-    
         <div className={classes.Content}>
           <Container>
             <Jumbotron
               style={{
                 background: "rgba(7, 58, 99, 0.5)",
                 padding: "1rem 1rem",
-                marginBottom: "-10px"
+                marginBottom: "-10px",
               }}
             >
               <Row className="justify-content-md-center">

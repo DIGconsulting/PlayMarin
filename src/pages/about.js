@@ -499,9 +499,9 @@ const About = () => {
                       <td>
                         {" "}
                         <Link to="/contact">
-                        <Button variant="outline-success">
-                          Become a Partner
-                        </Button>
+                          <Button variant="outline-success">
+                            Become a Partner
+                          </Button>
                         </Link>
                       </td>
                     </tr>

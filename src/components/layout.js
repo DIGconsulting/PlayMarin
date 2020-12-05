@@ -16,7 +16,7 @@ import Media from "react-media"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query siteTitleQuery {
       site {
         siteMetadata {
           title

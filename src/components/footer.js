@@ -58,7 +58,6 @@ const Footer = () => {
                   justifyContent: "space-between",
                 }}
               >
-
                 <ExternalLink href="https://secure.lglforms.com/form_engine/s/DyJ9AqAOL3OOLxrGV7s-mg">
                   <Button
                     variant="success"
@@ -68,7 +67,7 @@ const Footer = () => {
                       marginTop: "10px",
                     }}
                   >
-                  Donate
+                    Donate
                   </Button>
                 </ExternalLink>
               </ButtonGroup>

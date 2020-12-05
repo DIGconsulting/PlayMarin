@@ -68,11 +68,20 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    
+
     {
       resolve: `gatsby-plugin-browser-dependencies`,
       options: {
         dependencies: [`auth-js`, `browser-only-module`],
+      },
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      resolve: "gatsby-remark-embed-youtube",
+      options: {
+        width: 800,
+        height: `auto`,
+        preload: "auto",
       },
     },
 

@@ -130,7 +130,6 @@ const Support = () => {
                   Donate Today!
                 </button>
               </ExternalLink>
-
             </ButtonGroup>
 
             <p style={{ paddingTop: "50px" }}>
