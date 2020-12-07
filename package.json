@@ -45,6 +45,7 @@
     "gatsby-source-stripe": "^3.0.7",
     "gatsby-source-youtube": "^2.3.0",
     "gatsby-source-youtube-v2": "^1.0.1",
+    "gatsby-theme-youtube": "^1.0.0",
     "gatsby-transformer-ffmpeg": "^0.3.8",
     "gatsby-transformer-remark": "^2.8.25",
     "gatsby-transformer-sharp": "^2.4.3",
